@@ -13,32 +13,50 @@
         <figure class="logo">
             <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg" alt="tvastra logo">
         </figure>
-        <div id="icon">
+        <div class="icon">
             <i class="fas fa-bars"></i>
+        </div>
+        <div class="nav-mobile nav-desktop">
+            <div class="menu">
+                <ul >
+                    <li><a href="#">Doctor</a></li>
+                    <li><a href="#">Hospitals</a></li>
+                    <li><a href="#">Treatment</a></li>
+                    <li><a href="#">Other Services</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+            <div class="menu-buttons">
+                <button class="login">Login / Sign Up</button>
+                <button class="primary">Get a Quote</button>
+            </div>
         </div>
         </nav>
 
     <section class="find">
-        <h1>Find Affordable Healthcare</h1>
-        <p>Join the thousands of others who have exercised their rights to quality healthcare at a price you can afford</p>
-    <form class="find-form">
-    <div class="find-loc"> 
-        <i class="fas fa-map-marker-alt "></i>
-        <input name ="location" id = "location" list="cities" placeholder="Ahemdabad" required>
-        <figure class="loc-icon">
-            <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/gps.png" alt="gps" >
-            </figure>   
-        
-    </div>
-        <input name ="find-by" id = "find-by" list="doctors-hospital-treatments" placeholder="Search for Doctors, hospitals and treatments" 
-        required>
-        <button class="primary">Search</button>
-    </form>
+        <div class="container-find">
+            <h1>Find Affordable Healthcare</h1>
+            <p>Join the thousands of others who have exercised their rights to quality healthcare at a price you can afford</p>
+                <form class="find-form">
+                <div class="find-loc">
+            <i class="fas fa-map-marker-alt "></i>
+            <input name ="location" id = "location" list="cities" placeholder="Ahemdabad" required>
+            <figure class="loc-icon">
+                <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/gps.png" alt="gps" >
+                </figure>
+                </div>
+            <input name ="find-by" id = "find-by" list="doctors-hospital-treatments" placeholder="Search for Doctors, hospitals and treatments"
+            required>
+            <button class="primary">Search</button>
+                </form>
+        </div>
     </section>
     <section class = "how-it-works">
-        <h1>How it works</h1>
-        <p> Various facilities are provided here. But there is a protocol which needs to be followed so that you get the service at its best.</p>
-        <div class="parent-fi">
+        <div class="heading-how">
+            <h1>How it works</h1>
+            <p> Various facilities are provided here. But there is a protocol which needs to be followed so that you get the service at its best.</p>
+        </div>
+        <div class="parent-fi" id="content-mobile-how">
             <ol class="steps">
                 <div class="first-step">
                     <li class="first" >
@@ -80,6 +98,47 @@
 </div>
 </ol>
 </div>
+<div class="parent-fi parent-fi-tablet" id="content-tablet-how">
+        <div class="first-step rest">
+            <ol class="steps">
+            <li class="first" >
+                <h5><span id="step1" class="1st">01</span> Fix Consultation</h5>
+            </li>
+            <li class="rest">
+                <span id="step2"class="number">02</span>
+                <h5>Upload Medical Reports</h5>
+            </li>
+            <li class="rest">
+                <span id="step3"class="number">03</span>
+                <h5> Consult with doctor</h5>
+            </li>
+            <li class="rest">
+                <span id="step4"class="number">04</span>
+                <h5>Fix Surgery</h5>
+            </li>
+<li class="rest">
+<span id="step5"class="number">05</span>
+<h5> Hospital sent estimates</h5>
+</li>
+<li class="rest">
+<span id="step6"class="number">06</span>
+<h5> Payment</h5>
+</li>
+<li class="rest">
+<span id="step7"class="number">07</span>
+<h5> Surgery Completed</h5>
+</li>
+</ol>
+</div>
+<div class="droom">
+    <figure class="room">
+                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.png" alt="Fix Consultation">
+                    <h5>Fix Consultation</h5>
+                    <p>This depicts that user will have to fix appointment first when it selects a particular doctor.</p>
+    </figure>
+</div>
+</div>
+
     </section>
     <section class="doctors">
         <h2>World Class Expert Doctors!</h2>
@@ -93,8 +152,7 @@
                 <figcaption><h6>Duke Sanson</h6></figcaption>
                 <ul class="speciality">
                     <li>Neuro Surgeon</li>
-                    <li>Chain Department of Neurological Surgery</li>
-                    <li>Australia</li>
+                    <li>Chain Department of Neurological Surgery, Australia</li>
                 </ul>
             </figure>
             <figure class="about-doc" id="doctor2">
@@ -120,54 +178,49 @@
                 <figcaption><h6>Rose Moon</h6></figcaption>
                 <ul class="speciality">
                     <li>Plastic Surgeon</li>
-                    <li>Department of Plastic and </li>
-                    <li>Reconstructive Surgery</li>
+                    <li>Department of Plastic Surgery</li>
                     <li>Dubai</li>
                 </ul>
             </figure>
         </div>
     </section>
     <section class="Featured-treatments">
-        <h1>Featured Medical Treatment</h1>
-        <p>Join the thousands of others who have exercised their rights to quality healthcare at a price you can afford</p> 
-        <div class="parent-featured">
-            <figure class="treatments" id="Dentistry">
-                <div class="details">
-                <h6>Dentistry</h6>
-                <p>50+ Specialists</p>
+        <div class="heading-featured">
+            <h1>Featured Medical Treatment</h1>
+            <p>Join the thousands of others who have exercised their rights to quality healthcare at a price you can afford</p>
+            </div>
+            <div class="parent-featured">
+                <div class="treatments t1">
+                    <div class="background"></div>
+                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--010.jpg" alt="cancer">
+                    <div class="details"><h6>Cancer</h6><p>50+ Specialists</p></div>
                 </div>
-            </figure>
-            <figure class="treatments" id="Cancer">
-                <div class="details">
-                    <h6>Cancer</h6>
-                    <p>50+ Specialists</p>
+                <div class="treatments t2">
+                    <div class="background"></div>
+                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--009.jpg" alt="Dentistry">
+                    <div class="details"><h6>Dentistry</h6><p>50+ Specialists</p></div>
                 </div>
-            </figure>
-            <figure class="treatments" id="Cardiologic-Treatment">
-                <div class="details">
-                    <h6>Cardiologic Treatment</h6>
-                    <p>50+ Specialists</p>
+                <div class="treatments t3">
+                    <div class="background"></div>
+                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--008.jpg" alt="Orthopedics">
+                    <div class="details"><h6>Orthopedics Surgery</h6><p>50+ Specialists</p></div>
                 </div>
-            </figure>
-            <figure class="treatments" id="Multi-Organ-Transplant">
-                <div class="details">
-                    <h6>Multi Organ Transplant</h6>
-                    <p>50+ Specialists</p>
+                <div class="treatments t4">
+                    <div class="background"></div>
+                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--011.jpg" alt="Cardiology">
+                    <div class="details"><h6>Cardiology Treatment</h6><p>50+ Specialists</p></div>
                 </div>
-            </figure>
-            <figure class="treatments" id="Orthopedics-Surgery">
-                <div class="details">
-                    <h6>Orthopedics Surgery</h6>
-                    <p>50+ Specialists</p>
+                <div class="treatments t5">
+                    <div class="background"></div>
+                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--007.jpg" alt="Infertility">
+                    <div class="details"><h6>Infertility Treatment</h6><p>50+ Specialists</p></div>
                 </div>
-            </figure>
-            <figure class="treatments" id="Infertility-Treatment">
-                <div class="details">
-                    <h6>Infertility Treatment</h6>
-                    <p>50+ Specialists</p>
+                <div class="treatments t6">
+                    <div class="background"></div>
+                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--006.jpg" alt="Multi organ transplant">
+                    <div class="details"><h6>Multi Organ Transplant</h6><p>50+ Specialists</p></div>
                 </div>
-            </figure>
-        </div>
+            </div>
     </section>
     <section class="services">
         <h1>Exclusive services</h1>

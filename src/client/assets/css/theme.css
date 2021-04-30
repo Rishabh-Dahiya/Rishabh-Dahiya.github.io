@@ -203,33 +203,33 @@ footer{
 @media only screen and (min-width:1025px)
 {
     h1,h2{
-        font-size: 2.4rem;
-        line-height:2.6rem;
+        font-size: 2rem;
+        line-height:2.2rem;
+        text-align: left;
     }
     
     h3{
-        font-size: 2.2rem;
-        line-height:2.4rem;
+        font-size: 1.8rem;
+        line-height:2.0rem;
     }
     h4{
-        font-size: 2rem;
-        line-height:2.2rem;
+        font-size: 1.6rem;
+        line-height:1.8rrem;
     }
     h5{
-        font-size: 1.8rem;
-        line-height:2rem;
+        font-size: 1.4rem;
+        line-height:1.6rem;
     }
     h6{
-        font-size: 1.6rem;
-        line-height:1.8rem;   
+        font-size: 1.2rem;
+        line-height:1.4rem;   
     }
     section {
         padding: 3rem 4rem;
     }
-
     p{
-        font-size: 1.5rem;
-        line-height: 2rem;
+        font-size: 1rem;
+        line-height: 1.6rem;
         margin-bottom: 2rem;
     }
     input,select{
@@ -237,10 +237,14 @@ footer{
         line-height: 1.6rem;
     }
     button {
-        font-size: 1.1rem;
+        font-size: 0.8rem;
     }
     li {
-        font-size: 1.1rem;
+        font-size: 1rem;
         line-height: 1.3rem;
+    }
+    span{
+        font-size: 2rem;
+        line-height: 2rem;
     }
 }

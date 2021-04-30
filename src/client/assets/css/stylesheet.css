@@ -12,7 +12,9 @@
     width: 40%;
     height: 60%;
 }
-
+.nav-desktop{
+    display: none;
+}
 
 /*--------FIND HOSPITALS-------------*/
 .find {
@@ -31,6 +33,12 @@
     padding-bottom: 0;
     margin-bottom: 0.625rem;
 }
+
+.loc-icon {
+    width: 1.25em;
+    padding-top: 0.3rem;
+    color: var(--dark-grey);
+}
 .loc-icon {
     width: 1.25em;
 }
@@ -40,6 +48,8 @@
 }
 
 /*----------HOW DOES THIS WORKS-----------------*/
+#content-tablet-how
+{display: none;}
 .how-it-works {
     display: flex;
     flex-direction: column;
@@ -63,7 +73,7 @@
     height: 4rem;
     border-radius: 0.625rem;
     padding-left: 1rem;
-    padding-top: 0.625rem;
+    padding-top: 1rem;
     text-align: left;
 }
 .rest{
@@ -71,6 +81,7 @@
     color: var(--grey);
     margin-bottom: 1rem;
     border: 0.125rem solid var(--grey) ;
+    vertical-align: middle;
 }
 .number{
     color: var(--grey);
@@ -117,48 +128,42 @@ figcaption {
 }
 
 /*--------------FEATURED TREATMENTS-----------------*/
-#Dentistry , #Cancer,#Cardiologic-Treatment,#Multi-Organ-Transplant,#Orthopedics-Surgery,#Infertility-treatment {
-    background-size: 100% 100%; 
+.treatments{
+    width:100%;
+    height:22rem;
+    margin: 1rem auto;
+    position: relative;
 }
-.treatments {
-    height: 20rem;
-   margin-bottom: 0.1rem;  
+
+.background{
+    background-image: linear-gradient(to bottom, rgba(4,4,39,0), rgba(4,4,39,1));
+    width:100%;
+    height:100%;
+    position: absolute;
 }
-.details {
+.featured-treatments img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.details{
     text-align: left;
-    padding-top: 16rem;
-    padding-left: 0.5rem;
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    color: white;
+    margin:0;
+}
+.details p,.details h6{
+    color:white;
+    margin:0;
+}
+.details p:first-child{
+    font-family:'nexa-bold';
+    margin-bottom: 0.1rem;
+}
 
-}
-.details h6,.details p{
-    color: var(--white-text);
-}
-#Dentistry {
-background-image:  linear-gradient(to top, rgb(0,0,0,0.9) 20%, rgb(0,0,0,0)),
-url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--009.jpg");
-
-}
-#Cancer {
-    background-image: linear-gradient(to top, rgb(0,0,0,0.9) 20%, rgb(0,0,0,0))
-    ,url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--010.jpg");
-}
-#Cardiologic-Treatment {
-    background-image: linear-gradient(to top, rgb(0,0,0,0.9) 20%, rgb(0,0,0,0))
-    , url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--011.jpg");
-} 
-#Multi-Organ-Transplant {
-    background-image: linear-gradient(to top, rgb(0,0,0,0.9) 20%, rgb(0,0,0,0))
-    ,url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--006.jpg");
-}
-#Orthopedics-Surgery{
-    
-    background-image: linear-gradient(to top, rgb(0,0,0,0.9) 20%, rgb(0,0,0,0))
-    ,url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--008.jpg");
-}
-#Infertility-Treatment {
-    background-image: linear-gradient(to top, rgb(0,0,0,0.9) 20%, rgb(0,0,0,0))
-    ,url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--000.jpg");
-}
 /*--------------SERVICES AVAILABLE----------------*/
 .services{
     display: flex;
@@ -259,7 +264,22 @@ url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--0
         height: 4rem;
     }
     /*---------------HOW IT WORKS--------------------------------*/
-
+    #content-mobile-how{
+        display: none;
+    }
+    #content-tablet-how{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .first{
+        margin-bottom: 1rem;
+    }
+    
+    .room {
+        width: 20rem;
+        height: 21rem;
+    }
    /*-----------------DOCTORS----------------------------------------*/
     .parent-doc {
         display: grid;
@@ -282,14 +302,15 @@ url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--0
     /*----------------help------------------------------------------*/
     .help{
         display: flex;
-        flex-direction: column;
-       
+        flex-direction: column;  
     }
     .help button{
       width: 15rem;
         justify-self: center;
+        align-self: center;
     }
     /*---------------footer-----------------------------------------*/
+    
    .ft-main {
        background-color:var(--white);
        color: var(--dark-blue);
@@ -336,3 +357,215 @@ url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--0
         align-self: center;
     }
 }
+@media only screen and (min-width:1024px){
+    /*-----------------padding-----------------*/
+    .find,.how-it-works,.doctors,.featured-treatments,.services,.help,.ft-main{
+        padding: 3rem 5rem  ;
+    }
+    .nav-bar{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    /*-------------Navigation------------------*/
+    .icon{
+        display: none;
+    }
+    .logo{
+        width: 12rem;
+        height: 2rem;
+        padding-left: 3rem;
+    }
+    .nav-desktop{
+        display: flex;
+        flex-direction: row;
+    }
+    .nav-desktop li{
+        display: inline;
+        padding-left: 1rem;
+    }
+    .menu {
+        padding-right: 7rem;
+        align-self: center;
+    }
+    .menu-buttons button{
+        height: 2.5rem;
+        width: 10rem;
+        border: 0.007rem solid var(--dark-blue);
+        border-radius:0.125rem;
+    }
+    .nav-desktop a{
+        color: var(--dark-blue);
+    }
+    .login{
+        background-color: var(--white);
+    }
+    /*-----------------Find Affordablt Healthcare------------------------*/
+    .find{
+        background-image:url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.jpg");
+        background-size:100% 100%;
+        
+    }
+    .find-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+      }
+      .find-loc {
+        height: 4rem;
+        border-right:0.0625rem solid var(--grey-text);
+    }
+    .primary {
+        height: 4rem;
+        width: 10rem;
+    }
+   .find p{
+       text-align: left;
+   }
+   .container-find{
+       width: 55%;
+   }
+   /*---------------HOW IT WORKS--------------------------------*/
+       #content-mobile-how{
+        display: none;
+    }
+    #content-tablet-how{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .steps li {
+        height: 7rem;
+        padding: 0;
+    }
+    .first{
+        margin-bottom: 1rem;
+        width: 42vw;
+        border: 0.1rem solid var(--blue) ;
+    }
+   .first h5,.first span,.rest h5, .rest span{
+       align-self: center;
+   }
+    .steps span{
+        font-size: 1.7rem;
+        align-self: center;
+    }
+    .rest span {
+        padding-bottom:0.5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .droom img{
+     height: 36rem;
+     width: 35rem;
+     align-self: center;
+    }
+    .droom{
+        padding-left: 7rem;
+    }
+    .heading-how h1,.heading-how p{
+        text-align: left;
+
+    }
+    .heading-how{
+        margin-bottom: 2rem;
+    }
+   /*------------DOCTORS-------------*/
+   
+   .doctors p{
+       text-align: left;
+   }
+   .parent-doc{
+       display: grid;
+       grid-template-columns: 25% 25% 25% 25%;
+       overflow: hidden;
+       grid-column-gap: 0.5rem;
+   }
+   /*----------------Featured Treatments--------------*/
+   
+   .parent-featured{
+       display: grid;
+       grid-gap: 0.5rem;
+   }
+   /*---------------Icons----------------------------*/
+   .services p{
+       text-align: left;
+   }
+   .icons{
+    display: grid;
+    grid-template-columns: 14rem 14rem 14rem 14rem 14rem 14rem;
+    grid-template-rows: 100%;
+    grid-column-gap: 0.1rem; 
+   }
+   .icons figure{
+       border-radius: 0;
+   }
+   .icons h6{
+       color: var(--dark-grey);
+   }
+   /*---------------Submit your query-----------------*/
+   .help{
+       display: flex;
+       flex-direction: column;
+   }
+   .help p{
+       text-align:left;
+   }
+    .help button{
+    width: 20rem;
+    height: 4rem;
+}
+   /*---------------footer----------------------------*/
+   .ft-main {
+    background-color:var(--white);
+    color: var(--dark-blue);
+    padding-bottom: 0;
+}
+ .first-footer {
+     display: flex;
+     flex-direction: row-reverse;
+     width: 100vw;
+     justify-content: space-between;
+     align-content: center;
+     padding-left: 4rem;
+    padding-right: 4rem;
+ }
+
+ .ft-logo {
+     height: 2rem;
+     width: 11rem;
+    float: right;  
+    align-self: center; 
+    padding-right: 1rem;
+ }
+ .foot-li li {
+       display: inline;
+       padding-left: 1rem;
+      color: var(--dark-blue);
+ }
+ .foot-list{
+     align-self: center;
+ }
+ 
+ .footer1 {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100vw;
+    justify-content: space-between; 
+    padding-left: 4rem;
+    padding-right: 4rem;
+ }
+ .ft-final p{
+     color: var(--dark-blue);
+ }
+ .parent-ft-final {
+     align-self: center;
+     padding-top: 0.8rem;
+     padding-left: 1rem;
+ }
+ .parent-social {
+     align-self: center;
+ }
+ 
+   
+} 
