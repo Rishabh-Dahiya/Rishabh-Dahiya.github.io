@@ -6,6 +6,7 @@
     --grey:rgb(199, 212, 217, 1);
     --dark-grey:rgb(189, 189, 189, 1);
     --white-text:rgb(251, 252, 252 );
+    --text-grey:rgba(136,129,133,255);
 }
 
 @font-face{
@@ -92,7 +93,7 @@ input,select {
 input::placeholder ,select::placeholder {
     display: inline-block;
     font-size: 0.9rem;
-    color: var(--dark-grey);
+    color: var(--text-grey);
     text-overflow:ellipsis;
    
 }

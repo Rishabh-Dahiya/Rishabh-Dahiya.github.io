@@ -482,11 +482,48 @@ figcaption {
        grid-column-gap: 0.5rem;
    }
    /*----------------Featured Treatments--------------*/
-   
-   .parent-featured{
-       display: grid;
-       grid-gap: 0.5rem;
+   .heading-featured{
+       text-align: left;
+       padding-bottom: 1rem;
    }
+   .parent-featured{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(10,1fr);
+    grid-gap:1rem;
+}
+.treatments{
+    width:100%;
+    height:100%;
+}
+.t1{
+    grid-column: 4/7;
+    grid-row: 1/6;
+}
+
+.t2{
+    grid-column: 1/4;
+    grid-row: 1/4;
+}
+
+.t3{
+    grid-column:4/7;
+    grid-row: 6/11;
+}
+
+.t4{
+    grid-column: 7/10;
+    grid-row: 1/5;
+}
+
+.t5{
+    grid-column:7/10;
+    grid-row: 5/11;
+}
+.t6{
+    grid-column:1/4;
+    grid-row:4/11;
+}
    /*---------------Icons----------------------------*/
    .services p{
        text-align: left;

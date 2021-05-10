@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4fd1383274.js" crossorigin="anonymous"></script>
+    <link href="../assets/css/reset.css" type="text/css" rel="stylesheet">
+    <link href="../assets/css/theme.css" type="text/css" rel="stylesheet">
+    <link href="../assets/css/hospital.css" type="text/css" rel="stylesheet">
+    <title>hospital webpage</title>
+</head>
+<body>
+    <nav class="nav-bar">
+        <figure class="logo">
+            <a href="index.html">
+            <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg" alt="tvastra logo">
+            </a>
+        </figure>
+        <div class="icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="nav-mobile nav-desktop">
+            <div class="menu">
+                <ul >
+                    <li><a href="doctor.html">Doctor</a></li>
+                    <li><a href="hospital.html">Hospitals</a></li>
+                    <li><a href="#">Treatment</a></li>
+                    <li><a href="#">Other Services</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+            <div class="menu-buttons">
+                <button class="login">Login / Sign Up</button>
+                <button class="primary">Get a Quote</button>
+            </div>
+        </div>
+        </nav>  
+        <section class="hero-2">
+            <div class="treatments t2">
+                <div class="background"><h3>Hospitals in <a href="#">Delhi</a></h3></div>
+            </div>
+        </section>
+        <section class="hero">
+            <div class="hom-list">
+                <h5>Home/Doctor List</h5>
+                <select id = "sort-by" name="sort">
+                    <option value="">Sort By</option>
+                </select>
+            </div>
+        </section>
+        <section class="main">
+            <div class="filter-grid">
+                <div class="filters">
+                    <div id="filter-by"><button class="filter-by-bt">Filter By</button></div>
+                    <div class="specification">
+                        <div class="grid grid1">
+                            <h6>Location</h6>
+                            <i class="fas fa-search"></i>
+                            <i class="fas fa-minus"></i>
+                        </div>
+                        <div class="filter-flex">
+                            <input type="checkbox" name="treatment1" id="treatment1" value="DLF Cyber City">
+                            <label for="treatment1">DLF Cyber City</label>
+                        </div>
+                        <div class="filter-flex">
+                        <input type="checkbox" name="treatment2" id="treatment2" value="Dwarka">
+                        <label for="treatment2">Dwarka</label>
+                        </div>
+                        <div class="filter-flex">
+                        <input type="checkbox" name="treatment3" id="treatment3" value="Lajpat Nagar">
+                        <label for="treatment3">Lajpat Nagar</label>
+                        </div>
+                        <div class="filter-flex">
+                        <input type="checkbox" name="treatment4" id="treatment4" value="Palam Vihar">
+                        <label for="treatment4">Palam Vihar</label>
+                        </div>
+                        <div class="filter-flex">
+                        <input type="checkbox" name="treatment5" id="treatment5" value="Punjabi Baag">
+                        <label for="treatment5">Punjabi Baag</label>
+                        </div>
+                        <div class="filter-flex">
+                        <input type="checkbox" name="treatment6" id="treatment6" value="Pusa Road">
+                        <label for="treatment6">Pusa Road</label>
+                        </div>
+                        <div class="show"><label id="show">+Show more</label></div>
+                        <hr>
+                    </div>
+                    <div class="specification">
+                        <div class="grid grid3" >
+                            <h6>Department</h6>
+                            <i class="fas fa-search"></i>
+                            <i class="fas fa-minus"></i>
+                        </div>
+                        <div class="filter-flex">
+                        <input type="checkbox" name="hospital1" id="hospital1" value="Department 1">
+                        <label for="hospital1">Department 1</label>
+                        </div>
+                        <div class="filter-flex">
+                        <input type="checkbox" name="hospital2" id="hospital2" value="Department 2">
+                        <label for="hospital2">Department 2 </label>
+                        </div>
+                        <div class="filter-flex">
+                        <input type="checkbox" name="hospital3" id="hospital3" value="Department 3">
+                        <label for="hospital3">Department 3</label>
+                        </div>
+                        <div class="filter-flex">
+                        <input type="checkbox" name="hospital4" id="hospital4" value="Department 4">
+                        <label for="hospital4">Department 4</label>
+                        </div>
+                        <div class="filter-flex">
+                        <input type="checkbox" name="hospital5" id="hospital5" value="Department 5">
+                        <label for="hospital5">Department 5</label>
+                        </div>
+                        <div class="filter-flex">
+                        <input type="checkbox" name="hospital6" id="hospital6" value="Department 6">
+                        <label for="hospital6">Department 6</label>
+                        </div>
+                        <div class="show"><label id="show">+Show more</label></div>
+                        <hr>
+                    </div>
+                    <div class="specification">
+                        <div class="grid grid2" >
+                            <h6>Treatment</h6>
+                            <i class="fas fa-search"></i>
+                            <i class="fas fa-minus"></i>
+                        </div>
+                        <div class="filter-flex">
+                        <input type="checkbox" name="location1" id="location1" value="Multi Organ Transplant">
+                        <label for="location">Multi Organ Transplant</label>
+                        </div>
+                        <div class="filter-flex">
+                        <input type="checkbox" name="location2" id="location2" value="Orthpedic Surgery">
+                        <label for="location2">Orthpedic Surgery</label>
+                        </div>
+                        <div class="filter-flex">
+                        <input type="checkbox" name="location3" id="location3" value="Infertility Treatment">
+                        <label for="location3">Infertility Treatment</label>
+                        </div>
+                        <div class="filter-flex">
+                        <input type="checkbox" name="location4" id="location4" value="Dentistry">
+                        <label for="location4">Dentistry</label>
+                        </div>
+                        <div class="filter-flex">
+                        <input type="checkbox" name="location5" id="location5" value="Cardiology">
+                        <label for="location5">Cardiology</label>
+                        </div>
+                        <div class="filter-flex">
+                        <input type="checkbox" name="location6" id="location6" value="Cancer">
+                        <label for="location6">Cancer</label>
+                        </div>
+                        
+                        <div class="show"><label id="show">+Show more</label></div>
+                        <hr>
+                        
+                    </div>
+                </div>
+                </div>
+                
+                <div class="abcd">
+                <div class="parent-container">
+                    <div class="info-first" id="i1">
+                        <h5>Apollo Hospital</h5>
+                        <ul class="info-about">
+                            <li><i class="fas fa-map-marker-alt"></i>Delhi Mathura Road, Sarita Vihar, Delhi 110076</li>
+                            <li><i class="fas fa-bed"></i>100 Beds</li>
+                            <li><i class="fas fa-stethoscope"></i>Famous treatments</li>
+                        </ul>
+                        <div class="alignment">
+                            <div class="options">
+                                <div class="option-available">Multi Organ Transplant</div>
+                                <div class="option-available">Orthopedic Surgery</div>
+                                <div class="option-available">Infetility Treatment</div>
+                                <div class="option-available">Dentistry</div>
+                                <div class="option-available">Cardiology</div>
+                                <div class="option-available">Cancer</div>
+                                <div class="option-available">40+ more</div>
+                            </div>
+                            <button class="primary">Call Now</button>
+                        </div>
+                    </div>
+                    <div class="figure1">
+                        <img src="../assets/images/apollo.jpg" alt="Duke Sanson">
+                    </div>
+                </div>
+                    <div class="parent-container">
+                        <div class="info-first" id="Fortis">
+                            <h5>Fortis Hospital</h5>
+                            <ul class="info-about">
+                                <li><i class="fas fa-map-marker-alt"></i>Delhi Mathura Road, Sarita Vihar, Delhi 110076</li>
+                                <li><i class="fas fa-bed"></i>100 Beds</li>
+                                <li><i class="fas fa-stethoscope"></i>Famous treatments</li>
+                            </ul>
+                            <div class="alignment">
+                                <div class="options">
+                                    <div class="option-available">Multi Organ Transplant</div>
+                                    <div class="option-available">Orthopedic Surgery</div>
+                                    <div class="option-available">Infetility Treatment</div>
+                                    <div class="option-available">Dentistry</div>
+                                    <div class="option-available">Cardiology</div>
+                                    <div class="option-available">Cancer</div>
+                                    <div class="option-available">40+ more</div>
+                                </div>
+                                <button class="primary">Call Now</button>
+                            </div>
+                        </div>
+                        <div class="figure2">
+                            <img src="../assets/images/fortisfinal.jpg" alt="Department 5">
+                        </div>
+                    </div>
+                    <div class="parent-container">
+                        <div class="info-first" id="Rockland">
+                            <h5>Rockland Hospital</h5>
+                            <ul class="info-about">
+                                <li><i class="fas fa-map-marker-alt"></i>Delhi Mathura Road, Sarita Vihar, Delhi 110076</li>
+                                <li><i class="fas fa-bed"></i>100 Beds</li>
+                                <li><i class="fas fa-stethoscope"></i>Famous treatments</li>
+                            </ul>
+                            <div class="alignment">
+                                <div class="options">
+                                    <div class="option-available">Multi Organ Transplant</div>
+                                    <div class="option-available">Orthopedic Surgery</div>
+                                    <div class="option-available">Infetility Treatment</div>
+                                    <div class="option-available">Dentistry</div>
+                                    <div class="option-available">Cardiology</div>
+                                    <div class="option-available">Cancer</div>
+                                    <div class="option-available">40+ more</div>
+                                </div>
+                                <button class="primary">Call Now</button>
+                            </div>
+                        </div>
+                        <div class="figure3">
+                            <img src="../assets/images/rocklandfinal.jpg" alt="Rockland Hospital">
+                        </div>
+                    </div>
+                    <div class="parent-container">
+                        <div class="info-first" id="Primus">
+                            <h5>Primus Super Hospital</h5>
+                            <ul class="info-about">
+                                <li><i class="fas fa-map-marker-alt"></i>Delhi Mathura Road, Sarita Vihar, Delhi 110076</li>
+                                <li><i class="fas fa-bed"></i>100 Beds</li>
+                                <li><i class="fas fa-stethoscope"></i>Famous treatments</li>
+                            </ul>
+                            <div class="alignment">
+                                <div class="options">
+                                    <div class="option-available">Multi Organ Transplant</div>
+                                    <div class="option-available">Orthopedic Surgery</div>
+                                    <div class="option-available">Infetility Treatment</div>
+                                    <div class="option-available">Dentistry</div>
+                                    <div class="option-available">Cardiology</div>
+                                    <div class="option-available">Cancer</div>
+                                    <div class="option-available">40+ more</div>
+                                </div>
+                                <button class="primary">Call Now</button>
+                            </div>
+                        </div>
+                        <div class="figure4">
+                            <img src="../assets/images/primus.jfif" alt="Primus Super Hospital">
+                        </div>
+                    </div>
+                            </section>
+                            <section class="help">
+                                <h2>Need Help?</h2>
+                                <p>Just let us know, we will be happy to assist you</p>
+                                <button class="secondary">Submit your enquiry</button>
+                            </section>
+                            
+                            <footer>     
+                                <section class="ft-main">
+                    <div class="first-footer">
+                        <figure class="ft-logo">
+                            <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/footer.png" alt="Tvastra Logo">
+                        </figure>
+                    
+                        <div class="foot-list">
+                            <ul class="foot-li">
+                                <li><a href="doctor.html"></a>Doctor</li>
+                                <li><a href="hospital.html"></a>Hospital</li>
+                                <li>Treatment</li>
+                                <li>Other Services</li>
+                                <li>FAQ's</li>
+                            </ul>
+                            </div>
+                        </div>
+                        <div class="footer1">
+                            <div class="parent-social">
+                                <ul class="social-parent">
+                                    <div id="facebook">
+                                        <i class="fab fa-facebook"></i>
+                                    </div>
+                                    <div id="pinterest">
+                                        <i class="fab fa-pinterest-p"></i>
+                                    </div>
+                                    <div id="twitter">
+                                        <i class="fab fa-twitter"></i>
+                                    </div>
+                                    <div id="google">
+                                        <i class="fab fa-google-plus-g"></i>
+                                </div>
+                                <div id="instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </div>
+                                </div>
+                            <div class="parent-ft-final">
+                                <div class="ft-final">
+                                    <p>All Rights Reserved.</p>
+                                <div class="copyright-icon">
+                                    <i class="far fa-copyright"></i>
+                                </div>
+                                <p> tvastra 2018</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
+     
+        </footer>
+    
+</body>
+</html>

@@ -1,0 +1,97 @@
+/* -------- HEADER---------*/
+.logo {
+    width: 40%;
+    height: 60%;
+}
+.nav-desktop{
+    display: none;
+}
+/*------------main-----------------*/
+body{
+    background-color: var(--light-blue);
+}
+nav{
+    background-color: var(--white);
+}
+.credentials{
+    background-color: var(--white);
+    width: 90vw;
+    height: 50vh;
+    text-align: center;
+}
+h3{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 0.1rem solid var(--text-grey);
+    vertical-align: middle;
+    color: var(--blue);
+}
+input::placeholder{
+    font-family: nexa-bold;
+}
+.otp input{
+   border: 0.1rem solid var(--text-grey);
+   height: 4rem;
+}
+.otp{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.userid input{
+    height: 3.4rem;
+    padding-top: 1.2rem;
+}
+.fa-question-circle{
+    padding-right: 0.5rem;
+    color: var(--text-grey);
+    width: 4rem;
+}
+.userid{
+    display: flex;
+    border: 0.1rem solid var(--text-grey);
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    align-items: center;
+}
+.loginbox{
+    background-color:var(--light-blue);
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.credentials button{
+    width: 18.7rem;
+    height: 4rem;
+    margin-bottom: 2rem;
+}
+.credentials button h5{
+    display: inline;
+    padding-right: 2rem;
+    padding-left: 4rem;
+    letter-spacing: 0.3rem;
+}
+.fa-arrow-right{
+    padding-left: 2rem;
+}
+.credentials h6{
+    color: var(--text-grey);
+}
+.credentials a {
+    color: var(--blue);
+}
+.footer h6{
+    text-align: center;
+}
+@media only screen and (min-width:768px){
+    .logo{
+        width: 10rem;
+        padding-left: 1.5rem;
+}
+.credentials{
+    height: 50vh;
+    width: 70vw;
+}
+}
