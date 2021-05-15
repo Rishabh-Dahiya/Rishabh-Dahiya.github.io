@@ -19,9 +19,10 @@
 .hero-2{
     display: none;
 }
-.hom-list {
+.hero {
     display: flex;
     justify-content: space-between;
+    padding: 1rem 1rem 0rem;
 }
 .hero h5{
     text-align: left;
@@ -94,11 +95,14 @@
 .help{
     background-color: var(--light-blue);
 }
-
+.secondary{
+    width: 12rem;
+}
 /*--------------FOOTER------------------*/
 .ft-main {
     align-items: center;
     justify-content: center;
+  padding-bottom: 0;
 }
 .ft-main li{
     color: var(--grey);
@@ -113,7 +117,7 @@
     flex-direction: row;
     justify-content: center;
     align-content: center;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     margin-bottom: 1rem;
 }
 .fab {
@@ -122,7 +126,8 @@
 .footer1 p{
     color: var(--white);
     font-size: 1rem;
-    letter-spacing: 0.1rem;
+   word-spacing: 0.2rem;
+   padding-bottom: 1rem;
 }
 @media only screen and (min-width:768px){
     .logo{
@@ -131,6 +136,9 @@
 }
 .hero h5{
     width: 15rem;
+}
+.hero{
+    padding: 2rem 3rem 1rem;
 }
 #sort-by{
     width: 10rem;
@@ -173,15 +181,15 @@
     flex-direction: column;  
 }
 .help button{
-    width: 15rem;
+  width: 15rem;
     justify-self: center;
     align-self: center;
 }
 /*---------------footer-----------------------------------------*/
 
 .ft-main {
-    background-color:var(--white);
-    color: var(--dark-blue);
+   background-color:var(--white);
+   color: var(--dark-blue);
 }
 .first-footer {
     display: flex;
@@ -189,29 +197,32 @@
     width: 100vw;
     justify-content: space-between;
     align-content: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .ft-logo {
     height: 2rem;
     width: 11rem;
-    float: right;  
-    align-self: center; 
-    padding-right: 1rem;
+   float: right;  
+   align-self: center; 
+   padding-right: 1rem;
 }
 .foot-li li {
-    display: inline;
-  padding-left: 1rem;
-  color: var(--dark-blue);
+      display: inline;
+      padding-left: 1rem;
+     color: var(--dark-blue);
 }
 .foot-list{
     align-self: center;
 }
 
 .footer1 {
-    display: flex;
-    flex-direction: row-reverse;
-    width: 100vw;
-    justify-content: space-between; 
+   display: flex;
+   flex-direction: row-reverse;
+   width: 100vw;
+   justify-content: space-between; 
+   padding-left: 2rem;
 }
 .ft-final p{
     color: var(--dark-blue);
@@ -224,12 +235,13 @@
 }
 .parent-social {
     align-self: center;
+    padding-right: 2rem;
 }
 }
 @media only screen and (min-width:1024px) {
     .nav-bar{
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 3rem;
+        padding-right: 4rem;
     }
     /*-------------Navigation------------------*/
     .icon{
@@ -255,6 +267,9 @@
          background-position: center;
          height: 15rem;
     }
+    .hero{
+        padding: 2rem 5rem 1.5rem;
+    }
     .hero-2{
         display: block;
         padding: 0;
@@ -273,6 +288,10 @@
     .menu {
         padding-right: 7rem;
         align-self: center;
+    }
+    .menu-buttons .primary{
+        margin-left: 0;
+        margin-bottom: 0;
     }
     .menu-buttons button{
         height: 2.5rem;
@@ -297,9 +316,10 @@
     }
     .main{
         display: grid;
-        grid-template-columns: 25% 70%;
+        grid-template-columns: 25% 65%;
         grid-column-gap: 1rem;
-        padding: 0rem;
+        margin-left: 5rem;
+        margin-right: 2rem;
     }
     .fa-ul{
         column-count: 2;
@@ -417,6 +437,8 @@
     }
     #sort-by{
         font-size: 1.1rem;
+        width: 8rem;
+        margin-right: 0.5rem;
     }
     .main{
         display: grid;
@@ -426,7 +448,7 @@
     }
     .filter-by-bt{
         font-family: nexa-bold;
-        width: 23.5rem;
+        width: 21rem;
         font-size: 1rem;
         text-align: left;
         margin-bottom: 1.5rem;
@@ -486,12 +508,13 @@
         padding-left: 0.8rem;
     }
     #show{
+        float: left;
         color: var(--blue);
-        padding-right: 3.5rem;
+        padding-left: 1rem;
     }
   
     .show{
-        padding-bottom: 1rem;
+        padding-bottom: 2rem;
         padding-top: 1rem;
     }
     
@@ -538,25 +561,29 @@
         margin-left: 3rem;
     }
     
-     /*---------------Submit your query-----------------*/
-     .help{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .help p{
-        text-align:left;
-        margin: 0;
-    }
-     .help button{
-     width: 20rem;
-     height: 4rem;}
+      /*---------------Submit your query-----------------*/
+   .help-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 5rem;
+}
+.help p{
+    text-align:left;
+    margin: 0;
+}
+ .help button{
+ width: 20rem;
+ height: 4rem;
+}
 /*---------------footer----------------------------*/
 .ft-main {
  background-color:var(--white);
  color: var(--dark-blue);
  padding-bottom: 0;
+ padding-top: 1rem;
 }
 .first-footer {
   display: flex;
@@ -564,8 +591,8 @@
   width: 100vw;
   justify-content: space-between;
   align-content: center;
-  padding-left: 4rem;
- padding-right: 4rem;
+  padding-left: 5rem;
+ padding-right: 5rem;
 }
 
 .ft-logo {
@@ -574,6 +601,7 @@
  float: right;  
  align-self: center; 
  padding-right: 1rem;
+ margin-right: 2.6rem;
 }
 .foot-li li {
     display: inline;
@@ -591,6 +619,23 @@
  justify-content: space-between; 
  padding-left: 4rem;
  padding-right: 4rem;
+}
+.footer1 p {
+  padding-top:1.5rem;
+  color: (var(--dark-blue));
+  letter-spacing: normal;
+  padding-bottom: 0;
+}
+
+.footer1{
+  display: flex;
+  align-items: center;
+  justify-items: space-between;
+  padding-left: 5rem;
+  padding-right: 5.6rem;
+}
+.ft-main{
+  border-bottom: 0.5rem solid var(--blue);
 }
 
 }

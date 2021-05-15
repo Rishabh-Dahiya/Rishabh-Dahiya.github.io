@@ -42,7 +42,12 @@
 .loc-icon {
     width: 1.25em;
 }
-
+#find-by{
+    margin-bottom: 1rem;
+}
+#find-by:placeholder-shown{
+    text-overflow: ellipsis;
+}
 #location {
     padding-bottom: 0.2rem;
 }
@@ -65,7 +70,7 @@
 .first {
     background-color:var(--white);
     color:var(--dark-blue);
-     border: 0.125rem solid var(--dark-blue) ;
+     border: 0.09rem solid var(--dark-blue) ;
     }
 .steps li {
     display: flex;
@@ -80,7 +85,7 @@
      background-color:var(--white);
     color: var(--grey);
     margin-bottom: 1rem;
-    border: 0.125rem solid var(--grey) ;
+    border: 0.09rem solid var(--dark-blue) ;
     vertical-align: middle;
 }
 .number{
@@ -95,7 +100,7 @@ color: var(--white);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 0.125rem;
+    margin-bottom: 1rem;
 }
 .doctors p {
 color: var(--grey);
@@ -124,7 +129,7 @@ figcaption {
 }
 .speciality{
     color: black;
-    border-bottom: 3px solid var(--light-blue);
+    border-bottom: 0.188rem solid var(--light-blue);
 }
 
 /*--------------FEATURED TREATMENTS-----------------*/
@@ -167,45 +172,48 @@ figcaption {
 /*--------------SERVICES AVAILABLE----------------*/
 .services{
     display: flex;
-    background-color: var(--grey);
+    background-color: var(--border-grey);
 }
 .icons{    
     display: grid;    
-    grid-template-columns: 9.5em 9.5rem;
-    grid-template-rows: 9rem 9rem 9rem;
-    grid-gap: 1rem 1rem;
-    justify-content: center;
-    align-content: center;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 0.7rem;
 }
-.icons figure { 
-    width: 100%;
-    background-color: var(--white);
-    border-radius: 1rem;
-    text-align: center;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-    margin-bottom: 0;
-    margin-top: 0;
-}
-.icons img {
-    height: 4rem;
+.icon-image{
+    height: 5rem;
     width: 5rem;
+    margin: 0.6rem auto 0 auto;
 }
-.icons h6 {
-    padding-top: 0.8rem;
-    word-break: break-all;
+.icon-image img{
+    height: 100%;
+    width: 100%;
+}
+.service-icons { 
+   display: flex;
+   flex-direction: column;
+   background-color: var(--white);
+   border-radius: 1rem;
+   width: 100%;
+   height: 100%;
+}
+.service-icons h6{
+    padding: 0rem;
     color: var(--grey-text);  
 }
-
 /* ---------------HELP------------------*/
 .help{
     background-color: var(--light-blue);
 }
-
+.secondary{
+    width: 12rem;
+    
+}
 /*--------------FOOTER------------------*/
 .ft-main {
     align-items: center;
     justify-content: center;
+  padding-bottom: 0;
 }
 .ft-main li{
     color: var(--grey);
@@ -220,7 +228,7 @@ figcaption {
     flex-direction: row;
     justify-content: center;
     align-content: center;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     margin-bottom: 1rem;
 }
 .fab {
@@ -229,13 +237,14 @@ figcaption {
 .footer1 p{
     color: var(--white);
     font-size: 1rem;
-    letter-spacing: 0.1rem;
+   word-spacing: 0.2rem;
+   padding-bottom: 1rem;
 }
 @media only screen and (min-width:768px) and (max-width:1024px){
     /*---------------Navigation--------------------------------*/
     .nav-bar{
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
+        padding-left: 3rem;
+        padding-right: 2.7rem;
     }
     .logo{
         width: 10rem;
@@ -248,11 +257,15 @@ figcaption {
       align-content: center;
     }
     .find-loc {
-        height: 4rem;
+        height: 3rem;
         border-right:0.0625rem solid var(--grey-text) ;
     }
     .primary {
-        height: 4rem;
+        height: 3rem;
+    }
+    #find-by{
+        margin-bottom: 0rem;
+        height: 3rem;
     }
     /*---------------HOW IT WORKS--------------------------------*/
     #content-mobile-how{
@@ -275,8 +288,11 @@ figcaption {
     .parent-doc {
         display: grid;
         grid-template-columns:1fr 1fr ;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows:1fr 1fr;
         grid-column-gap: 1rem;
+    }
+    .doc-img{
+        height: 21rem;
     }
     /*-----------------Featured-Treatments----------------------------*/
     .parent-featured {
@@ -284,12 +300,16 @@ figcaption {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-column-gap: 1rem;
+        grid-row-gap: 0rem;
     }
+    /*-----------------Exclusive Services-------------------------*/
     .icons{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+        grid-gap: 1rem 1rem;
     }
+    
     /*----------------help------------------------------------------*/
     .help{
         display: flex;
@@ -312,6 +332,8 @@ figcaption {
         width: 100vw;
         justify-content: space-between;
         align-content: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
     .ft-logo {
@@ -335,6 +357,7 @@ figcaption {
        flex-direction: row-reverse;
        width: 100vw;
        justify-content: space-between; 
+       padding-left: 2rem;
     }
     .ft-final p{
         color: var(--dark-blue);
@@ -347,9 +370,10 @@ figcaption {
     }
     .parent-social {
         align-self: center;
+        padding-right: 2rem;
     }
 }
-@media only screen and (min-width:1024px){
+@media only screen and (min-width:1024px){  
     /*-----------------padding-----------------*/
     .find,.how-it-works,.doctors,.Featured-treatments,.services,.help{
         padding: 3rem 7rem  ;
@@ -406,12 +430,16 @@ figcaption {
         align-content: center;
       }
       .find-loc {
-        height: 4rem;
+        height: 3.3rem;
         border-right:0.0625rem solid var(--grey-text);
     }
     .primary {
-        height: 4rem;
+        height: 3.3rem;
         width: 10rem;
+    }
+    #find-by{
+        margin-bottom: 0;
+        height: 3.3rem;
     }
    .find p{
        text-align: left;
@@ -477,6 +505,13 @@ figcaption {
        overflow: hidden;
        grid-column-gap: 0.5rem;
    }
+   .doc-img{
+       height: 21rem;
+   }
+   .speciality{
+    border-bottom: 0.4rem solid var(--light-blue);
+}
+  
    /*----------------Featured Treatments--------------*/
    .heading-featured{
        text-align: left;
@@ -485,8 +520,11 @@ figcaption {
    .parent-featured{
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(9,1fr);
+    grid-template-rows: repeat(8,1fr);
     grid-gap:1rem;
+}
+.parent-featured{
+    padding-bottom: 2rem;
 }
 .treatments{
     width:100%;
@@ -540,7 +578,7 @@ figcaption {
        color: var(--dark-grey);
    }
    /*---------------Submit your query-----------------*/
-   .help{
+   .help-wrapper{
        display: flex;
        flex-direction: row;
        justify-content: space-between;
@@ -559,6 +597,7 @@ figcaption {
     background-color:var(--white);
     color: var(--dark-blue);
     padding-bottom: 0;
+    padding-top: 1rem;
 }
  .first-footer {
      display: flex;
@@ -599,6 +638,7 @@ figcaption {
      padding-top:1.5rem;
      color: (var(--dark-blue));
      letter-spacing: normal;
+     padding-bottom: 0;
  }
  
  .footer1{
