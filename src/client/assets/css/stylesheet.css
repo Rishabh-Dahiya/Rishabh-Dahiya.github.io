@@ -226,19 +226,10 @@ figcaption {
 .fab {
     padding-right: 1.27rem;
 }
-.ft-final {
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    display: inline-flex;
-}
-.ft-final p{
+.footer1 p{
+    color: var(--white);
     font-size: 1rem;
-    color: var(--grey);
-}
-.copyright-icon {
-    padding-left: 0.4rem;
-    padding-right: 0.4rem;
+    letter-spacing: 0.1rem;
 }
 @media only screen and (min-width:768px) and (max-width:1024px){
     /*---------------Navigation--------------------------------*/
@@ -348,10 +339,11 @@ figcaption {
     .ft-final p{
         color: var(--dark-blue);
     }
-    .parent-ft-final {
-        align-self: center;
-        padding-top: 0.8rem;
-        padding-left: 1rem;
+    .footer1 p {
+        color: var(--dark-blue);
+        letter-spacing: normal;
+        padding: 1rem;
+        word-spacing: 0.2rem;
     }
     .parent-social {
         align-self: center;
@@ -359,11 +351,11 @@ figcaption {
 }
 @media only screen and (min-width:1024px){
     /*-----------------padding-----------------*/
-    .find,.how-it-works,.doctors,.featured-treatments,.services,.help,.ft-main{
-        padding: 3rem 5rem  ;
+    .find,.how-it-works,.doctors,.Featured-treatments,.services,.help{
+        padding: 3rem 7rem  ;
     }
     .nav-bar{
-        padding-left: 2rem;
+        padding-left: 4rem;
         padding-right: 2rem;
     }
     /*-------------Navigation------------------*/
@@ -401,9 +393,11 @@ figcaption {
     }
     /*-----------------Find Affordablt Healthcare------------------------*/
     .find{
+        display: flex;
         background-image:url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.jpg");
-        background-size:100% 100%;
-        
+        background-size:100% 100%; 
+        justify-items: center; 
+        background-repeat: no-repeat;
     }
     .find-form {
         display: flex;
@@ -424,52 +418,54 @@ figcaption {
    }
    .container-find{
        width: 55%;
+       align-items: center;
    }
    /*---------------HOW IT WORKS--------------------------------*/
-       #content-mobile-how{
-        display: none;
-    }
-    #content-tablet-how{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .steps li {
-        height: 7rem;
-        padding: 0;
-    }
-    .first{
-        margin-bottom: 1rem;
-        width: 42vw;
-        border: 0.1rem solid var(--blue) ;
-    }
-   .first h5,.first span,.rest h5, .rest span{
-       align-self: center;
-   }
-    .steps span{
-        font-size: 1.7rem;
-        align-self: center;
-    }
-    .rest span {
-        padding-bottom:0.5rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-    .droom img{
-     height: 36rem;
-     width: 35rem;
-     align-self: center;
-    }
-    .droom{
-        padding-left: 7rem;
-    }
-    .heading-how h1,.heading-how p{
-        text-align: left;
+   #content-mobile-how{
+    display: none;
+}
+#content-tablet-how{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.steps li {
+    height: 7rem;
+    padding: 0;
+}
+.first{
+    margin-bottom: 1rem;
+    width: 30vw;
+    border: 0.1rem solid var(--blue) ;
+}
+.first h5,.first span,.rest h5, .rest span{
+   align-self: center;
+}
+.steps span{
+    font-size: 1.7rem;
+    align-self: center;
+}
+.rest span {
+    padding-bottom:0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.droom img{
+ height: 36rem;
+ width: 35rem;
+ align-self: center;
+}
+.droom{
+    padding-left: 7rem;
+}
+.heading-how h1,.heading-how p{
+    text-align: left;
 
-    }
-    .heading-how{
-        margin-bottom: 2rem;
-    }
+}
+.heading-how{
+    margin-bottom: 2rem;
+}
+   
    /*------------DOCTORS-------------*/
    
    .doctors p{
@@ -489,7 +485,7 @@ figcaption {
    .parent-featured{
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(10,1fr);
+    grid-template-rows: repeat(9,1fr);
     grid-gap:1rem;
 }
 .treatments{
@@ -498,7 +494,7 @@ figcaption {
 }
 .t1{
     grid-column: 4/7;
-    grid-row: 1/6;
+    grid-row: 1/5;
 }
 
 .t2{
@@ -508,31 +504,34 @@ figcaption {
 
 .t3{
     grid-column:4/7;
-    grid-row: 6/11;
+    grid-row: 5/9;
 }
 
 .t4{
     grid-column: 7/10;
-    grid-row: 1/5;
+    grid-row: 1/4;
 }
 
 .t5{
     grid-column:7/10;
-    grid-row: 5/11;
+    grid-row: 4/9;
 }
 .t6{
     grid-column:1/4;
-    grid-row:4/11;
+    grid-row:4/9;
 }
    /*---------------Icons----------------------------*/
+   .services{
+       background-color: var(--offwhite);
+   }
    .services p{
        text-align: left;
    }
    .icons{
     display: grid;
-    grid-template-columns: 14rem 14rem 14rem 14rem 14rem 14rem;
+    grid-template-columns: 13.2rem 13.2rem 13.2rem 13.2rem 13.2rem 13.2rem;
     grid-template-rows: 100%;
-    grid-column-gap: 0.1rem; 
+    grid-column-gap: 0.3rem; 
    }
    .icons figure{
        border-radius: 0;
@@ -543,10 +542,13 @@ figcaption {
    /*---------------Submit your query-----------------*/
    .help{
        display: flex;
-       flex-direction: column;
+       flex-direction: row;
+       justify-content: space-between;
+       align-items: center;
    }
    .help p{
        text-align:left;
+       margin: 0;
    }
     .help button{
     width: 20rem;
@@ -564,7 +566,7 @@ figcaption {
      width: 100vw;
      justify-content: space-between;
      align-content: center;
-     padding-left: 4rem;
+     padding-left: 6.5rem;
     padding-right: 4rem;
  }
 
@@ -574,6 +576,7 @@ figcaption {
     float: right;  
     align-self: center; 
     padding-right: 1rem;
+    margin-right: 2.6rem;
  }
  .foot-li li {
        display: inline;
@@ -592,16 +595,21 @@ figcaption {
     padding-left: 4rem;
     padding-right: 4rem;
  }
- .ft-final p{
-     color: var(--dark-blue);
+ .footer1 p {
+     padding-top:1.5rem;
+     color: (var(--dark-blue));
+     letter-spacing: normal;
  }
- .parent-ft-final {
-     align-self: center;
-     padding-top: 0.8rem;
-     padding-left: 1rem;
+ 
+ .footer1{
+     display: flex;
+     align-items: center;
+     justify-items: space-between;
+     padding-left: 7.4rem;
+     padding-right: 6.5rem;
  }
- .parent-social {
-     align-self: center;
+ .ft-main{
+     border-bottom: 0.5rem solid var(--blue);;
  }
  
    

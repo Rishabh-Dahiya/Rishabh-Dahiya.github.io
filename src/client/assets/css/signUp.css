@@ -7,11 +7,11 @@
     display: none;
 }
 /*------------main-----------------*/
-.loginbox{
+.signupbox{
     display: flex;
     flex-direction: column;
     background-color: var(--light-blue);
-    height: 90vh;
+    height: auto;
     justify-content: center;
     align-content: center;
 }
@@ -20,45 +20,63 @@
     flex-direction: column;
     height: auto;
     background-color: var(--white);
-   margin-right: 1rem;
-   margin-left: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem ;
+    margin-top: 3rem;
 }
 .heading h5{
         color:var(--blue);
         text-align: center;
-        border-bottom:0.1rem solid var(--grey);
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        border-bottom:0.1rem solid var(--dark-grey);
+        padding-top: 2rem;
+        padding-bottom: 2rem;
 }
-.userid{
+.input-edit{
+    border: 0.1rem solid var(--border-grey);
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+#fname{
+    margin-top: 1.5rem;
+}
+.credentials input,select{
+    margin: 0;
+    color :var(--text-grey);
+}
+#place {
     display: flex;
-    align-items: center;
-    padding-right: 1rem;
 }
-.credentials input{
-    padding-bottom: 0px;
+#city{
+    margin-right: 0;
 }
-.userid,.otp{
-    border: 0.01rem solid var(--grey);
-    margin-bottom:1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+#state{
+    margin-left: 0.1rem;
 }
-.lg-button{
+#state input:placeholder-shown{
+    text-overflow: ellipsis;
+}
+#age input{
+    font-size:1rem;
+}
+.credentials select{
+    font-size: 1rem;
+}
+.su-button{
     display: flex;
     align-content: center;
     justify-content: center;
     background-color: var(--dark-blue);
     height: 2.925rem;
-    margin-right: 1rem;
-    margin-left: 1rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
     margin-bottom: 2rem;
 }
 .fa-arrow-right{
     align-self: center;
     color:var(--white);
 }
-.lg-button h6{
+.su-button h6{
    color: var(--white);
    letter-spacing: 0.2rem;
 }
@@ -73,6 +91,8 @@
 }
 .footer{
     background-color: var(--light-blue);
+    padding-top: 4rem;
+    padding-bottom: 1rem;
 }
 .footer h6{
     text-align: center;
@@ -89,9 +109,9 @@
         width: 10rem;
     }
     .credentials{
-        margin-left: 5rem;
-        margin-right: 5rem;
-    }
+        margin: 7rem;   
+     }
+    
 }
 @media only screen and (min-width:1024px)
 {   
@@ -134,7 +154,9 @@
         background-color: var(--white);
     }
     .credentials{
-        margin-left: 32rem;
-        margin-right: 32rem;
+        margin-left: 28rem;
+        margin-right: 28rem;
     }
+   
+
 }

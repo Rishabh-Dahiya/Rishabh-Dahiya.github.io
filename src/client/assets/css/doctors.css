@@ -391,18 +391,19 @@
         float: right;
     }
      /*---------------Submit your query-----------------*/
-   .help{
-    display: flex;
-    flex-direction: column;
-}
-.help p{
-    text-align:left;
-}
- .help button{
- width: 20rem;
- height: 4rem;
- align-self: flex-start;
-}
+     .help{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .help p{
+        text-align:left;
+        margin: 0;
+    }
+     .help button{
+     width: 20rem;
+     height: 4rem;}
 /*---------------footer----------------------------*/
 .ft-main {
  background-color:var(--white);

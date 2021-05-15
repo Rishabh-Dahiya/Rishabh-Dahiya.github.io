@@ -1,0 +1,54 @@
+/* -------- HEADER---------*/
+.logo {
+    width: 40%;
+    height: 60%;
+}
+.nav-desktop{
+    display: none;
+}
+/*------------ Hero ------------*/
+.hero-background{
+    display: flex;
+    background-image:  linear-gradient(to right, rgba(45, 156, 230,1),rgba(45, 156, 230,0)),
+     url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/dentist_hero_image.jpg);
+     background-size: cover;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+     align-items: center;
+     justify-content: center;
+}
+.subject p{
+    color: var(--white);
+    padding-top: 1rem;
+    font-size: 1.1rem;
+}
+/*-------------------Vaccination--------------*/
+.vaccination h2{
+    color: var(--dark-blue);
+    margin-top: 1rem;
+}
+.about h5{
+    padding-top: 0.2rem;
+    padding-bottom: 0.3rem;
+}
+.about p,.about li{
+font-size: 1rem;
+color: var(--text-grey);
+}
+.vaccination p{
+    text-align: left;
+}
+.about ul li::before{
+    content: "\2022"; 
+    color:#0d7ac2;
+    font-family: 'nexa-bold';
+    display: inline-block; 
+    width: 1em;
+    
+}
+.about li{
+  
+    margin: 1rem 0;
+    display: block;
+    text-align: left;
+}

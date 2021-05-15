@@ -2,11 +2,13 @@
     --light-blue:rgb(148, 190, 221, 1);
     --dark-blue:rgb(34, 38, 63, 1);
     --white:rgb(255, 255, 255, 1);
+    --offwhite:rgba(245,245,245,255);
     --blue:rgb(42, 135, 193, 1);
     --grey:rgb(199, 212, 217, 1);
     --dark-grey:rgb(189, 189, 189, 1);
     --white-text:rgb(251, 252, 252 );
     --text-grey:rgba(136,129,133,255);
+    --border-grey:#f2f1f0;
 }
 
 @font-face{
