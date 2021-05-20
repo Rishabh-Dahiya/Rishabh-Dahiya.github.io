@@ -21,66 +21,25 @@
     padding-top: 1rem;
     font-size: 1.1rem;
 }
-/*---------------------------Main----------------------------------*/
-.wrapper{
-    border: 0.1rem solid var(--border-grey);
-}
-.doctor-profile{
-    padding: 1rem;
-    margin-bottom: 2rem;
-}
-#booking{
-    margin-top: 0.5rem;
-    padding: 0.5rem 2.9rem;
-    white-space: nowrap;
-}
-
-.about-doc h2{
+/*---------------------------Main-----------------------------*/
+.questions{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
     color: var(--blue);
+}
+.anwsers{
     text-align: left;
-    margin-bottom: 1rem;
-}
-.about-doc h2::before{
-    display: inline-block;
-    content: "";
-    border-bottom: 0.15rem solid var(--blue);
-    width: 2.5rem;
-    vertical-align: middle;   
-    margin-right: 0.5rem;
-}
-.desc-heading{
-    display: grid;
-    grid-template-columns: 10% 80% 10%;
-    border-bottom: 1px dashed lightgray;
-    color:var(--blue);
-    align-items: center;
-    transition: 0.4s;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-}
-#specialisation{
-    border-top: 1px dashed lightgray;
-}
-.desc-heading h4{
-    margin-bottom: 0rem;
-    white-space: nowrap;
-    text-align: left;
-}
-.desc {
-    text-align: left;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-}
-.desc-paragraph p{
-    margin-bottom: 0rem;
-}
-.desc-paragraph{
-    padding-left: 0.5rem;
     background-color: var(--lightest-blue);
-    padding-top: 0.5rem; 
+    padding:1rem 0rem 1rem 1rem;
+    margin-bottom:1.5rem;
 }
-.profile-desc li{
-    margin-bottom: 1rem;
+.anwsers p{
+    margin-bottom: 0rem;
+    color: var(--text-grey);
+}
+#last-anwser{
+    margin-bottom: 0rem;
 }
 /* ---------------HELP------------------*/
 .help{
@@ -125,50 +84,18 @@
     .logo{
         width: 10rem;
         padding-left: 1.5rem;
-}
-/*----------------Hero------------------*/
-.hero-background{
-    padding: 7rem 1rem;
-}
-/*---------------------Main-----------------*/
-.doctor-image{
-    height: 20rem;
-}
-.doctor-image img{
-    height: 100%;
-    object-fit: cover;
-}
-.about-doc h2::before{
-    display: inline-block;
-    content: "";
-    border-bottom: 0.15rem solid var(--blue);
-    width: 1rem;
-    vertical-align: middle;   
-    margin-right: 0.5rem;
-}
-.about-doc h2{
-    margin-top: 1rem;
-}
-/*------------------------Grid-------------------*/
-.wrapper{
-    display: grid;
-    grid-template-columns:5fr 3fr ;
-    grid-template-rows: 2fr;
-}
-.doctor-profile{
-    grid-column: 2/-1;
-
-}
-.about-doc{
-    grid-row: 1/2;
-    height: 15rem;
-    text-align: left;
-    padding-left: 0.5rem;
-}
-
-  
-
-  /*----------------help------------------------------------------*/
+    }
+    /*--------------------Main--------------------*/
+    .main{
+        margin-top: 2rem;
+            }
+    .questions{
+        margin-bottom: 1rem;
+    }
+    .anwsers{
+        margin-bottom: 2.5rem;
+    }
+     /*----------------help------------------------------------------*/
   .help{
     display: flex;
     flex-direction: column;  
@@ -229,11 +156,11 @@
     align-self: center;
     padding-right: 2rem;
 }
-
 }
-@media only screen and (min-width:1024px){
-     /*-----------------padding-----------------*/
-     .nav-bar{
+@media only screen and (min-width:1024px)
+{
+    /*-----------------padding-----------------*/
+    .nav-bar{
         padding-left: 4rem;
         padding-right: 2rem;
     }
@@ -282,6 +209,10 @@
     }
     .login{
         background-color: var(--white);
+    }
+    /*------------------------Main-------------------------*/
+    .subject h2{
+        text-align: center;
     }
        /*---------------Submit your query-----------------*/
    .help-wrapper{
