@@ -71,7 +71,8 @@
     vertical-align: 0.3rem;   
     margin-right: 0.5rem; 
 }
-.primary {
+#booking {
+    padding:0.5rem 1rem 0.5rem;
    margin-bottom: 0.7rem;
 }
 /* ---------------HELP------------------*/
@@ -124,10 +125,10 @@
         background-repeat: no-repeat;
         background-size: cover;
          background-position: center;
-         height: 15rem;
+        padding: 8rem 1rem;
     }
     .hero{
-       padding: 2rem 2rem 1.5rem;
+       padding: 2rem 2rem 0rem;
     }
     .hero-2{
         display: block;
@@ -136,9 +137,7 @@
     .treatments h3{
         font-family: nexa-light;
         text-align: left;
-        padding-top: 6rem;
-        padding-left: 2rem;
-    
+        padding-left: 1rem;
     }
     .treatments a {
         color: black;
@@ -165,7 +164,7 @@
         margin-bottom: 1rem;
     }
     .doctor-image{
-        height: 16rem;
+        height: 14rem;
 }
 .doctor-image img{
     height: 100%;
@@ -184,11 +183,13 @@
     }
     .filter-by-bt{
         font-family: nexa-bold;
-        width: 11rem;
+        padding: 0.5rem 3.5rem;
         text-align: left;
+        white-space: nowrap;
     }
-    .primary{
-        padding-bottom: 1rem ;
+    #booking{
+        float: left;
+        margin-left: 2.5rem;
     }
     .grid {
        display: flex;
@@ -251,7 +252,6 @@
     flex-direction: column;  
 }
 .help button{
-  width: 15rem;
     justify-self: center;
     align-self: center;
 }
@@ -311,61 +311,73 @@
 }      
 @media only screen and (min-width:1024px){
     
-    .nav-bar{
-        padding-left: 3rem;
-        padding-right: 4rem;
-    }
-    /*-------------Navigation------------------*/
-    .icon{
-        display: none;
-    }
-    .logo{
-        width: 12rem;
-        height: 2rem;
-        padding-left: 3rem;
-    }
-    .nav-desktop{
-        display: flex;
-        flex-direction: row;
-    }
-    .nav-desktop li{
-        display: inline;
-        padding-left: 1rem;
-    }
-    .menu {
-        padding-right: 7rem;
-        align-self: center;
-    }
-    .menu-buttons button{
-        height: 2.5rem;
-        width: 10rem;
-        border: 0.007rem solid var(--dark-blue);
-        border-radius:0.125rem;
-    }
-    .nav-desktop a{
-        color: var(--dark-blue);
-    }
-    .login{
-        background-color: var(--white);
-    }
+  /*-----------------padding-----------------*/
+  .nav-bar{
+    padding-left: 4rem;
+    padding-right: 2rem;
+}
+/*-------------Navigation------------------*/
+.icon{
+    display: none;
+}
+.logo{
+    width: 12rem;
+    height: 2rem;
+    padding-left: 3rem;
+}
+.nav-desktop{
+    display: flex;
+    flex-direction: row;
+}
+.nav-desktop li{
+    display: inline;
+    padding-left: 1rem;
+}
+.menu {
+    padding-right: 7rem;
+    align-self: center;
+}
+.menu-buttons{
+    display: flex;
+    align-items: center;
+    padding-right: 7rem;
+}
+.login{
+    border: 0.007rem solid var(--dark-blue);
+    background-color: var(--white);
+    padding: 0.7rem 1.5rem 0.7rem;
+    font-size: 0.9rem;
+    border-radius: 0.2rem;
+    margin-right: 0.2rem;
+   }
+   #quote{
+    border: 0.007rem solid var(--dark-blue);
+    border-radius: 0.2rem;
+    padding: 0.8rem 2rem 0.8rem;
+    margin-bottom: 0;
+   }
+.nav-desktop a{
+    color: var(--dark-blue);
+}
+.login{
+    background-color: var(--white);
+}
     .treatments h3{
         padding-left: 6rem;
     }
     #sort-by{
         font-size: 1.1rem;
         width: 8rem;
-        margin-right: 5rem;
     }
     .hero{
-       padding-left: 6.5rem;
-       padding-right: 5rem;
-       padding-bottom: 0rem;
+      padding:3rem 7rem 0rem;    
     }
     .main{
         display: grid;
-        grid-template-columns: 25% 65%;
+        grid-template-columns: 1fr 2fr;
         grid-column-gap: 1rem;
-        padding-left: 5rem;
+        margin: 3rem 7rem;
+        padding: 0;
     }
     .parent-container{
         display: grid;
@@ -378,16 +390,16 @@
        margin-left: 2rem;
        margin-top: 1rem;
        margin-bottom: 2rem;
-       width: 16rem;
+       padding :1rem 4rem 1rem;
     }
     .doctor-image{
-        height: 17rem;
+        height: 15rem;
     }
-    .doctor-image{
-        height: max-content;
+    .doctor-image img{
+      height: 100%;
     }
     .filter-by-bt{
-        width: 20rem;
+        padding: 1rem 11rem;
         font-size: 1rem;
     }
     .selected-filters{
@@ -439,80 +451,85 @@
         width: 13rem;
         float: right;
     }
+    #booking{
+        padding: 1rem 2rem;
+    }
      /*---------------Submit your query-----------------*/
    .help-wrapper{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-left: 2rem;
-    padding-right: 5rem;
 }
 .help p{
     text-align:left;
     margin: 0;
 }
  .help button{
- width: 20rem;
- height: 4rem;
+    padding: 1rem 2rem;
 }
 /*---------------footer----------------------------*/
-.ft-main {
- background-color:var(--white);
- color: var(--dark-blue);
- padding-bottom: 0;
- padding-top: 1rem;
+ /*---------------footer----------------------------*/
+ .ft-main {
+    background-color:var(--white);
+    color: var(--dark-blue);
+    padding-bottom: 0;
+    padding-top: 1rem;
 }
-.first-footer {
-  display: flex;
-  flex-direction: row-reverse;
-  width: 100vw;
-  justify-content: space-between;
-  align-content: center;
-  padding-left: 5rem;
- padding-right: 5rem;
-}
+ .first-footer {
+     display: flex;
+     flex-direction: row-reverse;
+     width: 100vw;
+     justify-content: space-between;
+     align-content: center;
+     padding-left: 6.5rem;
+    padding-right: 4rem;
+ }
 
-.ft-logo {
-  height: 2rem;
-  width: 11rem;
- float: right;  
- align-self: center; 
- padding-right: 1rem;
- margin-right: 2.6rem;
-}
-.foot-li li {
-    display: inline;
-    padding-left: 1rem;
-   color: var(--dark-blue);
-}
-.foot-list{
-  align-self: center;
-}
-
-.footer1 {
- display: flex;
- flex-direction: row-reverse;
- width: 100vw;
- justify-content: space-between; 
- padding-left: 4rem;
- padding-right: 4rem;
-}
-.footer1 p {
-  padding-top:1.5rem;
-  color: (var(--dark-blue));
-  letter-spacing: normal;
-  padding-bottom: 0;
-}
-
-.footer1{
-  display: flex;
-  align-items: center;
-  justify-items: space-between;
-  padding-left: 5rem;
-  padding-right: 5.6rem;
-}
-.ft-main{
-  border-bottom: 0.5rem solid var(--blue);
-}
+ .ft-logo {
+     height: 2rem;
+     width: 11rem;
+    float: right;  
+    align-self: center; 
+    padding-right: 1rem;
+    margin-right: 2.6rem;
+ }
+ .foot-li li {
+       display: inline;
+       padding-left: 1rem;
+      color: var(--dark-blue);
+ }
+ .foot-list{
+     align-self: center;
+ }
+ 
+ .footer1 {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100vw;
+    justify-content: space-between; 
+    padding-left: 4rem;
+    padding-right: 4rem;
+ }
+ .footer1 p {
+     padding-top:1.5rem;
+     color: (var(--dark-blue));
+     letter-spacing: normal;
+     padding-bottom: 0;
+     padding-left: 0;
+ }
+ .parent-social{
+     padding-right: 0;
+ }
+ .footer1{
+     display: flex;
+     align-items: center;
+     justify-items: space-between;
+     padding-left: 7.4rem;
+     padding-right: 6.5rem;
+ }
+ .ft-main{
+     border-bottom: 0.5rem solid var(--blue);;
+ }
+ 
 }

@@ -25,7 +25,6 @@
 /*-------------------Vaccination--------------*/
 .vaccination h2{
     color: var(--dark-blue);
-    margin-top: 1rem;
 }
 .about h5{
     padding-top: 0.2rem;
@@ -44,11 +43,454 @@ color: var(--text-grey);
     font-family: 'nexa-bold';
     display: inline-block; 
     width: 1em;
-    
 }
 .about li{
-  
     margin: 1rem 0;
     display: block;
     text-align: left;
+    white-space: nowrap;
+}
+.disorders{
+    padding-top: 2rem;
+    display: flex;
+}
+.ddetails{
+    font-size:0.9rem;
+}
+.dname{
+    padding-bottom: 0.5rem;
+}
+.disorders li{
+    margin-bottom: 2rem;
+}
+.disorders i{
+    border: 1rem solid var(--lightest-blue);
+    border-radius: 2rem;
+    background-color: var(--lightest-blue);
+    padding-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 4rem;
+    height: 4rem;
+}
+.service-wrapper li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    border-bottom: 0.1rem solid var(--border-grey);
+    margin-bottom: 1rem;
+    padding: 0 1rem 0;
+}
+.name{
+    padding: 1rem;
+    padding-left: 0rem;
+}
+.ans,.time{
+    color: var(--text-grey);
+    font-family: nexa-bold;
+}
+.ques,.date{
+    font-family: nexa-bold;
+}
+.service-wrapper h6{
+    text-align: left;
+}
+.service-wrapper h6::before{
+    display: inline-block;
+    content: "";
+    border-bottom: 0.15rem solid var(--blue);
+    width: 1rem;
+    vertical-align: middle;
+    margin-right: 0.2rem;
+}
+.service-details{
+border: 0.1rem solid var(--border-grey);
+border-radius: 0.5rem;
+margin-bottom: 1rem;
+}
+.schedule{
+border: 0.1rem solid var(--border-grey);
+border-radius: 0.5rem;
+}
+.other-services{
+    background-color: var(--light-blue);
+    padding-left: 0;
+    padding-right: 0;
+}
+.other-services h2{
+    margin-bottom: 1rem;
+}
+.arrow {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem ;
+}
+.arrow i{
+    border: 0.5rem solid var(--white);
+    border-radius: 0.2rem;
+    background-color: var(--white);
+    border-radius: 2rem;
+    padding: 0 0.1rem 0;
+    margin-left: 0.4rem;
+}
+.services-image{  
+    margin: 0 1rem 0;
+}
+
+.services-name h5{
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    text-align: left;
+}
+.services-name h5::before{
+    display: inline-block;
+    content: "";
+    border-bottom:0.15rem solid var(--blue);
+    vertical-align: middle;
+    width: 1rem;
+    margin-right: 0.5rem;
+}
+.other{
+    background-color: var(--white );
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+#cardiology,#cardiology h5 {
+    margin-bottom: 0;
+}
+/* ---------------HELP------------------*/
+.help{
+    background-color: var(--light-blue);
+}
+.secondary{
+    width: 12rem;
+    
+}
+/*--------------FOOTER------------------*/
+
+.ft-main {
+    align-items: center;
+    justify-content: center;
+  padding-bottom: 0;
+  padding-top: 0rem;
+  border-bottom: 0.5rem solid var(--blue);
+}
+.ft-main li{
+    color: var(--grey);
+    padding-bottom: 1rem;
+}
+.ft-logo {
+    width: 25vw;
+    width: 25vh;
+}
+.social-parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+.fab {
+    padding-right: 1.27rem;
+}
+.footer1 p{
+    color: var(--white);
+    font-size: 1rem;
+   word-spacing: 0.2rem;
+   padding-bottom: 1rem;
+}
+@media only screen and (min-width:768px){
+    .logo{
+        width: 10rem;
+        padding-left: 2rem;
+}
+    .icon{
+        padding-right: 2rem;
+    }
+    .hero-background{
+        padding-bottom: 5rem;
+    }
+    .vaccination h2{
+        text-align: left;
+        margin-bottom: 1rem;
+        margin-top: 0rem;
+    }
+    .vaccination h5{
+        text-align: left;
+    }
+    .vaccination-wrapper{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-column-gap: 1rem;
+    }
+    .about h5{
+        padding-top: 0rem;
+        margin-bottom: 0;
+        padding-bottom: 1rem;
+    }
+    .about h5::before{
+        display: none;
+    }
+    .disorders ul{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-column-gap:2rem ;
+    }
+    .dname h6{
+       white-space: nowrap;
+    }
+    .service-wrapper{
+     display: grid;
+     grid-template-columns: 50% 50%;
+     grid-column-gap: 1rem;
+    }
+    .service-details{
+        margin-bottom: 0rem;
+    }
+    .schedule{
+        height: 10rem;
+    }
+    .heading-wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    .other-services{
+        padding: 2rem 3rem;
+    }
+        .services-image{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-column-gap: 1rem;
+        max-height: 100%;
+        margin-bottom: 5rem;
+        margin-left:0;
+        margin-right: 0;
+        
+    }
+    .other{
+     max-height: 100%;
+     border-radius: 100rem;
+    }
+    .other img{
+        height: 100%;  
+    }
+    .services-name{
+        background-color: white;
+        padding: 2rem 0rem;
+    }
+    .services-name h5{
+        padding: 0;
+        white-space: nowrap;
+    }
+    #cardiology h5{
+        margin-bottom: 0.625rem;
+    }
+    
+    #cardiology{
+        margin-bottom: 1rem;
+    }
+    .ft-main {
+        background-color:var(--white);
+        color: var(--dark-blue);
+     }
+     .first-footer {
+         display: flex;
+         flex-direction: row-reverse;
+         width: 100vw;
+         justify-content: space-between;
+         align-content: center;
+         padding-left: 2rem;
+         padding-right: 2rem;
+     }
+     
+     .ft-logo {
+         height: 2rem;
+         width: 11rem;
+        float: right;  
+        align-self: center; 
+        padding-right: 1rem;
+     }
+     .foot-li li {
+           display: inline;
+           padding-left: 1rem;
+          color: var(--dark-blue);
+     }
+     .foot-list{
+         align-self: center;
+     }
+     
+     .footer1 {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100vw;
+        justify-content: space-between; 
+        padding-left: 2rem;
+     }
+     .ft-final p{
+         color: var(--dark-blue);
+     }
+     .footer1 p {
+         color: var(--dark-blue);
+         letter-spacing: normal;
+         padding: 1rem;
+         word-spacing: 0.2rem;
+     }
+     .parent-social {
+         align-self: center;
+         padding-right: 2rem;
+     }
+     
+}
+@media only screen and (min-width:1024px){
+    
+      /*-----------------padding-----------------*/
+  .nav-bar{
+    padding-left: 4rem;
+    padding-right: 2rem;
+}
+/*-------------Navigation------------------*/
+.icon{
+    display: none;
+}
+.logo{
+    width: 12rem;
+    height: 2rem;
+    padding-left: 3rem;
+}
+.nav-desktop{
+    display: flex;
+    flex-direction: row;
+}
+.nav-desktop li{
+    display: inline;
+    padding-left: 1rem;
+}
+.menu {
+    padding-right: 7rem;
+    align-self: center;
+}
+.menu-buttons{
+    display: flex;
+    align-items: center;
+    padding-right: 7rem;
+}
+.login{
+    border: 0.007rem solid var(--dark-blue);
+    background-color: var(--white);
+    padding: 0.7rem 1.5rem 0.7rem;
+    font-size: 0.9rem;
+    border-radius: 0.2rem;
+    margin-right: 0.2rem;
+   }
+   #quote{
+    border: 0.007rem solid var(--dark-blue);
+    border-radius: 0.2rem;
+    padding: 0.8rem 2rem 0.8rem;
+    margin-bottom: 0;
+   }
+.nav-desktop a{
+    color: var(--dark-blue);
+}
+.login{
+    background-color: var(--white);
+}
+    .treatments h3{
+        padding-left: 6rem;
+    }
+    .hero-background{
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+        justify-content: start;
+    }
+    .subject{
+        padding-left: 7rem;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: auto auto auto auto;
+        grid-gap: 1rem 1rem;
+    }
+
+    .disorders{
+        grid-row: 2/-1;
+        grid-column: 1/4;
+    }
+    .vaccination{
+        grid-column: 1/4;
+    }
+    .service-wrapper{
+        display: flex;
+        flex-direction: column;
+        grid-column:4/6;
+    }
+    .service-details{
+        margin-bottom: 1rem;
+    }
+    .other-services{
+        padding: 3rem 7rem;
+    }
+    /*---------------footer----------------------------*/
+ .ft-main {
+    background-color:var(--white);
+    color: var(--dark-blue);
+    padding-bottom: 0;
+    padding-top: 1rem;
+}
+ .first-footer {
+     display: flex;
+     flex-direction: row-reverse;
+     width: 100vw;
+     justify-content: space-between;
+     align-content: center;
+     padding-left: 6.5rem;
+    padding-right: 4rem;
+ }
+
+ .ft-logo {
+     height: 2rem;
+     width: 11rem;
+    float: right;  
+    align-self: center; 
+    padding-right: 1rem;
+    margin-right: 2.6rem;
+ }
+ .foot-li li {
+       display: inline;
+       padding-left: 1rem;
+      color: var(--dark-blue);
+ }
+ .foot-list{
+     align-self: center;
+ }
+ 
+ .footer1 {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100vw;
+    justify-content: space-between; 
+    padding-left: 4rem;
+    padding-right: 4rem;
+ }
+ .footer1 p {
+     padding-top:1.5rem;
+     color: (var(--dark-blue));
+     letter-spacing: normal;
+     padding-bottom: 0;
+     padding-left: 0;
+ }
+ .parent-social{
+     padding-right: 0;
+ }
+ .footer1{
+     display: flex;
+     align-items: center;
+     justify-items: space-between;
+     padding-left: 7.4rem;
+     padding-right: 6.5rem;
+ }
+ .ft-main{
+     border-bottom: 0.5rem solid var(--blue);;
+ }
+ 
 }

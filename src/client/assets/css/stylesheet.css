@@ -53,7 +53,7 @@
 }
 
 /*----------HOW DOES THIS WORKS-----------------*/
-#content-tablet-how
+.desktop-how
 {display: none;}
 .how-it-works {
     display: flex;
@@ -85,7 +85,7 @@
      background-color:var(--white);
     color: var(--grey);
     margin-bottom: 1rem;
-    border: 0.09rem solid var(--dark-blue) ;
+    border: 0.09rem solid var(--dark-grey) ;
     vertical-align: middle;
 }
 .number{
@@ -261,6 +261,10 @@ figcaption {
         border-right:0.0625rem solid var(--grey-text) ;
     }
     .primary {
+        padding: 0.9rem 2rem 0.9rem;
+        
+    }
+    .find-by-bt{
         height: 3rem;
     }
     #find-by{
@@ -316,7 +320,6 @@ figcaption {
         flex-direction: column;  
     }
     .help button{
-      width: 15rem;
         justify-self: center;
         align-self: center;
     }
@@ -375,9 +378,6 @@ figcaption {
 }
 @media only screen and (min-width:1024px){  
     /*-----------------padding-----------------*/
-    .find,.how-it-works,.doctors,.Featured-treatments,.services,.help{
-        padding: 3rem 7rem  ;
-    }
     .nav-bar{
         padding-left: 4rem;
         padding-right: 2rem;
@@ -403,12 +403,25 @@ figcaption {
         padding-right: 7rem;
         align-self: center;
     }
-    .menu-buttons button{
-        height: 2.5rem;
-        width: 10rem;
-        border: 0.007rem solid var(--dark-blue);
-        border-radius:0.125rem;
+    .menu-buttons{
+        display: flex;
+        align-items: center;
+        padding-right: 7rem;
     }
+    .login{
+        border: 0.007rem solid var(--dark-blue);
+        background-color: var(--white);
+        padding: 0.7rem 1.5rem 0.7rem;
+        font-size: 0.9rem;
+        border-radius: 0.2rem;
+        margin-right: 0.2rem;
+       }
+       #quote{
+        border: 0.007rem solid var(--dark-blue);
+        border-radius: 0.2rem;
+        padding: 0.8rem 2rem 0.8rem;
+        margin-bottom: 0;
+       }
     .nav-desktop a{
         color: var(--dark-blue);
     }
@@ -419,7 +432,7 @@ figcaption {
     .find{
         display: flex;
         background-image:url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.jpg");
-        background-size:100% 100%; 
+        background-size:cover; 
         justify-items: center; 
         background-repeat: no-repeat;
     }
@@ -433,9 +446,11 @@ figcaption {
         height: 3.3rem;
         border-right:0.0625rem solid var(--grey-text);
     }
+    .find-by-bt{
+        height: 4rem;
+    }
     .primary {
-        height: 3.3rem;
-        width: 10rem;
+       padding: 1.1rem 2rem 1.2rem;
     }
     #find-by{
         margin-bottom: 0;
@@ -450,52 +465,56 @@ figcaption {
    }
    /*---------------HOW IT WORKS--------------------------------*/
    #content-mobile-how{
-    display: none;
-}
-#content-tablet-how{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.steps li {
-    height: 7rem;
-    padding: 0;
-}
-.first{
-    margin-bottom: 1rem;
-    width: 30vw;
-    border: 0.1rem solid var(--blue) ;
-}
-.first h5,.first span,.rest h5, .rest span{
-   align-self: center;
-}
-.steps span{
-    font-size: 1.7rem;
-    align-self: center;
-}
-.rest span {
-    padding-bottom:0.5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-.droom img{
- height: 36rem;
- width: 35rem;
- align-self: center;
-}
-.droom{
-    padding-left: 7rem;
-}
-.heading-how h1,.heading-how p{
-    text-align: left;
-
-}
-.heading-how{
+       display: none;
+   }
+  .desktop-how{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+  .heading-how {
+     padding-bottom: 1rem;
+  }
+  .heading-how p{
+      text-align: left;
+  }
+  .step-list{
+      display: flex;
+      border: 0.1rem solid var(--border-grey);
+      align-items: center;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      width: 35rem;
+      border-radius: 0.3rem;
+      margin-bottom: 0.5rem;
+  }
+  #rest{
+      color: var(--white-grey);
+  }
+  #rest span{
+      color: var(--white-grey);
+  }
+  .step-list h5{
+    margin-bottom: 0;
+  }
+  .step-list span{
+    font-size: 1.4rem;
+    padding-left: 3rem;
+    padding-right: 4rem;
+  }
+  .room-image{
+      height: 45rem;
+    
+  }
+  .room-image img{
+     padding:2rem 0rem 2rem;
+    height: 100%;
     margin-bottom: 2rem;
-}
-   
+  }
+
    /*------------DOCTORS-------------*/
-   
+   .doctor-heading{
+       padding-bottom: 1rem;
+   }
    .doctors p{
        text-align: left;
    }
@@ -567,9 +586,12 @@ figcaption {
    }
    .icons{
     display: grid;
-    grid-template-columns: 13.2rem 13.2rem 13.2rem 13.2rem 13.2rem 13.2rem;
-    grid-template-rows: 100%;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 1fr;
     grid-column-gap: 0.3rem; 
+   }
+   .service-icons{
+       border-radius: 0;
    }
    .icons figure{
        border-radius: 0;
@@ -577,6 +599,9 @@ figcaption {
    .icons h6{
        color: var(--dark-grey);
    }
+   .padd-icon{
+       padding:2rem 0rem 2rem;
+       }
    /*---------------Submit your query-----------------*/
    .help-wrapper{
        display: flex;
@@ -589,8 +614,7 @@ figcaption {
        margin: 0;
    }
     .help button{
-    width: 20rem;
-    height: 4rem;
+        padding: 1rem 3rem;
 }
    /*---------------footer----------------------------*/
    .ft-main {

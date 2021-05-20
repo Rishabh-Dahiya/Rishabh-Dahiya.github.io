@@ -1,0 +1,229 @@
+/* -------- HEADER---------*/
+.logo {
+    width: 40%;
+    height: 60%;
+}
+.nav-desktop{
+    display: none;
+}
+/*----------------------------Hero------------------------------*/
+.hero-background{
+    display: flex;
+    background:url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.jpg");
+    background-size:cover; 
+    padding: 5rem 1rem;
+    background-position: center;
+    justify-content: center;
+    text-align: center;
+}
+.subject p{
+    color: var(--white);
+    padding-top: 1rem;
+    font-size: 1.1rem;
+}
+/*---------------------------Main----------------------------------*/
+.wrapper{
+    border: 0.1rem solid var(--border-grey);
+}
+.doctor-profile{
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+#booking{
+    margin-top: 0.5rem;
+    padding: 0.5rem 2.9rem;
+    white-space: nowrap;
+}
+
+.about-doc h2{
+    color: var(--blue);
+    text-align: left;
+    margin-bottom: 1rem;
+}
+.about-doc h2::before{
+    display: inline-block;
+    content: "";
+    border-bottom: 0.15rem solid var(--blue);
+    width: 2.5rem;
+    vertical-align: middle;   
+    margin-right: 0.5rem;
+}
+.desc-heading{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    border-bottom: 1px dashed lightgray;
+    color:var(--blue);
+    align-items: center;
+    transition: 0.4s;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+#specialisation{
+    border-top: 1px dashed lightgray;
+}
+.desc-heading h4{
+    margin-bottom: 0rem;
+    white-space: nowrap;
+}
+.desc {
+    text-align: left;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.desc-paragraph p{
+    margin-bottom: 0rem;
+}
+.desc-paragraph{
+    padding-left: 0.5rem;
+    background-color: var(--lightest-blue);
+    padding-top: 0.5rem; 
+}
+/* ---------------HELP------------------*/
+.help{
+    background-color: var(--light-blue);
+}
+.secondary{
+    width: 12rem;
+    
+}
+/*--------------FOOTER------------------*/
+.ft-main {
+    align-items: center;
+    justify-content: center;
+  padding-bottom: 0;
+}
+.ft-main li{
+    color: var(--grey);
+    padding-bottom: 1rem;
+}
+.ft-logo {
+    width: 25vw;
+    width: 25vh;
+}
+.social-parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+.fab {
+    padding-right: 1.27rem;
+}
+.footer1 p{
+    color: var(--white);
+    font-size: 1rem;
+   word-spacing: 0.2rem;
+   padding-bottom: 1rem;
+}
+@media only screen and (min-width:768px){
+    .logo{
+        width: 10rem;
+        padding-left: 1.5rem;
+}
+/*----------------Hero------------------*/
+.hero-background{
+    padding: 7rem 1rem;
+}
+/*---------------------Main-----------------*/
+.doctor-image{
+    height: 20rem;
+}
+.doctor-image img{
+    height: 100%;
+    object-fit: cover;
+}
+.about-doc h2::before{
+    display: inline-block;
+    content: "";
+    border-bottom: 0.15rem solid var(--blue);
+    width: 1rem;
+    vertical-align: middle;   
+    margin-right: 0.5rem;
+}
+.about-doc h2{
+    margin-top: 1rem;
+}
+/*------------------------Grid-------------------*/
+.wrapper{
+    display: grid;
+    grid-template-columns:5fr 3fr ;
+    grid-template-rows: 2fr;
+}
+.doctor-profile{
+    grid-column: 2/-1;
+
+}
+.about-doc{
+    grid-row: 1/2;
+    height: 15rem;
+    text-align: left;
+    padding-left: 0.5rem;
+}
+
+  
+
+  /*----------------help------------------------------------------*/
+  .help{
+    display: flex;
+    flex-direction: column;  
+}
+.help button{
+    justify-self: center;
+    align-self: center;
+}
+/*---------------footer-----------------------------------------*/
+
+.ft-main {
+   background-color:var(--white);
+   color: var(--dark-blue);
+}
+.first-footer {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100vw;
+    justify-content: space-between;
+    align-content: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.ft-logo {
+    height: 2rem;
+    width: 11rem;
+   float: right;  
+   align-self: center; 
+   padding-right: 1rem;
+}
+.foot-li li {
+      display: inline;
+      padding-left: 1rem;
+     color: var(--dark-blue);
+}
+.foot-list{
+    align-self: center;
+}
+
+.footer1 {
+   display: flex;
+   flex-direction: row-reverse;
+   width: 100vw;
+   justify-content: space-between; 
+   padding-left: 2rem;
+}
+.ft-final p{
+    color: var(--dark-blue);
+}
+.footer1 p {
+    color: var(--dark-blue);
+    letter-spacing: normal;
+    padding: 1rem;
+    word-spacing: 0.2rem;
+}
+.parent-social {
+    align-self: center;
+    padding-right: 2rem;
+}
+
+}

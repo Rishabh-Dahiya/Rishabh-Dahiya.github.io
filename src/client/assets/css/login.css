@@ -78,6 +78,8 @@
     text-align: center;
     font-size: 0.9rem;
     letter-spacing: 0.07;
+    margin-bottom: 0;
+    padding-bottom: 2rem;
 }
 @media only screen and (min-width:768px){
     /*---------------Navigation--------------------------------*/
@@ -121,12 +123,17 @@
         padding-right: 9rem;
         align-self: center;
     }
-    .menu-buttons button{
-        height: 2.5rem;
-        width: 10rem;
+    .login{
         border: 0.007rem solid var(--dark-blue);
-        border-radius:0.4rem;
-    }
+        background-color: var(--white);
+        padding: 1rem 2rem 1rem;
+        font-size: 0.9rem;
+        border-radius: 0.2rem;
+       }
+       #quote{
+        border: 0.007rem solid var(--dark-blue);
+        border-radius: 0.2rem;
+       }
     .nav-desktop a{
         color: var(--dark-blue);
     }
