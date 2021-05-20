@@ -299,81 +299,83 @@ video{
         word-spacing: 0.1rem ;
         white-space: nowrap;
     }
-      /*---------------Submit your query-----------------*/
-   .help-wrapper{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 2rem;
-    padding-right: 5rem;
-}
-.help p{
-    text-align:left;
-    margin: 0;
-}
- .help button{
- width: 20rem;
- height: 4rem;
-}
-/*---------------footer----------------------------*/
-.ft-main {
- background-color:var(--white);
- color: var(--dark-blue);
- padding-bottom: 0;
- padding-top: 1rem;
-}
-.first-footer {
-  display: flex;
-  flex-direction: row-reverse;
-  width: 100vw;
-  justify-content: space-between;
-  align-content: center;
-  padding-left: 5rem;
- padding-right: 5rem;
-}
-
-.ft-logo {
-  height: 2rem;
-  width: 11rem;
- float: right;  
- align-self: center; 
- padding-right: 1rem;
- margin-right: 2.6rem;
-}
-.foot-li li {
-    display: inline;
-    padding-left: 1rem;
-   color: var(--dark-blue);
-}
-.foot-list{
-  align-self: center;
-}
-
-.footer1 {
- display: flex;
- flex-direction: row-reverse;
- width: 100vw;
- justify-content: space-between; 
- padding-left: 4rem;
- padding-right: 4rem;
-}
-.footer1 p {
-  padding-top:1.5rem;
-  color: (var(--dark-blue));
-  letter-spacing: normal;
-  padding-bottom: 0;
-}
-
-.footer1{
-  display: flex;
-  align-items: center;
-  justify-items: space-between;
-  padding-left: 5rem;
-  padding-right: 5.6rem;
-}
-.ft-main{
-  border-bottom: 0.5rem solid var(--blue);
-}
+       /*---------------Submit your query-----------------*/
+       .help-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .help p{
+        text-align:left;
+        margin: 0;
+    }
+     .help button{
+        padding: 1rem 2rem;
+        white-space: nowrap;
+    }
+    /*---------------footer----------------------------*/
+     /*---------------footer----------------------------*/
+     .ft-main {
+        background-color:var(--white);
+        color: var(--dark-blue);
+        padding-bottom: 0;
+        padding-top: 1rem;
+    }
+     .first-footer {
+         display: flex;
+         flex-direction: row-reverse;
+         width: 100vw;
+         justify-content: space-between;
+         align-content: center;
+         padding-left: 6.5rem;
+        padding-right: 4rem;
+     }
+    
+     .ft-logo {
+         height: 2rem;
+         width: 11rem;
+        float: right;  
+        align-self: center; 
+        padding-right: 1rem;
+        margin-right: 2.6rem;
+     }
+     .foot-li li {
+           display: inline;
+           padding-left: 1rem;
+          color: var(--dark-blue);
+     }
+     .foot-list{
+         align-self: center;
+     }
+     
+     .footer1 {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100vw;
+        justify-content: space-between; 
+        padding-left: 4rem;
+        padding-right: 4rem;
+     }
+     .footer1 p {
+         padding-top:1.5rem;
+         color: (var(--dark-blue));
+         letter-spacing: normal;
+         padding-bottom: 0;
+         padding-left: 0;
+     }
+     .parent-social{
+         padding-right: 0;
+     }
+     .footer1{
+         display: flex;
+         align-items: center;
+         justify-items: space-between;
+         padding-left: 7.4rem;
+         padding-right: 6.5rem;
+     }
+     .ft-main{
+         border-bottom: 0.5rem solid var(--blue);;
+     }
        
 }
