@@ -12,6 +12,7 @@
     --text-grey:rgba(136,129,133,255);
     --border-grey:#f2f1f0;
     --black:#000000;
+    --green:rgb(0, 100, 0);
 }
 
 @font-face{
@@ -105,6 +106,7 @@ input::placeholder ,select::placeholder {
     color: var(--text-grey);
     text-overflow:ellipsis;
 }
+
 button {
     font-family: "Nexa-Light";
     font-size: 1rem;
@@ -118,7 +120,7 @@ button {
  .secondary { 
     color: var(--white);
     background-color: var(--blue);
-    border-radius: 0.3rem;
+    border-radius: 0.1rem;
     padding: 0.8rem 0rem 0.8rem;
      }
 
