@@ -278,16 +278,33 @@ video{
       background-position: top;
     }
     /*-------------about----------------*/
-    .about{                                                                     
-        padding-left: 6rem;
-        padding-right: 6rem;
+    .about{
+        grid-template-columns: 50% 10% 25% auto;
+        grid-template-rows: 15% 15% 15% 15% 15% auto;
+        grid-template-areas: 
+        "text-about . picture-doc ."
+        "text-about . picture-doc ."
+        "text-about . picture-doc ."
+        "text-about . picture-doc ."
+        "text-about . picture-doc ."
+        "signature . . . ";
+    }
+    
+    .description{
+        grid-area: text-about;
+    }
+    .doc-image {
+        grid-area: picture-doc;
+        width: 17rem;
+    }
+    .sign{
+        grid-area: signature;
     }
     /*-------------------checkup-------------------*/
     .checkup{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding-left: 6rem;
-        padding-right: 9rem;
+      
     }
     .data{
           padding:2rem 1rem;  

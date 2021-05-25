@@ -152,20 +152,33 @@
 /*------------------------Grid-------------------*/
 .wrapper{
     display: grid;
-    grid-template-columns:5fr 3fr ;
-    grid-template-rows: 2fr;
+    grid-template-columns:2fr 1fr ;
+    grid-template-rows: 10% 5% 2% auto;
+    grid-template-areas: 
+    "about-hosp pic"
+    "about-hosp pic"
+    "description ."
+    "description .";
+}
+.doctor-image{
+    height: 14rem;
 }
 .doctor-profile{
-    grid-column: 2/-1;
-
+    grid-area:pic;
 }
 .about-doc{
-    grid-row: 1/2;
-    height: 15rem;
+    grid-area: about-hosp;
     text-align: left;
-    padding-left: 0.5rem;
+    margin-left: 1rem;
 }
-
+.about-doc h2{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.profile-desc{
+    grid-area:description;
+    height: 82rem;
+}
   
 
   /*----------------help------------------------------------------*/
@@ -282,6 +295,47 @@
     }
     .login{
         background-color: var(--white);
+    }
+    /*------------------Main-----------------------------*/
+    .wrapper{
+        display: grid;
+        grid-template-columns:75% auto ;
+        grid-template-rows: 10% 5% 2% 10% 10% auto;
+        grid-column-gap: 1rem;
+        grid-template-areas: 
+        "about-hosp pic"
+        "about-hosp pic"
+        "description pic"
+        "description pic"
+        "description pic";
+    }
+    .doctor-image{
+        height: 20rem;
+        width: 16rem;
+    }
+    .desc-heading {
+        margin-top: 0.5rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+    #booking {
+        padding: 1rem 4rem;
+    }
+    .about-doc h2{
+        margin-top: 2rem;
+    }
+    .about-doc p{
+        margin-bottom: 0rem;
+        margin-left: 1.5rem;
+    }
+    .doctor-profile{
+        margin-top: 1rem;
+    }
+    .desc-paragraph{
+        margin-left: 2rem;
+    }
+    .profile-desc{
+        height: 72rem;
     }
        /*---------------Submit your query-----------------*/
    .help-wrapper{

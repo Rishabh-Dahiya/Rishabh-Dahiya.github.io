@@ -142,7 +142,8 @@
 }
 /*---------------------Main-----------------*/
 .hospital-image{
-    height: 20rem;
+    height: 10rem;
+    width: 15rem;
 }
 .hospital-image img{
     height: 100%;
@@ -159,25 +160,30 @@
 .about-hospital h2{
     margin-top: 1rem;
 }
+#booking{
+    padding-right: 2rem;
+}
 /*------------------------Grid-------------------*/
+
 .wrapper{
     display: grid;
-    grid-template-columns:5fr 3fr ;
-    grid-template-rows: 2fr;
+    grid-template-columns:2fr 1fr ;
+    grid-template-rows: 20% 2% auto;
+    grid-template-areas: 
+    "about-hosp pic"
+    "about-hosp ."
+    "description .";
 }
-.hospital-profile{
-    grid-column: 2/-1;
 
+.hospital-profile{
+    grid-area:pic;
 }
 .about-hospital{
-    grid-row: 1/2;
-    height: 15rem;
-    text-align: left;
-    padding-left: 0.5rem;
+    grid-area: about-hosp;
 }
-
-  
-
+.profile-desc{
+    grid-area:description;
+}
   /*----------------help------------------------------------------*/
   .help{
     display: flex;
@@ -292,6 +298,49 @@
     }
     .login{
         background-color: var(--white);
+    }
+    /*-------------------------Main0-----------------------*/
+    .wrapper{
+        grid-template-columns: 75% auto;
+        grid-template-areas: 
+        "about-hosp pic"
+        "description pic"
+        "description .";
+        grid-gap: 2rem 0rem;
+    }
+   
+    .hospital-image{
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+    #booking{
+        margin-top: 1rem;
+        padding: 1rem 5rem;
+    }
+    .fa-ul {
+        column-count: 2;
+        column-gap: 10rem;
+        margin-bottom: 1rem;
+        margin-left: 5rem;
+    }
+    .desc-paragraph {
+        margin-left: 2rem;
+    }
+    .about-hospital{
+        margin-left: 1rem;
+    }
+    .fa-ul span{
+        font-size: 1rem;
+    }
+    .about-hospital h2{
+        margin-bottom: 1.5rem;
+    }
+    .about-hospital p{
+        margin-left: 1rem;
+    }
+    .desc-heading{
+        margin-bottom: 0.5rem;
     }
        /*---------------Submit your query-----------------*/
    .help-wrapper{

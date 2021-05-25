@@ -51,7 +51,9 @@
 #location {
     padding-bottom: 0.2rem;
 }
-
+#search-location{
+    padding: 0.5rem 2rem;
+}
 /*----------HOW DOES THIS WORKS-----------------*/
 .desktop-how
 {display: none;}
@@ -447,7 +449,9 @@ figcaption {
         border-right:0.0625rem solid var(--grey-text);
     }
     .find-by-bt{
-        height: 4rem;
+        display: flex;
+        height: 3.3rem;
+        padding: 0;
     }
     .primary {
        padding: 1.1rem 2rem 1.2rem;
