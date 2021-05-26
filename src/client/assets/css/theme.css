@@ -13,6 +13,7 @@
     --border-grey:#f2f1f0;
     --black:#000000;
     --green:rgb(0, 100, 0);
+    --box-shadow:rgba(0,0,0,0.2);
 }
 
 @font-face{

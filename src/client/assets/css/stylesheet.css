@@ -267,6 +267,7 @@ figcaption {
         
     }
     .find-by-bt{
+        display: flex;
         height: 3rem;
     }
     #find-by{

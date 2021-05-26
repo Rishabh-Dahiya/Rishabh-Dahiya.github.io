@@ -46,8 +46,6 @@
 }
 #place {
     display: flex;
-    padding-left: 2rem;
-    padding-right: 2rem ;  
 }
 #city{
     margin-right: 0;
@@ -116,7 +114,13 @@
     .credentials{
         margin: 7rem;   
      }
-    
+    #place{
+        justify-content: space-between;
+        
+    }
+    #place .input-edit{
+        width: 15.5rem;
+    }
 }
 @media only screen and (min-width:1024px)
 {   
@@ -174,6 +178,9 @@
     .credentials{
         margin-left: 28rem;
         margin-right: 28rem;
+    }
+    #place .input-edit{
+        width: 18rem;
     }
     
 }
