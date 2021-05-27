@@ -51,7 +51,6 @@
 .desc-heading{
     display: grid;
     grid-template-columns: 10% 80% 10%;
-    border-bottom: 1px dashed lightgray;
     color:var(--blue);
     align-items: center;
     transition: 0.4s;
@@ -131,57 +130,59 @@
     padding: 7rem 1rem;
 }
 /*---------------------Main-----------------*/
-.doctor-image{
-    height: 20rem;
+hr{
+    
+    border: 0.1rem dotted var(--border-grey);
+    margin: 0rem 0.5rem;
+    margin-left: 1.6rem;
 }
-.doctor-image img{
-    height: 100%;
-    object-fit: cover;
-}
-.about-doc h2::before{
-    display: inline-block;
-    content: "";
-    border-bottom: 0.15rem solid var(--blue);
-    width: 1rem;
-    vertical-align: middle;   
-    margin-right: 0.5rem;
-}
-.about-doc h2{
-    margin-top: 1rem;
-}
-/*------------------------Grid-------------------*/
 .wrapper{
     display: grid;
-    grid-template-columns:2fr 1fr ;
-    grid-template-rows: 10% 5% 2% 83%;
+    grid-template-columns: 65% 35%;
+    grid-template-rows:15% 10% auto;
     grid-template-areas: 
-    "about-hosp pic"
-    "about-hosp pic"
-    "description ."
-    "description .";
+    "doc-info pic"
+    "info pic"
+    "info .";
 }
-.doctor-image{
-    height: 14rem;
+.desc-heading{
+    padding: 0.625rem;
 }
-.doctor-profile{
-    grid-area:pic;
-}
-.about-doc{
-    grid-area: about-hosp;
-    text-align: left;
+.desc-paragraph{
     margin-left: 1rem;
 }
-.about-doc h2{
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+.profile-desc li{
+    margin-bottom: 0.5rem;
+}
+.about-doc{
+    grid-area: doc-info;
 }
 .profile-desc{
-    grid-area:description;
+   grid-area: info;
 }
- .wrapper{
-     height: 105rem;
- }
-
+.doctor-profile{
+  grid-area: pic;
+    margin-bottom: 0rem;
+    padding-bottom: 0rem;
+    margin-top: 1.5rem;
+    padding-top: 0rem;
+}
+.doctor-image{
+    height: 57%;
+}
+#booking{
+    padding: 0.5rem 1.25rem;
+}
+.about-doc h2{
+    margin: 1.5rem 0rem 1.5rem;
+}
+.about-doc h2::before{
+    width: 1rem;
+}
+.about-doc p{
+    text-align: left;
+    padding-left: 1.5rem;
+}
   /*----------------help------------------------------------------*/
   .help{
     display: flex;
@@ -299,48 +300,42 @@
     }
     /*------------------Main-----------------------------*/
     .wrapper{
-        display: grid;
-        grid-template-columns:75% auto ;
-        grid-template-rows: 10% 5% 2% 10% 10% 63%;
-        grid-column-gap: 1rem;
-        grid-template-areas: 
-        "about-hosp pic"
-        "about-hosp pic"
-        "description pic"
-        "description ."
-        "description .";
+        grid-template-columns: 70% 30%;
+        grid-gap: 1rem 1rem;
+        grid-template-rows: 15% 10% 10% auto;
+        grid-template-areas: "doc-info pic"
+        "info pic"
+        "info pic"
+        "info .";
     }
-    .doctor-image{
-        height: 20rem;
-        width: 16rem;
-    }
-    .desc-heading {
-        margin-top: 0.5rem;
-        padding-bottom: 1rem;
-        padding-top: 1rem;
-    }
-    #booking {
-        padding: 1rem 4rem;
-    }
-    .about-doc{
-        margin-bottom:2rem;
-    }
-    .about-doc h2{
-        margin-top: 2rem;
+    .about-doc h2::before{
+        width: 2rem;
     }
     .about-doc p{
-        margin-bottom: 0rem;
-        margin-left: 1.5rem;
+        margin-left: 1.2rem;
     }
-    .doctor-profile{
-        margin-top: 1rem;
-    }
-    .desc-paragraph{
-        margin-left: 2rem;
-    }
-    .wrapper{
-        height: 72rem;
-    }
+   .doctor-image{
+       height: 70%;
+   }
+   .about-doc{
+       margin-top: 1.5rem;
+   }
+   .doctor-profile{
+    width: 90%;
+    padding-top: 1rem;
+   }
+   #booking{
+       padding: 1rem 5.9rem;
+   }
+   .profile-desc i{
+       font-size: 1.5rem;
+   }
+   .desc-heading{
+       padding: 1rem 0rem;
+   }
+   .desc-paragraph{
+       margin-left: 1.2rem;
+   }
        /*---------------Submit your query-----------------*/
    .help-wrapper{
     display: flex;
