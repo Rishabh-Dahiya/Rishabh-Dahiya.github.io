@@ -72,13 +72,13 @@ hr{
     margin-bottom: 1rem;
     margin-top: 1rem;
     border: 0;
-    border-bottom: 0.1rem solid var(--border-grey);
+    border-bottom: 0.05rem solid var(--dark-grey);
 }
 .plan hr{
     width: 10rem;
 }
 .plan ul{
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 .plan li{
     font-size: 0.9rem;
@@ -118,9 +118,11 @@ p{
     padding-bottom:0.3rem;
     border-radius: 0.2rem;
 }
+
 /*-------------------advanced--------------------*/
 #advanced-plan{
-    border: 0.1rem solid var(--dark-blue);
+    background-image: linear-gradient(var(--lightest-blue),var(--white));
+    position: relative;
 }
 #popular-tag
 {   margin: auto;
@@ -135,7 +137,6 @@ p{
     position:absolute;
     position: relative;
     top: -0.6rem;
-    
 }
 /*-------------------Rating---------------------*/
 .rating{
@@ -335,10 +336,11 @@ a {
 .user img{
     grid-column: 1/2;
     grid-row: 1/3;
-    height: 100%;
+    height: 75%;
     width: 100%;
     object-fit: cover;
     border-radius: 4rem;
+    margin-top: 0.5rem;
 }
 .name{
     font-family: 'nexa-bold';
@@ -346,19 +348,31 @@ a {
     text-align: left;
     grid-column: 2/3;
     grid-row: 1/2;
+    padding-top: 0.5rem;
 }
 
 .plan-tag{
-    background-color:var(--light-blue);
+    background-color:var(--lightest-blue);
     color:var(--blue);
     font-family: 'nexa-bold';
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     letter-spacing: 0.05rem;
     padding: 0.65rem;
     width: fit-content;
     border-radius: 5px;
     grid-column: 2/3;
     grid-row: 2/3;
+}
+.tag{
+    display: inline-flex;
+    background-color: var(--blue);
+    color: var(--white);
+   font-size: 0.7rem;
+   font-family: nexa-light;
+   font-weight: bolder;
+   padding: 0.3rem 1rem;
+   border-radius: 0.3rem;
+   margin-left: 0.1rem;
 }
 /*------------------FAQ-----------------*/
 .faq{
@@ -384,6 +398,7 @@ a {
     margin-bottom: 0rem;
     color: var(--text-grey);
     font-size: 0.8rem;
+    text-align: left;
 }
 #last-anwser{
     margin-bottom: 0rem;
@@ -437,7 +452,8 @@ a {
         margin-bottom: 1rem;
     }
     .offers-heading{
-        padding-left: 2rem;
+        padding-left: 0.2rem;
+        text-align: left;
     }
     .hero-background h2,p{
         text-align: left;
@@ -456,7 +472,10 @@ a {
     }
     #advanced-plan{
         position: relative;
-        top: -1.35rem;
+        top: -1rem;
+    }
+    #comprehensive-plan ul{
+        margin-bottom: 3.7rem;
     }
     /*-----------------Grid-rating-------------------------------------*/
     .grid-ratings h4{
@@ -535,6 +554,16 @@ a {
     margin-left: 4.5rem;
     margin-right: 4.5rem;
     padding: 0.5rem 0rem;
+    }
+    .plan-tag{
+        font-size: 0.9rem;
+        height: 2.2rem;
+    }
+    #user-first{
+        margin-top: 1rem;
+    }
+    .tag{
+      margin-left: 0.5rem;
     }
     /*---------------footer-----------------------------------------*/
 
@@ -661,10 +690,10 @@ a {
         margin-top: 3rem;
     }
    #basic-plan .price{
-       margin-top: 8.4rem;
+       margin-top: 8.15rem;
    }
    #advanced-plan .price{
-       margin-top: 6.1rem;
+       margin-top: 5.7rem;
    }
    #year{
        font-size: 1.5rem;
@@ -708,6 +737,15 @@ a {
    }
    .testemonials{
        grid-template-columns: 1fr 1fr 1fr;
+   }
+   #user-third{
+       margin-top: 0.8rem;
+   }
+   #user-first{
+       margin-top: 1rem;
+   }
+   .tag{
+       padding: 0.1rem 1rem;
    }
    .wrapper .anwsers p{
        text-align: left;
