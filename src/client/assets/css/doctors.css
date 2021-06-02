@@ -154,7 +154,7 @@
     }
     .main{
         display: grid;
-        grid-template-columns: 25% 73%;
+        grid-template-columns: 25% 75%;
         grid-column-gap: 1rem;
         padding: 2rem;
     }
@@ -164,7 +164,8 @@
         margin-bottom: 1rem;
     }
     .doctor-image{
-        height: 14rem;
+    height: 100%;
+    
 }
 .doctor-image img{
     height: 100%;
@@ -173,10 +174,18 @@
         column-count: 2;
         padding-left: 2rem;
         padding-bottom: 1rem;
-        column-fill: balance;
+        column-fill: auto;
+        height: auto;
+        column-gap: 2rem;
+        margin-left: 1rem;
     }
     .info-about li{
         padding-bottom: 1rem;
+        word-wrap: break-word;
+        padding-left: 0rem;
+    }
+    .info-about i{
+        padding-right: 0rem;
     }
     .selected-filters{
         display: none;
@@ -189,7 +198,7 @@
     }
     #booking{
         float: left;
-        margin-left: 2.5rem;
+        margin-left: 1.5rem;
     }
     .grid {
        display: flex;
@@ -356,6 +365,9 @@
     padding: 0.8rem 2rem 0.8rem;
     margin-bottom: 0;
    }
+   #quote a{
+       color: var(--white);
+   }
 .nav-desktop a{
     color: var(--dark-blue);
 }
@@ -377,14 +389,14 @@
     }
     .main{
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 25% 74%;
         grid-column-gap: 1rem;
         margin: 3rem 7rem;
         padding: 0;
     }
     .parent-container{
         display: grid;
-        grid-template-columns: 60% 40%;
+        grid-template-columns: 70% 30%;
         grid-template-rows: 1fr;
         margin-bottom: 1rem;
     }
@@ -396,13 +408,13 @@
        padding :1rem 4rem 1rem;
     }
     .doctor-image{
-        height: 15rem;
+        height: 16.7rem;
     }
     .doctor-image img{
       height: 100%;
     }
     .filter-by-bt{
-        padding: 1rem 11rem;
+        padding: 0.5rem 6rem;
         font-size: 1rem;
     }
     .selected-filters{
@@ -425,6 +437,9 @@
         color: var(--blue);
         padding-left: 0.5rem;
     }
+    .info-about span{
+        font-size: 1rem;
+    }
     .specification {
         padding: 1rem 1rem 0rem;
     }
@@ -436,12 +451,10 @@
         padding-left: 1rem;
         padding-top: 0.5rem;
     }
-    .grid2 h6{
-        padding-right: 8rem;
+    .grid h6{
+        padding-right: 5rem;
     }
-    .grid4 h6{
-        padding-right: 3.5rem;
-    }
+   
     #show {
        float: left;
        padding-left: 1rem;
@@ -450,13 +463,9 @@
             padding-bottom: 2rem;
             padding-top: 0.5rem;
         }
-    .parent-container img {
-        height: 15rem;
-        width: 13rem;
-        float: right;
-    }
     #booking{
-        padding: 1rem 2rem;
+        padding: 1rem 3.5rem;
+        margin: 1rem 0rem 2rem 2rem;
     }
      /*---------------Submit your query-----------------*/
    .help-wrapper{
@@ -522,6 +531,9 @@
      padding-bottom: 0;
      padding-left: 0;
  }
+ .foot-li a{
+    color:var(--dark-blue);
+    }
  .parent-social{
      padding-right: 0;
  }

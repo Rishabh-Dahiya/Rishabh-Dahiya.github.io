@@ -416,6 +416,9 @@
     display: inline;
     padding-left: 1rem;
 }
+#quote a{
+    color: var(--white);
+}
 .menu {
     padding-right: 7rem;
     align-self: center;
@@ -461,13 +464,13 @@
       }
     .main{
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 25% 74%;
         grid-column-gap: 1rem;
         padding: 0rem;
     }
     .filter-by-bt{
         font-family: nexa-bold;
-        padding: 1rem 11rem;
+        padding: 0.5rem 6rem;
         white-space: nowrap;
         font-size: 1rem;
         margin-bottom: 1.5rem;
@@ -500,19 +503,15 @@
         padding-left: 0.5rem;
     }
     .specification {
-        padding: 1rem;
+        padding: 1rem 1rem 0rem;
     }
     .grid h6{
-        padding-right: 8rem;
+        padding-right: 4rem;
         padding-left: 1rem;
     }
     .grid2 h6{
-        padding-right: 7rem;
-        padding-bottom: 0.7rem;
-        padding-left: 1rem;
-        font-size: 1.2rem;
-        text-align: left;
-    }   
+        padding-right: 3rem;
+    }
     .filter-flex label {
         padding-left: 1rem;
         padding-bottom:0.5rem;
@@ -536,7 +535,6 @@
         padding-bottom: 2rem;
         padding-top: 1rem;
     }
-    
     /*-----------------inside---------------------*/
     .figure-hospital img {
         float: right;
@@ -578,7 +576,9 @@
         padding-left: 1rem;
         padding-right: 1rem;
         margin-right: 0.2rem;
-        
+    }
+#colored-option{
+        background-color: var(--border-grey);
     }
     .alignment button{
         margin-left: 3rem;
@@ -647,6 +647,9 @@
      letter-spacing: normal;
      padding-bottom: 0;
      padding-left: 0;
+ }
+ .foot-li a{
+     color: var(--dark-blue);
  }
  .parent-social{
      padding-right: 0;

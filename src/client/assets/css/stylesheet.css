@@ -7,6 +7,7 @@
     --dark-grey:rgb(189, 189, 189, 1);
     --grey-text:#6e6e6e;
 }
+
 /* -------- HEADER---------*/
 .logo {
     width: 40%;
@@ -278,19 +279,38 @@ figcaption {
     #content-mobile-how{
         display: none;
     }
-    #content-tablet-how{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .first{
-        margin-bottom: 1rem;
-    }
-    
-    .room {
-        width: 20rem;
-        height: 21rem;
-    }
+   .desktop-how{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-column-gap: 2rem;
+   }
+   .step-list h5{
+       margin-bottom: 0rem;
+   }
+   .step-list span{
+       font-size: 1.25rem;
+       padding-left: 1rem;
+       padding-right: 1rem;
+   }
+   .step-list{
+       display: flex;
+       align-items: center;
+       padding-top: 1rem;
+       padding-bottom: 1rem;
+       border: 0.05rem solid var(--dark-blue);
+       border-radius: 0.5rem;
+       margin-bottom: 1rem;
+   }
+   #rest span,#rest h5{
+       color: var(--white-grey);
+   }
+   .room-image{
+       height: 22rem;
+       margin-top: 1rem;
+   }
+   .room-image img {
+       margin-bottom: 0.5rem;
+   }
    /*-----------------DOCTORS----------------------------------------*/
     .parent-doc {
         display: grid;
@@ -425,6 +445,9 @@ figcaption {
         padding: 0.8rem 2rem 0.8rem;
         margin-bottom: 0;
        }
+       #quote a {
+           color: var(--white);
+       }
     .nav-desktop a{
         color: var(--dark-blue);
     }
@@ -486,9 +509,9 @@ figcaption {
       display: flex;
       border: 0.1rem solid var(--border-grey);
       align-items: center;
-      padding-top: 3rem;
-      padding-bottom: 3rem;
-      width: 35rem;
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+      width: 25rem;
       border-radius: 0.3rem;
       margin-bottom: 0.5rem;
   }
@@ -503,21 +526,20 @@ figcaption {
   }
   .step-list span{
     font-size: 1.4rem;
-    padding-left: 3rem;
-    padding-right: 4rem;
+    padding-left: 2rem;
+    padding-right: 2.5rem;
   }
   .room-image{
-      height: 45rem;
+      height: 40rem;
+      width: 35rem;
     
   }
   .room-image img{
-     padding:2rem 0rem 2rem;
+     padding:1rem 0rem 2rem;
     height: 100%;
-    margin-bottom: 2rem;
   }
-
-   /*------------DOCTORS-------------*/
-   .doctor-heading{
+/*------------DOCTORS-------------*/
+.doctor-heading{
        padding-bottom: 1rem;
    }
    .doctors p{
@@ -535,7 +557,27 @@ figcaption {
    .speciality{
     border-bottom: 0.4rem solid var(--light-blue);
 }
-  
+  /*-------------------Doctors carousel-----------------*/
+  .dot {
+    cursor: pointer;
+    height: 0.6875rem;
+    width: 0.625rem;
+    margin: 0 0.13rem;
+    background-color:var(--white-grey);
+    border-radius: 50%;
+    display: inline-block;
+    transition: var(--light-blue) 0.6s ease;
+  }
+  .carousel-dot{
+      text-align: left;
+      margin-top: 2rem;
+      margin-left: 1rem;
+  }
+ .dot:hover {
+    background-color:var(--dark-blue);
+    border:0.15rem solid var(--blue);
+    border-radius: 100%;
+  }
    /*----------------Featured Treatments--------------*/
    .heading-featured{
        text-align: left;
@@ -582,6 +624,7 @@ figcaption {
     grid-column:1/4;
     grid-row:4/9;
 }
+
    /*---------------Icons----------------------------*/
    .services{
        background-color: var(--offwhite);
@@ -654,7 +697,9 @@ figcaption {
  .foot-list{
      align-self: center;
  }
- 
+ .foot-li a{
+    color:var(--dark-blue);
+    }
  .footer1 {
     display: flex;
     flex-direction: row-reverse;

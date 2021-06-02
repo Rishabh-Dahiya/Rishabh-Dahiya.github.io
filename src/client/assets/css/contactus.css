@@ -65,7 +65,9 @@ textarea{
     padding-left: 1rem;
     padding-right: 1rem;
 }
-
+.secondary-info{
+    font-family: nexa-light;
+}
 /*--------------FOOTER------------------*/
 .ft-main {
     align-items: center;

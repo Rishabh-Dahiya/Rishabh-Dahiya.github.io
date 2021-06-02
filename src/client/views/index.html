@@ -21,14 +21,14 @@
                 <ul >
                     <li><a href="./doctor.html">Doctor</a></li>
                     <li><a href="./hospital.html">Hospitals</a></li>
-                    <li><a href="#">Treatment</a></li>
-                    <li><a href="#">Other Services</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="./treatment.html">Treatment</a></li>
+                    <li><a href="./healthy.html">Other Services</a></li>
+                    <li><a href="./tvastra-plus.html">About</a></li>
                 </ul>
             </div>
             <div class="menu-buttons">
-                <button class="login">Login / Sign Up</button>
-                <button class="primary" id="quote">Get a Quote</button>
+                <button class="login"><a href="login.html">Login / Sign Up</a></button>
+                <button class="primary" id="quote"><a href="contactus.html">Get a Quote</a></button>
             </div>
         </div>
         </nav>
@@ -114,7 +114,7 @@
     </div>
     <div class="room-image">
       <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.png" alt="Fix Consultation">
-        <h5>Fix Consultation</h5>
+        <h6>Fix Consultation</h6>
         <p>This depicts that user will have to fix appointment first when it selects a particular doctor.</p>
     </div>
 </div>
@@ -128,43 +128,51 @@
                 for patients.
             </p>
         </div>
-        <div class="parent-doc">
-            <div class="about-doc" id="doctor1">
-                <div class="doc-img"><img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--002.jpg" alt="Duke Sanson"></div>
-                <figcaption><h6>Duke Sanson</h6></figcaption>
-                <ul class="speciality">
-                    <li>Neuro Surgeon</li>
-                    <li>Chain Department of Neurological Surgery, Australia</li>
-                </ul>
-            </div>
-            <div class="about-doc" id="doctor2">
-                <div class="doc-img"><img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--004.jpg" alt="Georgea Peter"></div>
-                <figcaption><h6>Georgea Peter</h6></figcaption>
-                <ul class="speciality">
-                    <li>Breast Cancer Surgeon</li>
-                    <li>Director, UT, Southwest</li>
-                    <li>London</li>
-                </ul>
-            </div>
-            <div class="about-doc" id="doctor3">
-                <div class="doc-img"><img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--005.jpg" alt="Charlie Moon"></div>
-                <figcaption><h6>Charlie Moon</h6></figcaption>
-                <ul class="speciality">
-                    <li>Cardiac Surgeon</li>
-                    <li>MBBS, MD, FRCP, Fellowship</li>
-                    <li>New Delhi, India</li>
-                </ul>
-            </div>
-            <div class="about-doc" id="doctor4">
-                <div class="doc-img"><img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--003.jpg" alt="Rose Moon" ></div>
-                <figcaption><h6>Rose Moon</h6></figcaption>
-                <ul class="speciality">
-                    <li>Plastic Surgeon</li>
-                    <li>Department of Plastic Surgery</li>
-                    <li>Dubai</li>
-                </ul>
+        <div class="slideshow-container">
+            <div class="parent-doc mySlides fade">
+                <div class="about-doc" id="doctor1">
+                    <div class="doc-img"><img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--002.jpg" alt="Duke Sanson"></div>
+                    <figcaption><h6>Duke Sanson</h6></figcaption>
+                    <ul class="speciality">
+                        <li>Neuro Surgeon</li>
+                        <li>Chain Department of Neurological Surgery, Australia</li>
+                    </ul>
+                </div>
+                <div class="about-doc" id="doctor2">
+                    <div class="doc-img"><img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--004.jpg" alt="Georgea Peter"></div>
+                    <figcaption><h6>Georgea Peter</h6></figcaption>
+                    <ul class="speciality">
+                        <li>Breast Cancer Surgeon</li>
+                        <li>Director, UT, Southwest</li>
+                        <li>London</li>
+                    </ul>
+                </div>
+                <div class="about-doc" id="doctor3">
+                    <div class="doc-img"><img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--005.jpg" alt="Charlie Moon"></div>
+                    <figcaption><h6>Charlie Moon</h6></figcaption>
+                    <ul class="speciality">
+                        <li>Cardiac Surgeon</li>
+                        <li>MBBS, MD, FRCP, Fellowship</li>
+                        <li>New Delhi, India</li>
+                    </ul>
+                </div>
+                <div class="about-doc" id="doctor4">
+                    <div class="doc-img"><img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--003.jpg" alt="Rose Moon" ></div>
+                    <figcaption><h6>Rose Moon</h6></figcaption>
+                    <ul class="speciality">
+                        <li>Plastic Surgeon</li>
+                        <li>Department of Plastic Surgery</li>
+                        <li>Dubai</li>
+                    </ul>
+                </div>
             </div>
         </div>
+        <div class="carousel-dot"  >
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
         
     </section>
     <section class="Featured-treatments">
@@ -204,6 +212,12 @@
                     <div class="details"><h6>Multi Organ Transplant</h6><p>50+ Specialists</p></div>
                 </div>
             </div>
+            <div class="carousel-dot" id="featured-carousel" >
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div>
     </section>
     <section class="services">
         <h1>Exclusive services</h1>
@@ -266,7 +280,7 @@
                 <h2>Need Help?</h2>
                 <p>Just let us know, we will be happy to assist you</p>
             </div>
-            <div class="enquiry"><button class="secondary">Submit your enquiry</button></div>
+            <div class="enquiry"><button class="secondary"><a href="query.html">Submit your enquiry</a></button></div>
         </div>
     </section>
 
@@ -279,11 +293,11 @@
                 
                     <div class="foot-list">
                         <ul class="foot-li">
-                            <li><a href="doctor.html"></a>Doctor</li>
-                            <li><a href="hospital.html"></a>Hospital</li>
-                            <li>Treatment</li>
-                            <li>Other Services</li>
-                            <li>FAQ's</li>
+                            <li><a href="doctor.html">Doctor</a></li>
+                            <li><a href="hospital.html">Hospital</a></li>
+                            <li><a href="treatment.html">Treatment</a></li>
+                            <li><a href="healthy.html">Other Services</a></li>
+                            <li><a href="faq.html">FAQ's</a></li>
                         </ul>
                     </div>
                 </div>

@@ -6,6 +6,9 @@
 .nav-desktop{
     display: none;
 }
+#quote a{
+    color: var(--white);
+}
 /*------------main-----------------*/
 .loginbox{
     display: flex;

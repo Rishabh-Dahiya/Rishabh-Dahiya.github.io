@@ -264,6 +264,9 @@ video{
         border: 0.007rem solid var(--dark-blue);
         border-radius:0.125rem;
     }
+    #quote a{
+        color: var(--white);
+    }
     .nav-desktop a{
         color: var(--dark-blue);
     }
@@ -304,7 +307,11 @@ video{
     .checkup{
         display: grid;
         grid-template-columns: 1fr 1fr;
-      
+        background-color: transparent;
+        position: relative;
+    }
+    .checkup-desc p,.label {
+        color: var(--white);
     }
     .data{
           padding:2rem 1rem;  
@@ -315,6 +322,14 @@ video{
         font-size: 1rem;
         word-spacing: 0.1rem ;
         white-space: nowrap;
+    }
+    #myVideo{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
     }
        /*---------------Submit your query-----------------*/
        .help-wrapper{
@@ -380,6 +395,9 @@ video{
          letter-spacing: normal;
          padding-bottom: 0;
          padding-left: 0;
+     }
+     .foot-li a{
+         color: var(--dark-blue);
      }
      .parent-social{
          padding-right: 0;

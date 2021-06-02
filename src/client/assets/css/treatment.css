@@ -401,6 +401,9 @@ border-radius: 0.5rem;
     padding: 0.8rem 2rem 0.8rem;
     margin-bottom: 0;
    }
+   #quote a{
+       color: var(--white);
+   }
 .nav-desktop a{
     color: var(--dark-blue);
 }
@@ -483,7 +486,9 @@ border-radius: 0.5rem;
  .foot-list{
      align-self: center;
  }
- 
+ .foot-li a{
+     color: var(--dark-blue);
+ }
  .footer1 {
     display: flex;
     flex-direction: row-reverse;

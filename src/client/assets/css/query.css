@@ -15,6 +15,9 @@
     justify-content: center;
     align-content: center;
 }
+#quote a{
+    color: var(--white);
+}
 form{
     margin-top: 2rem;
     margin-bottom: 2rem;

@@ -21,24 +21,38 @@
     padding-top: 1rem;
     font-size: 1.1rem;
 }
+/*--------------------------- Accordian -----------------------*/  
 /*---------------------------Main-----------------------------*/
 .questions{
     display: flex;
     justify-content: space-between;
     text-align: left;
     color: var(--blue);
+    cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
 }
 .anwsers{
     text-align: left;
     background-color: var(--lightest-blue);
     padding:1rem 0rem 1rem 1rem;
     margin-bottom:1.5rem;
+    background-color: white;
+    display: none;
+    overflow: hidden;
 }
 .anwsers p{
     margin-bottom: 0rem;
     color: var(--text-grey);
 }
 #last-anwser{
+    margin-bottom: 0rem;
+}
+.wrapper h5{
     margin-bottom: 0rem;
 }
 /* ---------------HELP------------------*/
@@ -86,9 +100,6 @@
         padding-left: 1.5rem;
     }
     /*--------------------Main--------------------*/
-    .main{
-        margin-top: 2rem;
-            }
     .questions{
         margin-bottom: 0.5rem;
     }
