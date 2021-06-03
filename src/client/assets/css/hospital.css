@@ -102,6 +102,7 @@
     width: 12rem;
 }
 /*--------------FOOTER------------------*/
+/*--------------FOOTER------------------*/
 .ft-main {
     align-items: center;
     justify-content: center;
@@ -343,53 +344,35 @@
         justify-self: center;
         align-self: center;
     }
-    /*---------------footer-----------------------------------------*/
-    
-    .ft-main {
-        background-color:var(--white);
-        color: var(--dark-blue);
-    }
-    .first-footer {
-        display: flex;
-        flex-direction: row-reverse;
-        width: 100vw;
-        justify-content: space-between;
-        align-content: center;
-    }
-    
-    .ft-logo {
-        height: 2rem;
-        width: 11rem;
-        float: right;  
-        align-self: center; 
-        padding-right: 1rem;
-    }
-    .foot-li li {
-        display: inline;
-      padding-left: 1rem;
-      color: var(--dark-blue);
-    }
-    .foot-list{
-        align-self: center;
-    }
-    
-    .footer1 {
-        display: flex;
-        flex-direction: row-reverse;
-        width: 100vw;
-        justify-content: space-between; 
-    }
-    .ft-final p{
-        color: var(--dark-blue);
-    }
-    .parent-ft-final {
-        align-self: center;
-        padding-top: 0.8rem;
-        padding-left: 1rem;
-    }
-    .parent-social {
-        align-self: center;
-    }
+    /*---------------footer-tablet-----------------------------------------*/ 
+.ft-main {
+    background-color:var(--white);
+    color: var(--dark-blue);
+    padding-top: 0.5rem;
+}
+.foot-li a,.footer1 p{
+    color: var(--dark-blue);
+}
+.foot-li li{
+    display: inline;
+    padding-right: 0.5rem;
+}
+.first-footer{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer1{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: space-between;
+}
+.fa-instagram{
+    padding-right: 0.2rem;
+}
 
 }      
 @media only screen and (min-width:1024px){
@@ -598,72 +581,57 @@
     padding: 1rem 2rem;
     white-space: nowrap;
 }
-/*---------------footer----------------------------*/
- /*---------------footer----------------------------*/
- .ft-main {
+/*---------------footer-desktop----------------------------*/
+.ft-main {
     background-color:var(--white);
     color: var(--dark-blue);
-    padding-bottom: 0;
+    padding-bottom: 1rem;
     padding-top: 1rem;
 }
- .first-footer {
-     display: flex;
-     flex-direction: row-reverse;
-     width: 100vw;
-     justify-content: space-between;
-     align-content: center;
-     padding-left: 6.5rem;
-    padding-right: 4rem;
- }
-
- .ft-logo {
-     height: 2rem;
-     width: 11rem;
-    float: right;  
-    align-self: center; 
-    padding-right: 1rem;
-    margin-right: 2.6rem;
- }
- .foot-li li {
-       display: inline;
-       padding-left: 1rem;
-      color: var(--dark-blue);
- }
- .foot-list{
-     align-self: center;
- }
- 
- .footer1 {
+.ft-logo{
+    padding-right: 0;
+}
+.foot-li li:first-of-type{
+    padding-left: 0rem;
+}
+.foot-li a,.footer1 p{
+    color: var(--dark-blue);
+}
+.foot-li li{
+    display: inline;
+    padding-right: 0.5rem;
+}
+.first-footer{
     display: flex;
     flex-direction: row-reverse;
-    width: 100vw;
-    justify-content: space-between; 
-    padding-left: 4rem;
-    padding-right: 4rem;
- }
- .footer1 p {
-     padding-top:1.5rem;
-     color: (var(--dark-blue));
-     letter-spacing: normal;
-     padding-bottom: 0;
-     padding-left: 0;
- }
- .foot-li a{
-     color: var(--dark-blue);
- }
- .parent-social{
-     padding-right: 0;
- }
- .footer1{
-     display: flex;
-     align-items: center;
-     justify-items: space-between;
-     padding-left: 7.4rem;
-     padding-right: 6.5rem;
- }
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+.footer1 p{
+    padding-bottom: 0rem;
+    margin-bottom: 0rem;
+    padding-left: 0rem;
+    padding-top: 0rem;
+}
+.footer1{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0rem;
+}
+.fa-instagram{
+    padding-right: 0.2rem;
+}
  .ft-main{
      border-bottom: 0.5rem solid var(--blue);;
  }
- 
+ .parent-social{
+     padding-right: 0rem;
+     align-self: center;
+ }
 
 }

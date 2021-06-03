@@ -179,57 +179,34 @@ video{
     justify-self: center;
     align-self: center;
 }
-/*---------------footer-----------------------------------------*/
-
-.ft-main {
-   background-color:var(--white);
-   color: var(--dark-blue);
+ /*---------------footer-tablet-----------------------------------------*/ 
+ .ft-main {
+    background-color:var(--white);
+    color: var(--dark-blue);
+    padding-top: 0.5rem;
 }
-.first-footer {
+.foot-li a,.footer1 p{
+    color: var(--dark-blue);
+}
+.foot-li li{
+    display: inline;
+    padding-right: 0.5rem;
+}
+.first-footer{
     display: flex;
     flex-direction: row-reverse;
-    width: 100vw;
+    width: 100%;
     justify-content: space-between;
-    align-content: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    align-items: center;
 }
-
-.ft-logo {
-    height: 2rem;
-    width: 11rem;
-   float: right;  
-   align-self: center; 
-   padding-right: 1rem;
+.footer1{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: space-between;
 }
-.foot-li li {
-      display: inline;
-      padding-left: 1rem;
-     color: var(--dark-blue);
-}
-.foot-list{
-    align-self: center;
-}
-
-.footer1 {
-   display: flex;
-   flex-direction: row-reverse;
-   width: 100vw;
-   justify-content: space-between; 
-   padding-left: 2rem;
-}
-.ft-final p{
-    color: var(--dark-blue);
-}
-.footer1 p {
-    color: var(--dark-blue);
-    letter-spacing: normal;
-    padding: 1rem;
-    word-spacing: 0.2rem;
-}
-.parent-social {
-    align-self: center;
-    padding-right: 2rem;
+.fa-instagram{
+    padding-right: 0.2rem;
 }
 }
 @media only screen and (min-width:1024px){
@@ -346,71 +323,43 @@ video{
         padding: 1rem 2rem;
         white-space: nowrap;
     }
-    /*---------------footer----------------------------*/
-     /*---------------footer----------------------------*/
-     .ft-main {
-        background-color:var(--white);
-        color: var(--dark-blue);
-        padding-bottom: 0;
-        padding-top: 1rem;
-    }
-     .first-footer {
-         display: flex;
-         flex-direction: row-reverse;
-         width: 100vw;
-         justify-content: space-between;
-         align-content: center;
-         padding-left: 6.5rem;
-        padding-right: 4rem;
-     }
-    
-     .ft-logo {
-         height: 2rem;
-         width: 11rem;
-        float: right;  
-        align-self: center; 
-        padding-right: 1rem;
-        margin-right: 2.6rem;
-     }
-     .foot-li li {
-           display: inline;
-           padding-left: 1rem;
-          color: var(--dark-blue);
-     }
-     .foot-list{
-         align-self: center;
-     }
-     
-     .footer1 {
-        display: flex;
-        flex-direction: row-reverse;
-        width: 100vw;
-        justify-content: space-between; 
-        padding-left: 4rem;
-        padding-right: 4rem;
-     }
-     .footer1 p {
-         padding-top:1.5rem;
-         color: (var(--dark-blue));
-         letter-spacing: normal;
-         padding-bottom: 0;
-         padding-left: 0;
-     }
-     .foot-li a{
-         color: var(--dark-blue);
-     }
-     .parent-social{
-         padding-right: 0;
-     }
-     .footer1{
-         display: flex;
-         align-items: center;
-         justify-items: space-between;
-         padding-left: 7.4rem;
-         padding-right: 6.5rem;
-     }
-     .ft-main{
-         border-bottom: 0.5rem solid var(--blue);;
-     }
+    /*---------------footer-desktop----------------------------*/
+   .ft-main {
+    background-color:var(--white);
+    color: var(--dark-blue);
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+.foot-li a,.footer1 p{
+    color: var(--dark-blue);
+}
+.foot-li li{
+    display: inline;
+    padding-right: 0.5rem;
+}
+.first-footer{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer1 p{
+    padding-bottom: 0rem;
+    margin-bottom: 0rem;
+}
+.footer1{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.fa-instagram{
+    padding-right: 0.2rem;
+}
+ .ft-main{
+     border-bottom: 0.5rem solid var(--blue);;
+ }
        
 }
