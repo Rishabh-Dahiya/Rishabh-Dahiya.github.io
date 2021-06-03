@@ -71,17 +71,17 @@ textarea{
     white-space: nowrap ;
     padding-right: 0.2rem;
 }
-.appoint-button button{
+.adjust-appoint{
     display: flex;
-    flex-direction: row;
-    justify-self: center;
-    padding: 1rem 2.5rem;
+    margin: 1rem;
 }
-.appoint-button{
+.adjust-appoint button{
     display: flex;
     justify-content: center;
-    margin-bottom: 1rem;
+    padding:1rem 0rem 1rem;
+    width: 100%;
 }
+
 .fa-arrow-right{
     align-self: center;
     color:var(--white);
@@ -175,9 +175,7 @@ textarea{
             margin-left: 28rem;
             margin-right: 28rem;
         }
-        .appoint-button button{
-            padding: 1rem 11rem;
-        }
+       
         input{
             font-size: 1rem;
         }
