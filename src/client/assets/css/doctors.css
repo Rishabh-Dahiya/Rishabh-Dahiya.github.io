@@ -22,18 +22,21 @@
 .hero {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1rem 1rem 0rem;
 }
 .hero h5{
     text-align: left;
     font-family: "Nexa-light";
     width: 12rem;
+    margin-bottom: 0rem;
 }
 
 #sort-by{
     background-color: var(--dark-grey);
     width: 6.5rem;
     text-align: center;
+    margin-bottom: 0rem;
     }
 /*---------------main----------------*/
 .filter-grid{
@@ -71,10 +74,18 @@
     vertical-align: 0.3rem;   
     margin-right: 0.5rem; 
 }
-#booking {
-    padding:0.5rem 1rem 0.5rem;
-   margin-bottom: 0.7rem;
+.info-first button{
+    font-size: 0.9rem;
 }
+.call-now{
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+}
+#booking{
+    padding: 0.5rem 3rem;
+}
+
 /* ---------------HELP------------------*/
 .help{
     background-color: var(--light-blue);
@@ -187,6 +198,10 @@
     .info-about i{
         padding-right: 0rem;
     }
+    .call-now{
+        justify-content: start;
+        margin-left: 1.5rem;
+    }
     .selected-filters{
         display: none;
     }
@@ -195,10 +210,6 @@
         padding: 0.5rem 3.5rem;
         text-align: left;
         white-space: nowrap;
-    }
-    #booking{
-        float: left;
-        margin-left: 1.5rem;
     }
     .grid {
        display: flex;
@@ -304,14 +315,17 @@
     padding-left: 4rem;
     padding-right: 2rem;
 }
-/*-------------Navigation------------------*/
-.icon{
+   /*-------------Navigation------------------*/
+   .icon{
     display: none;
 }
 .logo{
-    width: 12rem;
+    width: 10rem;
     height: 2rem;
-    padding-left: 3rem;
+    padding-left: 0rem;
+}
+.nav-bar{
+    padding: 0rem 7rem;
 }
 .nav-desktop{
     display: flex;
@@ -319,34 +333,19 @@
 }
 .nav-desktop li{
     display: inline;
-    padding-left: 1rem;
+    padding-right: 1.5rem;
 }
 .menu {
-    padding-right: 7rem;
     align-self: center;
+    margin-right: 8rem;
 }
 .menu-buttons{
     display: flex;
     align-items: center;
-    padding-right: 7rem;
 }
-.login{
-    border: 0.007rem solid var(--dark-blue);
-    background-color: var(--white);
-    padding: 0.7rem 1.5rem 0.7rem;
-    font-size: 0.9rem;
-    border-radius: 0.2rem;
-    margin-right: 0.2rem;
-   }
-   #quote{
-    border: 0.007rem solid var(--dark-blue);
-    border-radius: 0.2rem;
-    padding: 0.8rem 2rem 0.8rem;
-    margin-bottom: 0;
-   }
-   #quote a{
-       color: var(--white);
-   }
+#quote a{
+    color: var(--white);
+}
 .nav-desktop a{
     color: var(--dark-blue);
 }
@@ -379,22 +378,26 @@
         grid-template-rows: 1fr;
         margin-bottom: 1rem;
     }
-    .info-first button{
-       float: left;
-       margin-left: 2rem;
-       margin-top: 1rem;
-       margin-bottom: 2rem;
-       padding :1rem 4rem 1rem;
+    .fa-ul{
+        margin-bottom: 1rem;
+    }
+    #booking{
+        margin-bottom: 1rem;
     }
     .doctor-image{
-        height: 16.7rem;
+        height: 15rem;
     }
     .doctor-image img{
       height: 100%;
     }
     .filter-by-bt{
-        padding: 0.5rem 6rem;
+        display: flex;
+        font-family: nexa-bold;
+        text-align: left;
+        padding: 1rem 7rem;
+        white-space: nowrap;
         font-size: 1rem;
+        margin-bottom: 0.5rem;
     }
     .selected-filters{
         display: flex;
@@ -442,10 +445,7 @@
             padding-bottom: 2rem;
             padding-top: 0.5rem;
         }
-    #booking{
-        padding: 1rem 3.5rem;
-        margin: 1rem 0rem 2rem 2rem;
-    }
+
      /*---------------Submit your query-----------------*/
    .help-wrapper{
     display: flex;

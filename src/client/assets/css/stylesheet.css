@@ -389,9 +389,12 @@ figcaption {
         display: none;
     }
     .logo{
-        width: 12rem;
+        width: 10rem;
         height: 2rem;
-        padding-left: 3rem;
+        padding-left: 0rem;
+    }
+    .nav-bar{
+        padding: 0rem 7rem;
     }
     .nav-desktop{
         display: flex;
@@ -399,34 +402,19 @@ figcaption {
     }
     .nav-desktop li{
         display: inline;
-        padding-left: 1rem;
+        padding-right: 1.5rem;
     }
     .menu {
-        padding-right: 7rem;
         align-self: center;
+        margin-right: 8rem;
     }
     .menu-buttons{
         display: flex;
         align-items: center;
-        padding-right: 7rem;
     }
-    .login{
-        border: 0.007rem solid var(--dark-blue);
-        background-color: var(--white);
-        padding: 0.7rem 1.5rem 0.7rem;
-        font-size: 0.9rem;
-        border-radius: 0.2rem;
-        margin-right: 0.2rem;
-       }
-       #quote{
-        border: 0.007rem solid var(--dark-blue);
-        border-radius: 0.2rem;
-        padding: 0.8rem 2rem 0.8rem;
-        margin-bottom: 0;
-       }
-       #quote a {
-           color: var(--white);
-       }
+    #quote a{
+        color: var(--white);
+    }
     .nav-desktop a{
         color: var(--dark-blue);
     }
@@ -494,6 +482,9 @@ figcaption {
       border-radius: 0.3rem;
       margin-bottom: 0.5rem;
   }
+  #first-step-desktop{
+    border: 0.1rem solid var(--blue);
+  }
   #rest{
       color: var(--white-grey);
   }
@@ -537,26 +528,32 @@ figcaption {
     border-bottom: 0.4rem solid var(--light-blue);
 }
   /*-------------------Doctors carousel-----------------*/
-  .dot {
+  .carousel-circle{
+    display: flex;
+    margin-top: 2rem;
     cursor: pointer;
-    height: 0.6875rem;
-    width: 0.625rem;
-    margin: 0 0.13rem;
-    background-color:var(--white-grey);
-    border-radius: 50%;
-    display: inline-block;
-    transition: var(--light-blue) 0.6s ease;
-  }
-  .carousel-dot{
-      text-align: left;
-      margin-top: 2rem;
-      margin-left: 1rem;
-  }
- .dot:hover {
-    background-color:var(--dark-blue);
-    border:0.15rem solid var(--blue);
-    border-radius: 100%;
-  }
+}
+    .dot{
+        height: 1rem;
+        width: 1rem;
+        margin: 0 2px;
+        background-color:var(--dark-grey);
+        border-radius: 50%;
+        display: inline-block;
+        border:0.2rem solid var(--dark-blue);
+        }
+.dot:hover {
+            background-color:var(--dark-blue);
+            border:0.2rem solid var(--blue);
+        }
+#carousel-treat .dot:hover{
+        background-color:var(--white);
+        border:0.2rem solid var(--blue);
+    }
+    #carousel-treat .dot{
+        border-color: var(--white);
+    }
+   
    /*----------------Featured Treatments--------------*/
    .heading-featured{
        text-align: left;

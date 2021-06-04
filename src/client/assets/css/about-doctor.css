@@ -234,14 +234,17 @@ hr{
         padding-left: 4rem;
         padding-right: 2rem;
     }
-    /*-------------Navigation------------------*/
-    .icon{
+       /*-------------Navigation------------------*/
+       .icon{
         display: none;
     }
     .logo{
-        width: 12rem;
+        width: 10rem;
         height: 2rem;
-        padding-left: 3rem;
+        padding-left: 0rem;
+    }
+    .nav-bar{
+        padding: 0rem 7rem;
     }
     .nav-desktop{
         display: flex;
@@ -249,34 +252,19 @@ hr{
     }
     .nav-desktop li{
         display: inline;
-        padding-left: 1rem;
+        padding-right: 1.5rem;
     }
     .menu {
-        padding-right: 7rem;
         align-self: center;
+        margin-right: 8rem;
     }
     .menu-buttons{
         display: flex;
         align-items: center;
-        padding-right: 7rem;
     }
-    .login{
-        border: 0.007rem solid var(--dark-blue);
-        background-color: var(--white);
-        padding: 0.7rem 1.5rem 0.7rem;
-        font-size: 0.9rem;
-        border-radius: 0.2rem;
-        margin-right: 0.2rem;
-       }
-       #quote{
-        border: 0.007rem solid var(--dark-blue);
-        border-radius: 0.2rem;
-        padding: 0.8rem 2rem 0.8rem;
-        margin-bottom: 0;
-       }
-       #quote a{
-           color: var(--white);
-       }
+    #quote a{
+        color: var(--white);
+    }
     .nav-desktop a{
         color: var(--dark-blue);
     }

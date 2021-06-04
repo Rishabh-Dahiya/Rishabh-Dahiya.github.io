@@ -27,8 +27,8 @@
                 </ul>
             </div>
             <div class="menu-buttons">
-                <button class="login"><a href="login.html">Login / Sign Up</a></button>
-                <button class="primary" id="quote"><a href="contactus.html">Get a Quote</a></button>
+                <button class="primary-login"><a href="login.html">Login / Sign Up</a></button>
+                <button class="primary-quote" id="quote"><a href="contactus.html">Get a Quote</a></button>
             </div>
         </div>
         </nav>
@@ -48,7 +48,7 @@
                     </div>
                 <input name ="find-by" id = "find-by" list="doctors-hospital-treatments" placeholder="Search for Doctors, hospitals and treatments"
                 required>
-                <div class="find-by-bt"><button class="primary" id="search-location">Search</button></div>
+                <div class="find-by-bt"><button class="primary-dark" id="search-location">Search</button></div>
                     </form>
             </div>
         </div>
@@ -102,7 +102,7 @@
 </div>
 <div class="desktop-how">
     <div class="steps">
-        <div class="step-list">
+        <div class="step-list" id="first-step-desktop">
             <span>01</span> <h5>Fix Consultation</h5>
         </div>
         <div class="step-list" id="rest"><span>02</span><h5>Upload Medical Reports</h5></div>
@@ -167,7 +167,7 @@
                 </div>
             </div>
         </div>
-        <div class="carousel-dot"  >
+        <div class="carousel-circle">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
@@ -212,10 +212,10 @@
                     <div class="details"><h6>Multi Organ Transplant</h6><p>50+ Specialists</p></div>
                 </div>
             </div>
-            <div class="carousel-dot" id="featured-carousel" >
+            <div class="carousel-circle" id="carousel-treat" >
+                <span class="dot activecarousel" onclick="currentSlide(0)"></span>
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
               </div>
     </section>
@@ -280,7 +280,7 @@
                 <h2>Need Help?</h2>
                 <p>Just let us know, we will be happy to assist you</p>
             </div>
-            <div class="enquiry"><button class="secondary"><a href="query.html">Submit your enquiry</a></button></div>
+            <div class="enquiry"><button class="primary-light"><a href="query.html">Submit your enquiry</a></button></div>
         </div>
     </section>
 

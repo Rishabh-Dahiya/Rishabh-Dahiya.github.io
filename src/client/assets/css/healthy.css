@@ -214,14 +214,16 @@ video{
         padding-left: 3rem;
         padding-right: 4rem;
     }
-    /*-------------Navigation------------------*/
-    .icon{
+      /*-------------Navigation------------------*/
+      .icon{
         display: none;
     }
     .logo{
         width: 12rem;
         height: 2rem;
-        padding-left: 3rem;
+    }
+    .nav-bar{
+        padding: 1rem 7rem;
     }
     .nav-desktop{
         display: flex;
@@ -229,17 +231,15 @@ video{
     }
     .nav-desktop li{
         display: inline;
-        padding-left: 1rem;
+        padding-right: 1.5rem;
     }
     .menu {
-        padding-right: 7rem;
         align-self: center;
+        margin-right: 8rem;
     }
-    .menu-buttons button{
-        height: 2.5rem;
-        width: 10rem;
-        border: 0.007rem solid var(--dark-blue);
-        border-radius:0.125rem;
+    .menu-buttons{
+        display: flex;
+        align-items: center;
     }
     #quote a{
         color: var(--white);

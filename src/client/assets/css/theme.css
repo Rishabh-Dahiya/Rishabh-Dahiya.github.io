@@ -118,18 +118,36 @@ button {
     font-size: 1rem;
     border: none;
 }
-.primary {
-    color: var(--white);
-    background-color: var(--dark-blue);
-    font-family: "Nexa-Light";
+.primary-login,.primary-quote{
+    padding: 0.7rem 1.3rem;
+    border-radius: 0.2rem;
+}
+.primary-login{
+   background-color:var(--white);
+   border: 0.1rem solid var(--dark-blue);
+   margin-right: 0.5rem;
  }
- .secondary { 
+ .primary-quote{
+     background-color: var(--dark-blue);
+     color: var(--white);
+     border: 0.1rem solid var(--dark-blue);
+ }
+ .primary-dark{
+     color: var(--white);
+     background-color: var(--dark-blue);
+ }
+ .primary-light { 
     color: var(--white);
     background-color: var(--blue);
     border-radius: 0.1rem;
-    padding: 0.8rem 0rem 0.8rem;
+    padding: 0.8rem 0.5rem 0.8rem;
      }
-
+.primary-use {
+    color: var(--white);
+     background-color: var(--dark-blue);
+     padding: 0.5rem 5rem;
+     margin-bottom: 1.5rem;
+}
 option {
     font-size: 0.9rem;
 }
@@ -268,5 +286,11 @@ footer{
     span{
         font-size: 2rem;
         line-height: 2rem;
+    }
+    .primary-use{
+        padding: 1rem 6rem;
+    }
+    .primary-light{
+        padding: 1rem 3rem;
     }
 }
