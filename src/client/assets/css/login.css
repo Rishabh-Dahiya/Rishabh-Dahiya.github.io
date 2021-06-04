@@ -58,6 +58,12 @@
     margin-left: 1rem;
     margin-bottom: 2rem;
 }
+.primary-dark h6 a{
+    color: var(--white);
+}
+.lg-button a{
+    color: var(--white);
+   }
 .fa-arrow-right{
     align-self: center;
     color:var(--white);
@@ -144,7 +150,9 @@
 .login{
     background-color: var(--white);
 }
-   
+   .lg-button a{
+    color: var(--white);
+   }
     .credentials{
         margin-left: 32rem;
         margin-right: 32rem;

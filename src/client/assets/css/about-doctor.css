@@ -271,6 +271,12 @@ hr{
     .login{
         background-color: var(--white);
     }
+    .profile h6{
+        margin-bottom: 0rem;
+    }
+    .profile a{
+        margin-right: 0.5rem;
+    }
     /*------------------Main-----------------------------*/
     .wrapper{
         grid-template-columns: 70% 30%;

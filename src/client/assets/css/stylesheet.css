@@ -134,7 +134,9 @@ figcaption {
     color: black;
     border-bottom: 0.188rem solid var(--light-blue);
 }
-
+figcaption h6 a{
+    color: var(--blue);
+}
 /*--------------FEATURED TREATMENTS-----------------*/
 .treatments{
     width:100%;
@@ -321,6 +323,7 @@ figcaption {
     .doc-img{
         height: 21rem;
     }
+   
     /*-----------------Featured-Treatments----------------------------*/
     .parent-featured {
         display: grid;
@@ -420,6 +423,12 @@ figcaption {
     }
     .login{
         background-color: var(--white);
+    }
+    .profile h6{
+        margin-bottom: 0rem;
+    }
+    .profile i{
+        margin-right: 0.5rem;
     }
     /*-----------------Find Affordablt Healthcare------------------------*/
     .find{
@@ -527,6 +536,9 @@ figcaption {
    .speciality{
     border-bottom: 0.4rem solid var(--light-blue);
 }
+.linking a{
+    color: var(--blue);
+}
   /*-------------------Doctors carousel-----------------*/
   .carousel-circle{
     display: flex;
@@ -553,7 +565,7 @@ figcaption {
     #carousel-treat .dot{
         border-color: var(--white);
     }
-   
+
    /*----------------Featured Treatments--------------*/
    .heading-featured{
        text-align: left;

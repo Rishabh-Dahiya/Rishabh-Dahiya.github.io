@@ -638,6 +638,10 @@ a {
 .login{
     background-color: var(--white);
 }
+.profile h6{
+    margin-bottom: 0rem;
+}
+
     /*----------------Hero-----------------------------*/
     .hero-btn{
        margin-top: 3rem;

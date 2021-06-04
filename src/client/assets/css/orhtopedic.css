@@ -421,9 +421,6 @@ border-radius: 0.5rem;
         flex-direction: column;
         grid-column:4/6;
     }
-    .services-name a{
-        color:var(--dark-blue);
-    }
     .service-details{
         margin-bottom: 1rem;
     }
@@ -435,7 +432,7 @@ border-radius: 0.5rem;
        object-fit: cover;
     }
     .services-image{
-        height: 18rem;
+     object-fit: cover;
     }
   /*---------------footer-desktop----------------------------*/
   .ft-main {
