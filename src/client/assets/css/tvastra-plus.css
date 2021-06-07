@@ -314,6 +314,26 @@ a {
     font-family:nexa-light;
     font-size: 0.8rem;
 }
+/*-------------------Carousel---------------------*/
+.carousel-circle{
+    display: flex;
+    margin-top: 2rem;
+    cursor: pointer;
+    justify-content: center;
+}
+    .dot{
+        height: 1rem;
+        width: 1rem;
+        margin: 0 2px;
+        background-color:var(--white-grey);
+        border-radius: 50%;
+        display: inline-block;
+
+        }
+.dot:hover {
+            background-color:var(--blue);
+ 
+        }
 /*--------------------Testimonials---------------*/
 .quote{
     font-size: 0.9rem;
@@ -374,6 +394,7 @@ a {
    border-radius: 0.3rem;
    margin-left: 0.1rem;
 }
+
 /*------------------FAQ-----------------*/
 .faq{
     margin-top: 0rem;
