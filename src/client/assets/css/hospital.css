@@ -446,6 +446,7 @@
         display: grid;
         grid-template-columns:70% auto;
         margin-bottom: 1rem;
+        grid-column-gap: 2rem;
     }
     .fa-ul{
         column-count: 2;
