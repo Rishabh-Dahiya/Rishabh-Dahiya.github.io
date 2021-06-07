@@ -319,10 +319,7 @@ video{
         text-align:left;
         margin: 0;
     }
-     .help button{
-        padding: 1rem 2rem;
-        white-space: nowrap;
-    }
+    
     /*---------------footer-desktop----------------------------*/
    .ft-main {
     background-color:var(--white);
