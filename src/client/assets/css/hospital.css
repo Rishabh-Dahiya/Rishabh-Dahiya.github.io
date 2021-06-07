@@ -158,12 +158,23 @@
 }
 
 .fa-ul{
-    column-count: 2;
-    padding-bottom: 1rem;
+   display: grid;
+   grid-template-columns: 30% auto;
+   grid-template-rows: 50% auto;
+   grid-row-gap: 1rem;
+   grid-column-gap: 4rem;
 }
 .fa-ul li{
     padding-bottom: 1rem;
-    font-size: 1.1rem;
+}
+.fa-ul li:nth-child(2){
+    align-self: center;
+}
+.fa-ul:last-child{
+    grid-column: 2/4;
+}
+.fa-ul li:nth-child(3){
+    padding-bottom: 0rem;
 }
 .options{
     padding-bottom: 3rem;
@@ -324,9 +335,10 @@
         margin: 3rem 7rem;
     }
     .fa-ul{
-        column-count: 2;
-        padding-bottom: 1rem;
-        margin-left: 1rem;
+        grid-template-columns: 70% auto;
+    }
+    .fa-ul li:nth-child(2){
+        white-space: nowrap;
     }
     .fa-ul span{
         font-size: 1.2rem;
@@ -423,23 +435,24 @@
         padding-top: 1rem;
     }
     /*-----------------inside---------------------*/
-    .figure-hospital img {
-        float: right;
-        padding-left: 5rem;
-    }
+
     .figure-hospital{
-        height: 25rem;
+        height: 23rem;
+    }
+    .info-first h5::before{
+        width: 1.5rem;
     }
     .parent-container{
         display: grid;
-        grid-template-columns:60% 40%;
+        grid-template-columns:70% auto;
         margin-bottom: 1rem;
     }
     .fa-ul{
         column-count: 2;
         column-gap: 3rem;
         padding-bottom: 1rem;
-        margin-left: 2rem;
+        margin-left: 4rem;
+        margin-right: 0rem;
     }
     .fa-ul li{
         padding-bottom: 1rem;
@@ -451,13 +464,19 @@
         padding-top: 2rem;
     }
     .options{
-        padding-left: 2rem;
+        display: flex;
+        padding-left: 4rem;
+        padding-bottom: 1.5rem;
     }
     .option-available{
         text-align: center;
         padding-left: 1rem;
         padding-right: 1rem;
+        margin-bottom: 0.5rem;
         margin-right: 0.2rem;
+    }
+    #booking{
+        margin-left: 2rem;
     }
 #colored-option{
         background-color: var(--border-grey);

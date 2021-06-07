@@ -378,18 +378,33 @@
         grid-template-rows: 1fr;
         margin-bottom: 1rem;
     }
+    /*********************INSIDE PARENT CONTAINER****************************/
+    .info-first h5{
+        margin-top: 1rem;
+    }
+    .info-first h5::before{
+        width: 1.5rem;
+    }
+    .info-about{
+        margin-top: 1rem;
+        margin-left: 3rem;
+    }
     .fa-ul{
         margin-bottom: 1rem;
     }
     #booking{
+        margin-top: 0.5rem;
         margin-bottom: 1rem;
+        margin-left: 1.5rem;
+       padding: 1rem 4rem;
     }
     .doctor-image{
-        height: 15rem;
+        height: 19rem;
     }
     .doctor-image img{
       height: 100%;
     }
+    
     .filter-by-bt{
         display: flex;
         font-family: nexa-bold;

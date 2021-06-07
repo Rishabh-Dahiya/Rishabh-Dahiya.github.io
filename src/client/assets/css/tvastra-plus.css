@@ -387,20 +387,32 @@ a {
     justify-content: space-between;
     text-align: left;
     color: var(--blue);
+    cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
 }
+.active, .questions:hover {
+    background-color:var(--white);
+  }
 .anwsers{
     text-align: left;
     background-color: var(--lightest-blue);
     padding:1rem 0rem 1rem 1rem;
-    margin-bottom:1.5rem;
+    display: none;
+    overflow: hidden;
 }
 .anwsers p{
     margin-bottom: 0rem;
     color: var(--text-grey);
-    font-size: 0.8rem;
-    text-align: left;
 }
 #last-anwser{
+    margin-bottom: 0rem;
+}
+.wrapper h5{
     margin-bottom: 0rem;
 }
 /*--------------FOOTER------------------*/

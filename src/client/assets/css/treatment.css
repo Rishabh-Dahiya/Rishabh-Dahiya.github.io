@@ -141,6 +141,9 @@ border-radius: 0.5rem;
     padding-top: 1.5rem;
     text-align: left;
 }
+.services-name h5 a{
+    color: var(--dark-blue);
+}
 .services-name h5::before{
     display: inline-block;
     content: "";

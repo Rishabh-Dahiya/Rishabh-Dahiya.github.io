@@ -36,12 +36,13 @@
   outline: none;
   transition: 0.4s;
 }
+.active, .questions:hover {
+    background-color:var(--lightest-blue);
+  }
 .anwsers{
     text-align: left;
     background-color: var(--lightest-blue);
     padding:1rem 0rem 1rem 1rem;
-    margin-bottom:1.5rem;
-    background-color: white;
     display: none;
     overflow: hidden;
 }
