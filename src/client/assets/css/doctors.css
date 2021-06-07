@@ -205,11 +205,12 @@
     .selected-filters{
         display: none;
     }
-    .filter-by-bt{
+    #filter-by{
+        display: flex;
+        background-color: var(--border-grey);
+        font-size: 1rem;
         font-family: nexa-bold;
-        padding: 0.5rem 3.5rem;
-        text-align: left;
-        white-space: nowrap;
+       padding: 1rem 1rem 1rem;
     }
     .grid {
        display: flex;
@@ -404,15 +405,11 @@
     .doctor-image img{
       height: 100%;
     }
-    
-    .filter-by-bt{
-        display: flex;
-        font-family: nexa-bold;
-        text-align: left;
-        padding: 1rem 7rem;
-        white-space: nowrap;
-        font-size: 1rem;
-        margin-bottom: 0.5rem;
+    .call-now{
+        margin-left: 2rem;
+    }
+    #filter-by{
+        margin-right: 1rem;
     }
     .selected-filters{
         display: flex;

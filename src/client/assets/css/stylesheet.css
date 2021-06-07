@@ -22,7 +22,6 @@
     background-color: var(--light-blue);
 }
 .find-loc {
-    height: 3rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -33,15 +32,6 @@
     vertical-align: center;
     padding-bottom: 0;
     margin-bottom: 0.625rem;
-}
-
-.loc-icon {
-    width: 1.25em;
-    padding-top: 0.3rem;
-    color: var(--dark-grey);
-}
-.loc-icon {
-    width: 1.25em;
 }
 #find-by{
     margin-bottom: 1rem;
@@ -62,7 +52,10 @@
     display: flex;
     flex-direction: column;
 }
-.room h5,.room p{
+.steps li h5{
+    margin-bottom: 0rem;
+}
+.room p{
    margin-top: 1.27rem;
    margin-bottom: 0;
 }
@@ -81,7 +74,7 @@
     height: 4rem;
     border-radius: 0.625rem;
     padding-left: 1rem;
-    padding-top: 1rem;
+   align-items: center;
     text-align: left;
 }
 .rest{
@@ -262,21 +255,17 @@ figcaption h6 a{
       align-content: center;
     }
     .find-loc {
-        height: 3rem;
         border-right:0.0625rem solid var(--grey-text) ;
+        margin-bottom: 0rem;
     }
-    .primary {
-        padding: 0.9rem 2rem 0.9rem;
-        
-    }
+
     .find-by-bt{
         display: flex;
-        height: 3rem;
     }
     #find-by{
         margin-bottom: 0rem;
-        height: 3rem;
     }
+  
     /*---------------HOW IT WORKS--------------------------------*/
     #content-mobile-how{
         display: none;
@@ -445,21 +434,17 @@ figcaption h6 a{
         align-content: center;
       }
       .find-loc {
-        height: 3.3rem;
         border-right:0.0625rem solid var(--grey-text);
+        margin-bottom: 0rem;
+    }
+    #find-by{
+        margin-bottom: 0rem;
     }
     .find-by-bt{
         display: flex;
-        height: 3.3rem;
         padding: 0;
     }
-    .primary {
-       padding: 1.1rem 2rem 1.2rem;
-    }
-    #find-by{
-        margin-bottom: 0;
-        height: 3.3rem;
-    }
+  
    .find p{
        text-align: left;
    }
@@ -474,6 +459,7 @@ figcaption h6 a{
   .desktop-how{
       display: grid;
       grid-template-columns: 1fr 1fr;
+      grid-column-gap: 2rem;
   }
   .heading-how {
      padding-bottom: 1rem;
@@ -487,7 +473,7 @@ figcaption h6 a{
       align-items: center;
       padding-top: 2.5rem;
       padding-bottom: 2.5rem;
-      width: 25rem;
+      width: 30rem;
       border-radius: 0.3rem;
       margin-bottom: 0.5rem;
   }
@@ -516,6 +502,10 @@ figcaption h6 a{
   .room-image img{
      padding:1rem 0rem 2rem;
     height: 100%;
+    margin-left: 2rem;
+  }
+  .room-image h6,.room-image p{
+      margin-left: 2rem;
   }
 /*------------DOCTORS-------------*/
 .doctor-heading{
