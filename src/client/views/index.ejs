@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="../assets/css/reset.css" type="text/css" rel="stylesheet">
-        <link href="../assets/css/theme.css" type="text/css" rel="stylesheet">
-        <link href="../assets/css/stylesheet.css" type="text/css" rel="stylesheet">
+        <link href="reset.css" type="text/css" rel="stylesheet">
+        <link href="theme.css" type="text/css" rel="stylesheet">
+        <link href="stylesheet.css" type="text/css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://kit.fontawesome.com/4fd1383274.js" crossorigin="anonymous"></script>
     </head>
@@ -19,16 +19,16 @@
         <div class="nav-mobile nav-desktop">
             <div class="menu">
                 <ul >
-                    <li><a href="./doctor.html">Doctor</a></li>
-                    <li><a href="./hospital.html">Hospitals</a></li>
-                    <li><a href="./treatment.html">Treatment</a></li>
-                    <li><a href="./healthy.html">Other Services</a></li>
-                    <li><a href="./tvastra-plus.html">About</a></li>
+                    <li><a href="./doctor.ejs">Doctor</a></li>
+                    <li><a href="./hospital.ejs">Hospitals</a></li>
+                    <li><a href="./treatment.ejs">Treatment</a></li>
+                    <li><a href="./healthy.ejs">Other Services</a></li>
+                    <li><a href="./tvastra-plus.ejs">About</a></li>
                 </ul>
             </div>
             <div class="menu-buttons">
-                <button class="primary-login"><a href="login.html">Login / Sign Up</a></button>
-                <button class="primary-quote" id="quote"><a href="contactus.html">Get a Quote</a></button>
+                <button class="primary-login"><a href="login.ejs">Login / Sign Up</a></button>
+                <button class="primary-quote" id="quote"><a href="contactus.ejs">Get a Quote</a></button>
             </div>
         </div>
         </nav>
@@ -41,7 +41,7 @@
                     <form class="find-form">
                     <div class="find-loc">
                 <i class="fas fa-map-marker-alt "></i>
-                <input name ="location" id = "location" list="cities" placeholder="Ahemdabad" required>
+                <input name ="location" id = "location" list="cities" placeholder="Ahemdabad" >
                 <i class="fas fa-crosshairs"></i>
                     </div>
                 <input name ="find-by" id = "find-by" list="doctors-hospital-treatments" placeholder="Search for Doctors, hospitals and treatments"
@@ -278,7 +278,7 @@
                 <h2>Need Help?</h2>
                 <p>Just let us know, we will be happy to assist you</p>
             </div>
-            <div class="enquiry"><button class="primary-light"><a href="query.html">Submit your enquiry</a></button></div>
+            <div class="enquiry"><button class="primary-light"><a href="query.ejs">Submit your enquiry</a></button></div>
         </div>
     </section>
 
@@ -291,11 +291,11 @@
                 
                     <div class="foot-list">
                         <ul class="foot-li">
-                            <li><a href="doctor.html">Doctor</a></li>
-                            <li><a href="hospital.html">Hospital</a></li>
-                            <li><a href="treatment.html">Treatment</a></li>
-                            <li><a href="healthy.html">Other Services</a></li>
-                            <li><a href="faq.html">FAQ's</a></li>
+                            <li><a href="doctor.ejs">Doctor</a></li>
+                            <li><a href="hospital.ejs">Hospital</a></li>
+                            <li><a href="treatment.ejs">Treatment</a></li>
+                            <li><a href="healthy.ejs">Other Services</a></li>
+                            <li><a href="faq.ejs">FAQ's</a></li>
                         </ul>
                     </div>
                 </div>
@@ -325,5 +325,6 @@
         </section>
  
     </footer>
+    <script src="../scripts/search.js"></script>
 </body>
 </html>

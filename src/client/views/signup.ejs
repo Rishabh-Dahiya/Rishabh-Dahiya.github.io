@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../assets/css/reset.css" type="text/css" rel="stylesheet">
-    <link href="../assets/css/theme.css" type="text/css" rel="stylesheet">
-    <link href="../assets/css/signup.css" type="text/css" rel="stylesheet">
+    <link href="../css/reset.css" type="text/css" rel="stylesheet">
+    <link href="../css/theme.css" type="text/css" rel="stylesheet">
+    <link href="../css/signup.css" type="text/css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4fd1383274.js" crossorigin="anonymous"></script>
     <title>Sign Up</title>
 </head>
 <body>
     <nav class="nav-bar">
         <figure class="logo">
-            <a href="index.html"><img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg" alt="tvastra logo"></a>
+            <a href="index.ejs"><img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg" alt="tvastra logo"></a>
          </figure>
          <div class="icon">
              <i class="fas fa-bars"></i>
@@ -21,22 +21,22 @@
          <div class="nav-mobile nav-desktop">
              <div class="menu">
                  <ul >
-                     <li><a href="./doctor.html">Doctor</a></li>
-                     <li><a href="./hospital.html">Hospitals</a></li>
-                     <li><a href="./treatment.html">Treatment</a></li>
-                     <li><a href="./healthy.html">Other Services</a></li>
-                     <li><a href="./tvastra-plus.html">About</a></li>
+                     <li><a href="./doctor.ejs">Doctor</a></li>
+                     <li><a href="./hospital.ejs">Hospitals</a></li>
+                     <li><a href="./treatment.ejs">Treatment</a></li>
+                     <li><a href="./healthy.ejs">Other Services</a></li>
+                     <li><a href="./tvastra-plus.ejs">About</a></li>
                  </ul>
              </div>
              <div class="menu-buttons">
-                <button class="primary-login"><a href="login.html">Login / Sign Up</a></button>
-                <button class="primary-quote" id="quote"><a href="contactus.html">Get a Quote</a></button>
+                <button class="primary-login"><a href="login.ejs">Login / Sign Up</a></button>
+                <button class="primary-quote" id="quote"><a href="contactus.ejs">Get a Quote</a></button>
             </div>
         </div>
         </nav>  
+        <form action="post" action="" id="signupform">
         <div class="signupbox">
             <div class="credentials">
-                <form action="post" action="">
                 <div class="heading">
                     <h5>Sign Up</h5>
                 </div>
@@ -66,13 +66,13 @@
                 </datalist>
                 </div>
                 <div class="su-button">
-                    <button class="primary-dark id="signup-btn"><h6><a href="./login.html">SIGN UP</a></h6></button>
+                    <button class="primary-dark id="signup-btn"><h6><a href="./login.ejs">SIGN UP</a></h6></button>
                     <i class="fas fa-arrow-right"></i>
                 </div>
-                <p>Already Registered? <a href="./login.html">Login</a></p>
+                <p>Already Registered? <a class = "signupanchor"href="./login.ejs">Login</a></p>
             </div>
-        </form>
-    </div>
+        </div>
+    </form>
     <div class="footer">
         <h6>All rights reserved &copy. 2020</h6>
     </div>    
