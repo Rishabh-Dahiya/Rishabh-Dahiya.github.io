@@ -1,14 +1,16 @@
 const express = require("express");
 const path = require("path");
+const router = express.Router();
+const logger = require("morgan");
 const app = express();
 const session = require("express-session");
 const port = process.env.PORT || 3000;
 require("../src/backend/database/conn");
-
+const Signupdetails = require("./backend/database/userschema")
+const mainRoutes = require("./backend/routes/MainRoutes")
 
 app.set("views", __dirname+"/client/views");
 app.use(express.static(path.join(__dirname, "client/assets")));
-app.use(express.static(path.join(__dirname, "client/fonts")));
 app.use(express.static(path.join(__dirname, "client/css")));
 app.use(express.static(path.join(__dirname, "client/javascript")));
 
@@ -33,26 +35,30 @@ app.use(session({
 app.get("/",(req,res)=> {
     res.render("index")
 });
-app.get("/doctor",(req,res)=> {
-    res.render("doctor")
+
+//for logging purposes
+app.use(logger("dev"));
+
+// Create a new User in our database
+app.post("/signup", async (req,res)=> {
+   try {
+   } catch (error) {
+       res.status(400).send(error)
+   }
 });
-app.get("/hospital",(req,res)=> {
-    res.render("hospital")
-});
-app.get("/treatment",(req,res)=> {
-    res.render("treatment")
-});
-app.get("/login",(req,res)=> {
-    res.render("login")
-});
-app.get("/signup",(req,res)=> {
-    res.render("signup")
-});
-app.get("/healthy",(req,res)=> {
-    res.render("healthy")
-});
+
+
+// For routing 
+app.use("/",mainRoutes);
+
+function index(req,res)
+{
+    res.render("index");
+}
+
 
 
 app.listen(port,()=>{
-    console.log('server is running at port number 3000');
+    console.log(`Server is running at port number, ${port}`);
 })
+module.exports = app;
