@@ -14,7 +14,8 @@ function about_hospital(req, res){
 function index(req,res){
     res.render("index");
 }
-function appointment(req, res){
+
+function appointment(req,res){
     res.render("appointment");
 }
 

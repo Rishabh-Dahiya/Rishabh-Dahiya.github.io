@@ -4,6 +4,8 @@ const router = express.Router();
 const session = require("express-session");
 const app = express();
 
+router.route("/").get(mainController.index);
+
 router.route("/healthy").get(mainController.healthy);
 router.route("/about_hospital").get(mainController.about_hospital);
 router.route("/appointment").get(mainController.appointment);

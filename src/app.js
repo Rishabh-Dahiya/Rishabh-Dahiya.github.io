@@ -56,7 +56,8 @@ function index(req,res)
     res.render("index");
 }
 
-
+router.route("/").get(index);
+app.use("/",index);
 
 app.listen(port,()=>{
     console.log(`Server is running at port number, ${port}`);
