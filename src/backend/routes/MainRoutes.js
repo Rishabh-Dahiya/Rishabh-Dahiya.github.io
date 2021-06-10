@@ -17,5 +17,5 @@ router.route("/hospital").get(mainController.hospital);
 router.route("/query").get(mainController.query);
 router.route("/treatment").get(mainController.treatment);
 router.route("/tvastra_plus").get(mainController.tvastra_plus);
-
+   
 module.exports = router;
