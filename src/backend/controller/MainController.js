@@ -2,7 +2,7 @@ function signup(req,res){
     res.render("signup");
 }
 function login(req, res){
-    res.render("login.ejs", {err:"some error with main controller"});
+    res.render("login");
 }
 function healthy(req, res){
     res.render("healthy");
@@ -15,6 +15,9 @@ function index(req,res){
     res.render("index");
 }
 
+function doctor(req, res){
+    res.render("doctor");
+}
 function appointment(req,res){
     res.render("appointment");
 }
@@ -27,9 +30,6 @@ function about_doctor(req, res){
     res.render("about-doctor");
 }
 
-function doctors(req, res){
-    res.render("doctor");
-}
 
 function faq(req, res){
     res.render("faq");
@@ -56,9 +56,10 @@ module.exports = {
     about_doctor:about_doctor,
     faq:faq,
     hospital:hospital,
-    doctors:doctors,
+    doctor:doctor,
     treatment:treatment,
     query:query,
     healthy:healthy,
-    contactus:contactus
+    contactus:contactus,
+    appointment,appointment,
 };
