@@ -23,7 +23,7 @@ const userschema = new mongoose.Schema({
         type: String,
         allowNull: false
     },
-    DOB:{
+    dob:{
         type: Number,
         allowNull: false
     },
@@ -42,6 +42,6 @@ const userschema = new mongoose.Schema({
     }
 })
 
-const Signupdetails = new mongoose.model("SingupDetials",userschema);
+const signupdata = new mongoose.model("Signupdata",userschema);
 
-module.exports = Signupdetails; 
+module.exports = signupdata; 

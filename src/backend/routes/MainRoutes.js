@@ -3,6 +3,7 @@ const mainController = require("../controller/MainController");
 const signupController = require("../controller/SignupController");
 const router = express.Router();
 const session = require("express-session");
+const SignupController = require("../controller/SignupController");
 const app = express();
 
 router.route("/").get(mainController.index);
@@ -20,8 +21,9 @@ router.route("/tvastra-plus.ejs").get(mainController.tvastra_plus);
 router.route("/login.ejs").get(mainController.login);
 router.route("/signup.ejs").get(mainController.signup);
    
+//post
+
+router.route("/signup").post(signupController.register);
 
 
-// API 
-route.post('/api/users/',signupController.create);
 module.exports = router;
