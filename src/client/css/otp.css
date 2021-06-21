@@ -10,7 +10,7 @@
     color: var(--white);
 }
 /*------------main-----------------*/
-.loginbox{
+.otpbox{
     display: flex;
     flex-direction: column;
     background-color: var(--light-blue);
@@ -33,6 +33,10 @@
         padding-top: 1rem;
         padding-bottom: 1rem;
 }
+.about-otp{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
 .userid{
     display: flex;
     align-items: center;
@@ -53,7 +57,7 @@
     margin-left: 1rem;
     margin-right:1rem;   
 }
-.other-options .with-otp p,.other-options .forgot p{
+.credentials .resend p{
     color: var(--blue);
 }
 .lg-button{
@@ -114,6 +118,13 @@
         margin-left: 5rem;
         margin-right: 5rem;
     }
+    .about-otp{
+        margin: 0rem;
+    }
+    .userid,.lg-button{
+       margin-left: 3.5rem;
+       margin-right: 3.5rem;
+    }
 }
 @media only screen and (min-width:1024px)
 {   
@@ -162,17 +173,6 @@
    .lg-button a{
     color: var(--white);
    }
-   #messages{
-    background-color: var(--white);
-    border-left: 0.5rem solid var(--flash-green);
-    position: absolute;
-    left: 77.5rem;
-    top: 5.5rem;
-}
-#messages li{
-    color: var(--flash-green);
-    padding: 1.5rem 1rem;
-}
     .credentials{
         margin-left: 28rem;
         margin-right: 28rem;
@@ -180,4 +180,11 @@
     .userid,.otp{
         margin-bottom:1rem;
     }
+    .userid,.lg-button{
+        margin-left: 1rem;
+        margin-right: 1rem;
+     }
+     .resend p{
+         margin-bottom: 1rem;
+     }
 }

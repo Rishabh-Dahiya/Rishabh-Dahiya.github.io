@@ -29,33 +29,42 @@
                  </ul>
              </div>
              <div class="menu-buttons">
-                <button class="primary-login"><a href="login.ejs">Login / Sign Up</a></button>
                 <button class="primary-quote" id="quote"><a href="contactus.ejs">Get a Quote</a></button>
             </div>
         </div>
         </nav>  
+        <div id="messages">
+            <% Object.keys(messages).forEach(function (type) { %>
+              <ul class="<%= type %>">
+              <% messages[type].forEach(function (message) { %>
+                <li><%= message %></li>
+              <% }) %>
+              </ul>
+            <% }) %>
+            </div>
         <form action="/signup" method="POST" id="signupform">
         <div class="signupbox">
             <div class="credentials">
                 <div class="heading">
                     <h5>Sign Up</h5>
+              
                 </div>
                 <div id="fname"  class="input-edit"><input name="name" placeholder="Enter Name" type="text"></div>
                 <div id="mail" class="input-edit"><input name="email" placeholder="Enter Email" type="email"></div>
                 <div id="pass" class="input-edit"><input name="password" placeholder="Enter Password" type="password"></div>
                 <div id="sex" class="input-edit">
-                <select id="gender">
+                <select id="gender" name="gender">
                     <option>Select your gender</option>
                     <option>Male</option>
                     <option>Female</option>
                     <option>Other</option>
                 <select>
                 </div>
-                <div id="age" class="input-edit"><input type="date" placeholder="dd / mm /yyyy" name="dob"> </div>
-                <div id="number" class="input-edit"><input type="number" placeholder="Enter Phone Number" name="mobile-number"></div>
+                <div id="age" class="input-edit"><input type="date" placeholder="dd / mm /yyyy" name="dateofbirth"> </div>
+                <div id="number" class="input-edit"><input type="number" placeholder="Enter Phone Number" name="number"></div>
                 <div id="place" ><div class="input-edit" id="city"><input type="text" name="city" placeholder="Enter City"></div><div class="input-edit" id="state"><input type="text" name="state" placeholder="Enter your state"></div>
                 </div>
-                <div id="region" class="input-edit"><input name="select-country" list="country" placeholder="Select Your country">
+                <div id="region" class="input-edit"><input name="country" list="country" placeholder="Select Your country">
                 <datalist id="country">
                     <option value=""></option>
                     <option value=""></option>

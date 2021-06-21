@@ -14,6 +14,8 @@
     --black:#000000;
     --green:rgb(0, 100, 0);
     --box-shadow:rgba(0,0,0,0.2);
+    --flash-red :rgb(255, 5, 3);
+    --flash-green : rgb(92, 166, 64);
 }
 
 @font-face{

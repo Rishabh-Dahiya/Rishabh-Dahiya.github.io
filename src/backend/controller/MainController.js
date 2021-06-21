@@ -12,6 +12,7 @@ function about_hospital(req, res){
     res.render("about-hospital");
 }
 function index(req,res){
+    console.log(req.session);
     res.render("index");
 }
 
@@ -46,6 +47,12 @@ function treatment(req, res){
 function tvastra_plus(req, res){
     res.render("tvastra-plus");
 }
+function otp(req,res){
+    res.render("otp");
+}
+function otp_password(req,res){
+    res.render("otp-password")
+}
 
 module.exports = {
     login:login,
@@ -61,5 +68,7 @@ module.exports = {
     query:query,
     healthy:healthy,
     contactus:contactus,
-    appointment,appointment,
+    appointment:appointment,
+    otp:otp,
+    otp_password:otp_password
 };

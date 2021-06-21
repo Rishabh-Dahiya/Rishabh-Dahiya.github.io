@@ -179,9 +179,20 @@
 .login{
     background-color: var(--white);
 }
+#messages{
+    background-color: var(--white);
+    border-left: 0.5rem solid var(--flash-red);
+    position: absolute;
+    left: 77.5rem;
+    top: 5.5rem;
+}
+#messages li{
+    color: var(--flash-red);
+    padding: 1.5rem 1rem;
+}
     .credentials{
-        margin-left: 28rem;
-        margin-right: 28rem;
+        margin-left: 24rem;
+        margin-right: 24rem;
     }
     #place .input-edit{
         width: 18rem;

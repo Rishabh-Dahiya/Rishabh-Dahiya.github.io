@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
-
-const userschema = new mongoose.Schema({
+const Schema = mongoose.Schema;
+const userschema = new Schema({
     name:{
         type: String,
         allowNull: false
@@ -23,7 +23,7 @@ const userschema = new mongoose.Schema({
         type: String,
         allowNull: false
     },
-    dob:{
+    dateofbirth:{
         type: Number,
         allowNull: false
     },
@@ -42,6 +42,6 @@ const userschema = new mongoose.Schema({
     }
 })
 
-const signupdata = new mongoose.model("Signupdata",userschema);
+const signupdata = mongoose.model("Signupdata",userschema);
 
 module.exports = signupdata; 

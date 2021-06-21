@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="/css/reset.css" type="text/css" rel="stylesheet">
+    <link href="/css/theme.css" type="text/css" rel="stylesheet">
+    <link href="/css/otp.css" type="text/css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4fd1383274.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>otp</title>
+</head>
+<body>
+    <nav class="nav-bar">
+        <figure class="logo">
+            <a href="index.ejs"><img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg" alt="tvastra logo"></a>
+         </figure>
+         <div class="icon">
+             <i class="fas fa-bars"></i>
+         </div>
+         <div class="nav-mobile nav-desktop">
+             <div class="menu">
+                 <ul >
+                     <li><a href="./doctor.ejs">Doctor</a></li>
+                     <li><a href="./hospital.ejs">Hospitals</a></li>
+                     <li><a href="./treatment.ejs">Treatment</a></li>
+                     <li><a href="./healthy.ejs">Other Services</a></li>
+                     <li><a href="./tvastra-plus.ejs">About</a></li>
+                 </ul>
+             </div>
+             <div class="menu-buttons">
+            
+                <button class="primary-quote" id="quote"><a href="contactus.ejs">Get a Quote</a></button>
+            </div>
+        </div>
+        </nav>  
+        <form method="post" action="/login" id="loginform">
+            <div class="otpbox">
+                    <div class="credentials">
+                        <div class="heading">
+                            <h5>Login</h5>
+                        </div>
+                            <div class="about-otp"><p>We have sent One time Password(OTP) to your registerd Phone number</p></div>
+                            <div class="userid"><input name="email" type="text" placeholder="Enter otp" pattern="[0-9]{4}">
+                            </div>
+                            <div class="resend"><p>Resend in 29</p></div>
+                            <div class="lg-button">
+                                <button class="primary-dark" type="submit"><h6>SUBMIT</a></h6></button>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                            <p>Not Registered? <a class = "loginanchor" href="./signUp.ejs">Sign Up</a></p>
+                        </div>
+                    </div>
+                </form>
+            <div class="footer">
+                <h6>All rights reserved &copy. 2020</h6>
+            </div>
+</body>
+</html>
