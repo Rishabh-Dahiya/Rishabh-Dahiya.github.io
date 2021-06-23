@@ -44,6 +44,7 @@ function signup(req, res){
                     } 
                     else{
                         console.log("Record inserted Successfully"+collection); 
+                        req.flash("success","Record inserted succesfully");
                         req.session.email= email;
                         req.session.name=name;
                         console.log(req.session.email,req.session.name);
