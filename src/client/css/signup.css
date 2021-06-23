@@ -121,12 +121,18 @@
         margin: 7rem;   
      }
     #place{
-        justify-content: space-between;
-        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "place1 place2";
     }
-    #place .input-edit{
-        width: 15.5rem;
+    #city {
+        grid-area: place1;
     }
+    #state {
+        grid-area: place2;
+    }
+
 }
 @media only screen and (min-width:1024px)
 {   
@@ -193,9 +199,5 @@
     .credentials{
         margin-left: 24rem;
         margin-right: 24rem;
-    }
-    #place .input-edit{
-        width: 18rem;
-    }
-    
+    }    
 }
