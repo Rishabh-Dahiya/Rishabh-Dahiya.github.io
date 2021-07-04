@@ -53,6 +53,10 @@ function otp(req,res){
 function otp_password(req,res){
     res.render("otp-password")
 }
+function phonelogin(req,res){
+    res.render("phonelogin")
+}
+
 
 module.exports = {
     login:login,
@@ -70,5 +74,6 @@ module.exports = {
     contactus:contactus,
     appointment:appointment,
     otp:otp,
-    otp_password:otp_password
+    otp_password:otp_password,
+    phonelogin:phonelogin
 };

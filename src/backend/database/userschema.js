@@ -43,5 +43,4 @@ const userschema = new Schema({
 })
 
 const signupdata = mongoose.model("Signupdata",userschema);
-
 module.exports = signupdata; 

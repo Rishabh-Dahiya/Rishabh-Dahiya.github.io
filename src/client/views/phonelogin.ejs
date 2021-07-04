@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="/css/reset.css" type="text/css" rel="stylesheet">
     <link href="/css/theme.css" type="text/css" rel="stylesheet">
-    <link href="/css/otp.css" type="text/css" rel="stylesheet">
+    <link href="/css/phone-login.css" type="text/css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4fd1383274.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>otp</title>
+    <title>phone</title>
 </head>
 <body>
     <nav class="nav-bar">
@@ -43,18 +43,17 @@
               </ul>
             <% }) %>
             </div> 
-        <form method="post" action="/verifyotp/98754" id="loginform">
-            <div class="otpbox">
+        <form method="post" action="/otp/98754" id="phoneform">
+            <div class="phonebox">
                     <div class="credentials">
                         <div class="heading">
                             <h5>Login</h5>
                         </div>
-                            <div class="about-otp"><p>We have sent One time Password(OTP) to your registerd Phone number</p></div>
-                            <div class="userid"><input name="otp" type="text" placeholder="Enter otp" pattern="[0-9]{4}"> <input type="hidden" name="requestId" value="">
+                            <div class="userid"><input name="phonenum" type="text" placeholder="Enter phone" pattern="[0-9]{10}">
                             </div>
-                            <div class="resend"><p>Resend in 29</p></div>
-                            <div class="lg-button">
-                                <button class="primary-dark" type="submit"><h6>SUBMIT</h6></button>
+                            <div class="resend"><p><a href="./login.ejs">Login with password</a></p></div>
+                            <div class="ph-button">
+                                <button class="primary-dark" type="submit"><h6>Login</h6></button>
                                 <i class="fas fa-arrow-right"></i>
                             </div>
                             <p>Not Registered? <a class = "loginanchor" href="./signUp.ejs">Sign Up</a></p>
