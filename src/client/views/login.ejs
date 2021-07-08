@@ -34,15 +34,7 @@
             </div>
         </div>
         </nav> 
-        <div id="messages">
-            <% Object.keys(messages).forEach(function (type) { %>
-              <ul class="<%= type %>">
-              <% messages[type].forEach(function (message) { %>
-                <li><%= message %></li>
-              <% }) %>
-              </ul>
-            <% }) %>
-            </div> 
+        <% include ('./flashmessages.ejs') %>
         <form method="post" action="/login" id="loginform">
                 <div class="loginbox">
                         <div class="credentials">

@@ -56,10 +56,14 @@ require("../src/backend/database/conn");
 
 /*------------------------Setting it to public-------------------*/
 app.set("views", __dirname+"/client/views");
+
+
 app.use("/img",express.static(path.join(__dirname, "client/images")));
 app.use("/css",express.static(path.join(__dirname, "client/css")));
 app.use("/js",express.static(path.join(__dirname, "client/scripts")));
 app.use("/font",express.static(path.join(__dirname, "client/fonts")));
+
+
 
 const otpManager = new OtpManager(otpRepository, {
   otpLength: 4,
