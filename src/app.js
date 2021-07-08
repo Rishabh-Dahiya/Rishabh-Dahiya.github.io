@@ -10,7 +10,7 @@ const flash = require('connect-flash');
 const db = require("./backend/database/conn");
 const router = express.Router();
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 const user = require('./backend/database/userschema');
 const OtpManager = require("./OtpManager");
 const otpRepository = require("./otpRepository");
@@ -47,100 +47,6 @@ app.use(function (req, res, next) {
   next();
 });
 
-const otpManager = new OtpManager(otpRepository, {
-    otpLength: 4,
-    validityTime: 4,
-  });
-
-
-  app.post("/otp/:token", async(req, res) => {
-
-    const number = req.body.phonenum;
-
-  
-    db.collection('users').findOne({"number": number},'*',function(err,result){
-        if(err){
-            console.log(err);
-            throw err;
-        }
-
-        else{
-            if(result){
-                console.log("user found "); 
-                req.flash("success","user found");
-                const otp = otpManager.create(req.params.token);
-                req.body.recieverNumber =result.number;
-                console.log("OTP send post");
-                console.log(req.body);
-                req.session.number={number};
-                req.session.name=result.name;
-                otpSender.send(otp, req.body);
-                console.log(`Your token code is ${otp.token} and otp is ${otp.code}`);
-                res.redirect('/otp');
-            }          
-            else
-            {
-                req.flash("error","User not present");
-                res.render("signup",{
-                    messages : req.flash()
-                });
-                console.log("Incorrect email or password");
-            }
-        }
-    })
-  
-  });
-
-
-
-
-  app.post("/verifyotp/:token", (req, res) => {
-    var code = req.body.otp ;
-    console.log(code);
-    
-    const verificationResults = otpManager.VerificationResults;
-    const verificationResult = otpManager.verify(
-      req.params.token,
-      code
-    );
-    let statusCode;
-    let bodyMessage;
-  
-    switch (verificationResult) {
-      case verificationResults.valid:
-
-        req.flash("success", "Welcome");
-                req.flash("success", "Login Successfull");
-        
-        return res.redirect("/index");
-        break;
-      case verificationResults.notValid:
-        req.session.destroy(()=>{
-          console.log("session destroyed");
-        });
-        return res.redirect("/phonelogin");
-        break;
-      case verificationResults.checked:
-        req.session.destroy(()=>{
-          console.log("session destroyed");
-        });
-        return res.redirect("/phonelogin");
-        break;
-      case verificationResults.expired:
-        req.session.destroy(()=>{
-          console.log("session destroyed");
-        });
-        return res.redirect("/phonelogin");
-        break;
-      default:
-
-        req.session.destroy(()=>{
-          console.log("session destroyed");
-        });
-        return res.redirect("/phonelogin");
-    }
-    res.status(statusCode).send(bodyMessage);
-  });
 
 /*-------------------connection to controller and routes-------------------------*/
 const Signupdetails = require("./backend/database/userschema")
@@ -155,6 +61,98 @@ app.use("/css",express.static(path.join(__dirname, "client/css")));
 app.use("/js",express.static(path.join(__dirname, "client/scripts")));
 app.use("/font",express.static(path.join(__dirname, "client/fonts")));
 
+const otpManager = new OtpManager(otpRepository, {
+  otpLength: 4,
+  validityTime: 4,
+});
+app.post("/otp/:token", async(req, res) => {
+
+  const number = req.body.phonenum;
+  console.log(number + "this the number got from req.body");
+  var k= await user.findOne({number: number });
+
+  db.collection('users').findOne({number: number }).then((user) => {
+    if (user) {
+      const otp = otpManager.create(req.params.token);
+      req.body.recieverNumber ="917015388780";
+      console.log("Otp wala");
+      console.log(req.body);
+      req.session.user={number};
+      req.session.name=user.name;
+      otpSender.send(otp, req.body);
+      console.log(`Your token code is ${otp.token} and otp is ${otp.code}`);
+      res.redirect('/otp');
+
+    }
+    else {
+      console.log("directly going to else");
+      //req.flash("fail", "Failure");
+      //req.flash("fail", "Invalid number");
+      return res.redirect("/signup");
+    }
+
+  })
+
+});
+
+
+
+//Verify Otp
+
+app.post("/verifyotp/:token", (req, res) => {
+  var code = req.body.digit1 + req.body.digit2 + req.body.digit3 + req.body.digit4 ;
+  console.log(code);
+  
+  const verificationResults = otpManager.VerificationResults;
+  const verificationResult = otpManager.verify(
+    req.params.token,
+    code
+  );
+  let statusCode;
+  let bodyMessage;
+
+  switch (verificationResult) {
+    case verificationResults.valid:
+
+      req.flash("success", "Welcome");
+              req.flash("success", "Login Successfull");
+      
+      return res.redirect("/index");
+      break;
+    case verificationResults.notValid:
+      //req.flash("fail", "Failure");
+      //req.flash("fail", "Invalid OTP");
+      req.session.destroy(()=>{
+        console.log("session destroyed");
+      });
+      return res.redirect("/otpnumber");
+      break;
+    case verificationResults.checked:
+      //req.flash("fail", "Failure");
+      //req.flash("fail", "code already used");
+      req.session.destroy(()=>{
+        console.log("session destroyed");
+      });
+      return res.redirect("/otpnumber");
+      break;
+    case verificationResults.expired:
+      //req.flash("fail", "Failure");
+      //req.flash("fail", "OTP expired");
+      req.session.destroy(()=>{
+        console.log("session destroyed");
+      });
+      return res.redirect("/otpnumber");
+      break;
+    default:
+      //req.flash("fail", "Failure");
+      //req.flash("fail", "cannot send");
+      req.session.destroy(()=>{
+        console.log("session destroyed");
+      });
+      return res.redirect("/otpnumber");
+  }
+  res.status(statusCode).send(bodyMessage);
+});
 
 // For routing 
 app.use("/",mainRoutes);

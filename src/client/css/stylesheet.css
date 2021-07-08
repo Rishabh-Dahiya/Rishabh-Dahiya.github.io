@@ -464,61 +464,90 @@ figcaption h6 a{
        width: 55%;
        align-items: center;
    }
-   /*---------------HOW IT WORKS--------------------------------*/
-   #content-mobile-how{
-       display: none;
-   }
-  .desktop-how{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-column-gap: 2rem;
-  }
-  .heading-how {
-     padding-bottom: 1rem;
-  }
-  .heading-how p{
-      text-align: left;
-  }
-  .step-list{
-      display: flex;
-      border: 0.1rem solid var(--border-grey);
-      align-items: center;
-      padding-top: 2.5rem;
-      padding-bottom: 2.5rem;
-      width: 30rem;
-      border-radius: 0.3rem;
-      margin-bottom: 0.5rem;
-  }
-  #first-step-desktop{
+/*-----------How it works-----------*/
+.heading-how p{
+    text-align: left;
+}
+#content-mobile-how{
+    display: none;
+}
+.desktop-how {
+    display: block;
+
+}
+.desktop-how .steps{
+    display: grid;
+    grid-template-columns: 45% 5% 50% ;
+    grid-template-areas: 
+    "step1 . figure"
+    "step2 . figure"
+    "step3 . figure"
+    "step4 . figure"
+    "step5 . figure"
+    "step6 . figure"
+    "step7 . figure";
+    grid-column-gap: 2rem;
+}
+.steps li{
+    margin-bottom: 0.5rem;
+    margin-right: 5rem;
+}
+ .activejs{
     border: 0.1rem solid var(--blue);
-  }
-  #rest{
-      color: var(--white-grey);
-  }
-  #rest span{
-      color: var(--white-grey);
-  }
-  .step-list h5{
-    margin-bottom: 0;
-  }
-  .step-list span{
+    color: var(--dark-blue );
+}
+.grayjs{
+    border: 0.1rem solid var(--grey);
+    color: var(--dark-grey);
+}
+.steps .grayjs span{
+    color: var(--dark-grey);
+}
+.steps li{
+    padding-top: 4rem;
+    padding-bottom:4rem;
+}
+.steps span{
     font-size: 1.4rem;
-    padding-left: 2rem;
-    padding-right: 2.5rem;
-  }
-  .room-image{
-      height: 40rem;
-      width: 35rem;
-    
-  }
-  .room-image img{
-     padding:1rem 0rem 2rem;
-    height: 100%;
-    margin-left: 2rem;
-  }
-  .room-image h6,.room-image p{
-      margin-left: 2rem;
-  }
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.steps #step1{
+    grid-area: step1;
+}
+.steps #step2{
+    grid-area: step2;
+}
+.steps #step3{
+    grid-area: step3;
+}
+.steps #step4{
+    grid-area: step4;
+}
+.steps #step5{
+    grid-area: step5;
+}
+.steps #step6{
+    grid-area: step6;
+}
+.steps #step7{
+    grid-area: step7;
+}
+.steps figure{
+    grid-area:figure;
+}
+.steps figure img{
+    padding-top: 4rem;
+    margin-bottom: 1rem;
+}
+.steps figure img{
+  height: auto;
+}
+.hide{
+    display: none;
+}
+
+
 /*------------DOCTORS-------------*/
 .doctor-heading{
        padding-bottom: 1rem;

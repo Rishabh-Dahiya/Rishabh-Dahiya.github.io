@@ -107,22 +107,72 @@
 </ol>
 </div>
 <div class="desktop-how">
-    <div class="steps">
-        <div class="step-list" id="first-step-desktop">
+    
+       <ul class="steps">
+           <!----Step1-->
+           <li class="activejs" id = "step1" onclick = "changeimage('step1','step1_fig')">
             <span>01</span> <h5>Fix Consultation</h5>
-        </div>
-        <div class="step-list" id="rest"><span>02</span><h5>Upload Medical Reports</h5></div>
-        <div class="step-list" id="rest"><span>03</span><h5>Consult with doctor</h5></div>
-        <div class="step-list" id="rest"><span>04</span><h5>Fix Surgery</h5></div>
-        <div class="step-list" id="rest"><span>05</span><h5>Hospital sent estimates</h5></div>
-        <div class="step-list" id="rest"><span>06</span><h5>Payment</h5></div>
-        <div class="step-list" id="rest"><span>07</span><h5>Surgery Completed</h5></div>
-    </div>
-    <div class="room-image">
-      <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.png" alt="Fix Consultation">
-        <h6>Fix Consultation</h6>
-        <p>This depicts that user will have to fix appointment first when it selects a particular doctor.</p>
-    </div>
+            </li>
+           <figure class="show" id = step1_fig>
+            <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.png" alt="Fix Consultation">
+            <h6>Fix Consultation</h6>
+            <p>This depicts that user will have to fix appointment first when it selects a particular doctor.</p>
+           </figure>
+            <!----Step2-->
+           <li id = "step2"  class="grayjs"   onclick = "changeimage('step2','step2_fig')">
+            <span>02</span><h5>Upload Medical Reports</h5>
+            </li>
+           <figure class="hide" id = step2_fig>
+            <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img6.jpg" alt="Fix Consultation">
+            <h6>Fix Consultation</h6>
+            <p>This depicts that user will have to fix appointment first when it selects a particular doctor.</p>
+           </figure>
+            <!----Step3-->
+           <li class="grayjs" id = "step3"   onclick = "changeimage('step3','step3_fig')">
+            <span>03</span><h5>Consult with doctor</h5>
+            </li>
+           <figure class="hide" id = step3_fig>
+            <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img2.png" alt="Fix Consultation">
+            <h6>Fix Consultation</h6>
+            <p>This depicts that user will have to fix appointment first when it selects a particular doctor.</p>
+           </figure>
+            <!----Step4-->
+           <li class="grayjs" id = "step4"   onclick = "changeimage('step4','step4_fig')">
+            <span>04</span><h5>Fix Surgery</h5>
+            </li>
+           <figure class="hide" id = step4_fig>
+            <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img7.jpeg" alt="Fix Consultation">
+            <h6>Fix Consultation</h6>
+            <p>This depicts that user will have to fix appointment first when it selects a particular doctor.</p>
+           </figure>
+            <!----Step5-->
+           <li class="grayjs" id = "step5"   onclick = "changeimage('step5','step5_fig')">
+            <span>05</span><h5>Hospital sent estimates</h5>
+            </li>
+           <figure class="hide" id = step5_fig>
+            <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img2.png" alt="Fix Consultation">
+            <h6>Fix Consultation</h6>
+            <p>This depicts that user will have to fix appointment first when it selects a particular doctor.</p>
+           </figure>
+            <!----Step6-->
+           <li class="grayjs" id = "step6"   onclick = "changeimage('step6','step6_fig')">
+            <span>06</span><h5>Payment</h5>
+            </li>
+           <figure class="hide" id = step6_fig>
+            <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img3.jpeg" alt="Fix Consultation">
+            <h6>Fix Consultation</h6>
+            <p>This depicts that user will have to fix appointment first when it selects a particular doctor.</p>
+           </figure>
+            <!----Step7-->
+           <li class="grayjs" id = "step7"   onclick = "changeimage('step7','step7_fig')">
+            <span>07</span><h5>Surgery Completed</h5>
+            </li>
+           <figure class="hide" id = step7_fig>
+            <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img4.jpeg" alt="Fix Consultation">
+            <h6>Fix Consultation</h6>
+            <p>This depicts that user will have to fix appointment first when it selects a particular doctor.</p>
+           </figure>
+       </ul>
 </div>
 
     </section>
@@ -206,16 +256,6 @@
                     <div class="background"></div>
                     <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--011.jpg" alt="Cardiology">
                     <div class="details"><h6>Cardiology Treatment</h6><p>50+ Specialists</p></div>
-                </div>
-                <div class="treatments t5">
-                    <div class="background"></div>
-                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--007.jpg" alt="Infertility">
-                    <div class="details"><h6>Infertility Treatment</h6><p>50+ Specialists</p></div>
-                </div>
-                <div class="treatments t6">
-                    <div class="background"></div>
-                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--006.jpg" alt="Multi organ transplant">
-                    <div class="details"><h6>Multi Organ Transplant</h6><p>50+ Specialists</p></div>
                 </div>
             </div>
             <div class="carousel-circle" id="carousel-treat" >
@@ -333,6 +373,7 @@
         </section>
  
     </footer>
-    <script src="../scripts/search.js"></script>
+    
+    <script src="/js/index.js"></script>
 </body>
 </html>

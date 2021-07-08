@@ -24,7 +24,7 @@ function signup(req, res){
             "country":country
         } 
 
-        db.collection('users').findOne({"email": email},'*',function(err, result){
+        db.collection('users').findOne({"email": email , "number":number},'*',function(err, result){
             if(err){
              console.log(err);
              throw err;
@@ -46,9 +46,6 @@ function signup(req, res){
                     else{
                         console.log("Record inserted Successfully"+collection); 
                         req.flash("success","Record inserted succesfully");
-                        req.session.email= email;
-                        req.session.name=name;
-                        console.log(req.session.email,req.session.name);
                         res.render("login",{
                             messages : req.flash()
                         });

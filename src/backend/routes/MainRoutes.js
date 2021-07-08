@@ -20,13 +20,14 @@ router.route("/query.ejs").get(mainController.query);
 router.route("/treatment.ejs").get(mainController.treatment);
 router.route("/tvastra-plus.ejs").get(mainController.tvastra_plus);
 router.route("/otp-password.ejs").get(mainController.otp_password); 
+router.route("/phone-login.ejs").get(mainController.phonelogin);
    
 //post
 router.route("/login.ejs").get(middle.redirectprofile,mainController.login);
 router.route("/login").post(loginController.login);
 router.route("/signup.ejs").get(middle.redirectprofile, mainController.signup);
 router.route("/signup").post(signupController.signup);
-router.route("/phone-login.ejs").get(middle.redirectprofile,mainController.phonelogin);
+
 
 router.route("/otp.ejs").get(mainController.otp);
 
