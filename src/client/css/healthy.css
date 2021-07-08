@@ -214,42 +214,44 @@ video{
         padding-left: 3rem;
         padding-right: 4rem;
     }
-      /*-------------Navigation------------------*/
-      .icon{
-        display: none;
-    }
-    .logo{
-        width: 12rem;
-        height: 2rem;
-    }
-    .nav-bar{
-        padding: 1rem 7rem;
-    }
-    .nav-desktop{
-        display: flex;
-        flex-direction: row;
-    }
-    .nav-desktop li{
-        display: inline;
-        padding-right: 1.5rem;
-    }
-    .menu {
-        align-self: center;
-        margin-right: 8rem;
-    }
-    .menu-buttons{
-        display: flex;
-        align-items: center;
-    }
-    #quote a{
-        color: var(--white);
-    }
-    .nav-desktop a{
-        color: var(--dark-blue);
-    }
-    .login{
-        background-color: var(--white);
-    }
+
+  /*-------------Navigation------------------*/
+  .icon{
+    display: none;
+}
+.logo{
+    width: 10rem;
+    height: 2rem;
+    padding-left: 0rem;
+}
+.nav-bar{
+    padding: 0rem 7rem;
+}
+.nav-desktop{
+    display: flex;
+    flex-direction: row;
+}
+.nav-desktop li{
+    display: inline;
+    padding-right: 1.5rem;
+}
+.menu {
+    align-self: center;
+    margin-right: 8rem;
+}
+.menu-buttons{
+    display: flex;
+    align-items: center;
+}
+#quote a{
+    color: var(--white);
+}
+.nav-desktop a{
+    color: var(--dark-blue);
+}
+.login{
+    background-color: var(--white);
+}
     /*-----hero-------------*/
     .background{
       padding: 9rem 6rem;
