@@ -75,20 +75,24 @@ app.post("/otp/:token", async(req, res) => {
     if (user) {
       const otp = otpManager.create(req.params.token);
       req.body.recieverNumber ="917015388780";
-      console.log("Otp wala");
+      console.log("Otp sent");
       console.log(req.body);
       req.session.user={number};
       req.session.name=user.name;
       otpSender.send(otp, req.body);
       console.log(`Your token code is ${otp.token} and otp is ${otp.code}`);
-      res.redirect('/otp');
+      req.flash("success","Otp sent");
+      res.render('otp.ejs',{
+        messages : req.flash()
+      });
 
     }
     else {
       console.log("directly going to else");
-      //req.flash("fail", "Failure");
-      //req.flash("fail", "Invalid number");
-      return res.redirect("/signup");
+      req.flash("warning","user not present");
+      return res.render("signup",{
+        messages : req.flash()
+      });
     }
 
   })
@@ -117,39 +121,35 @@ app.post("/verifyotp/:token", (req, res) => {
       req.flash("success", "Welcome");
               req.flash("success", "Login Successfull");
       
-      return res.redirect("/index");
+      return res.render("index",{
+        messages : req.flash()
+      });
       break;
     case verificationResults.notValid:
-      //req.flash("fail", "Failure");
-      //req.flash("fail", "Invalid OTP");
-      req.session.destroy(()=>{
-        console.log("session destroyed");
+      req.flash("error","Incorrect Otp");
+      
+      return res.render("otp",{
+        messages : req.flash()
       });
-      return res.redirect("/otpnumber");
       break;
     case verificationResults.checked:
-      //req.flash("fail", "Failure");
-      //req.flash("fail", "code already used");
-      req.session.destroy(()=>{
-        console.log("session destroyed");
+     req.flash("warning","Code already used");
+      
+      return res.render("otp",{
+        messages : req.flash()
       });
-      return res.redirect("/otpnumber");
       break;
     case verificationResults.expired:
-      //req.flash("fail", "Failure");
-      //req.flash("fail", "OTP expired");
-      req.session.destroy(()=>{
-        console.log("session destroyed");
+      req.flash("error","Otp expired");
+      return res.render("otp",{
+        messages : req.flash()
       });
-      return res.redirect("/otpnumber");
       break;
     default:
-      //req.flash("fail", "Failure");
-      //req.flash("fail", "cannot send");
-      req.session.destroy(()=>{
-        console.log("session destroyed");
+      req.flash("error","Otp not delivered")
+      return res.render("phonelogin",{
+        messages : req.flash()
       });
-      return res.redirect("/otpnumber");
   }
   res.status(statusCode).send(bodyMessage);
 });

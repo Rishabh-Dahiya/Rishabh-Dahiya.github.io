@@ -8,6 +8,7 @@ const middle= require("../controller/middle");
 const app = express();
 
 router.route("/").get(mainController.index);
+router.route('/index.ejs').get(middle.redirectprofile,mainController.logindex);
 router.route("/doctor.ejs").get(mainController.doctor);
 router.route("/healthy.ejs").get(mainController.healthy);
 router.route("/about-hospital.ejs").get(mainController.about_hospital);
@@ -29,7 +30,8 @@ router.route("/signup.ejs").get(middle.redirectprofile, mainController.signup);
 router.route("/signup").post(signupController.signup);
 
 
-router.route("/otp.ejs").get(mainController.otp);
+router.route("/otp").get(mainController.otp);
+router.route('/signup').get(mainController.signup);
 
 
 

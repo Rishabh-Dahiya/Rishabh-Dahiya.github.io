@@ -15,6 +15,10 @@ function index(req,res){
     console.log(req.session);
     res.render("index");
 }
+function logindex(req,res){
+   console.log(req.session);
+    res.render("index");
+}
 
 function doctor(req, res){
     res.render("doctor");
@@ -75,5 +79,6 @@ module.exports = {
     appointment:appointment,
     otp:otp,
     otp_password:otp_password,
-    phonelogin:phonelogin
+    phonelogin:phonelogin,
+    logindex:logindex
 };
