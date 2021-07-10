@@ -162,17 +162,6 @@
    .lg-button a{
     color: var(--white);
    }
-   #messages{
-    background-color: var(--white);
-    border-left: 0.5rem solid var(--flash-green);
-    position: absolute;
-    left: 77.5rem;
-    top: 5.5rem;
-}
-#messages li{
-    color: var(--flash-green);
-    padding: 1.5rem 1rem;
-}
     .credentials{
         margin-left: 28rem;
         margin-right: 28rem;

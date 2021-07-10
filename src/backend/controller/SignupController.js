@@ -1,6 +1,5 @@
 
 const db = require("../database/conn");
-const client = require('twilio')("ACb94e9097e386097d1830eec8d308d5eb", "addb8a756b8ec0a991b069e5e7114a06");
 module.exports={
     signup: signup
 };

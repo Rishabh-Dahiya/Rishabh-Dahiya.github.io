@@ -6,6 +6,7 @@
     <link href="/css/reset.css" type="text/css" rel="stylesheet">
     <link href="/css/theme.css" type="text/css" rel="stylesheet">
     <link href="/css/phone-login.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/flash-messages.css" type="text/css">
     <script src="https://kit.fontawesome.com/4fd1383274.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>phone</title>
@@ -34,7 +35,7 @@
             </div>
         </div>
         </nav>  
-        <% include ('./flashmessages.ejs') %>
+        <%- include ('./flashmessages.ejs') %>
         <form method="post" action="/otp/12345" id="phoneform">
             <div class="phonebox">
                     <div class="credentials">

@@ -1,0 +1,45 @@
+@keyframes fade-out {
+    0%,100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  .fade-out {
+    animation-name: fade-out;
+  }
+  .animated {
+    animation-duration: 10s;
+    animation-fill-mode: both;
+  }
+#messages{
+    background-color: var(--white);
+    display: flex;
+    position: absolute;
+    right: 1rem;
+ top: 5.5rem;
+}
+.success{
+  border-left: 0.5rem solid var(--flash-green);
+}
+#messages .success li{
+    color: var(--flash-red);
+    padding: 1.5rem 1rem;
+}
+
+.warning{
+  border-left: 0.5rem solid var(--flash-red);
+}
+#messages .warning li{
+    color: var(--flash-red);
+    padding: 1.5rem 1rem;
+}
+
+.error{
+  border-left: 0.5rem solid var(--flash-red);
+}
+#messages .error li{
+    color: var(--flash-red);
+    padding: 1.5rem 1rem;
+}

@@ -419,18 +419,6 @@ figcaption h6 a{
     .profile i{
         margin-right: 0.5rem;
     }
-    /*------------------Flash Message-------------------------------------*/
-    #messages{
-        background-color: var(--white);
-        border-left: 0.5rem solid var(--flash-green);
-        position: absolute;
-        left: 77.5rem;
-        top: 5.5rem;
-    }
-    #messages li{
-        color: var(--flash-green);
-        padding: 1.5rem 1rem;
-    }
     /*-----------------Find Affordablt Healthcare------------------------*/
     .find{
         display: flex;
