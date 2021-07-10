@@ -122,8 +122,8 @@ app.post("/verifyotp/:token", (req, res) => {
   switch (verificationResult) {
     case verificationResults.valid:
 
-      req.flash("success", "Welcome");
-              req.flash("success", "Login Successfull");
+      req.flash("success", "Welcome Login Successfull");
+              
       
       return res.render("index",{
         messages : req.flash()

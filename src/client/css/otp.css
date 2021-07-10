@@ -26,6 +26,7 @@
    margin-right: 1rem;
    margin-left: 1rem;
 }
+
 .heading h5{
         color:var(--blue);
         text-align: center;
@@ -37,26 +38,37 @@
     margin-left: 1rem;
     margin-right: 1rem;
 }
+.about-otp p{
+    margin-bottom: 0rem;
+}
 .userid{
     display: flex;
-    align-items: center;
-    padding-right: 1rem;
+    justify-content: center;
 }
-.credentials input{
-    padding-bottom: 0px;
+.dash {
+    border-bottom: 0.1rem solid var(--blue);
+    width: 2rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  text-align: center;
+  font-family: nexa-bold;
+  align-self: center;
+  justify-self: center;
+  margin-bottom: 1rem;
 }
-.userid,.otp{
-    border: 0.01rem solid var(--grey);
-    margin-bottom:0.5rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+#btn-resend{
+    color: var(--blue);
+    background-color: var(--white);
+    font-size: 0.75rem;
+    font-family: nexa-bold;
+    margin-bottom: 1rem;
 }
-.other-options{
+.resend{
     display: flex;
-    justify-content: space-between;
-    margin-left: 1rem;
-    margin-right:1rem;   
+    justify-content: center;
 }
+
+
 .credentials .resend p{
     color: var(--blue);
 }
@@ -125,6 +137,9 @@
        margin-left: 3.5rem;
        margin-right: 3.5rem;
     }
+    .dash {
+        width: 3rem;
+    }
 }
 @media only screen and (min-width:1024px)
 {   
@@ -177,14 +192,23 @@
         margin-left: 28rem;
         margin-right: 28rem;
     }
+    .about-otp p{
+        margin-bottom: 1rem;
+    }
     .userid,.otp{
         margin-bottom:1rem;
+    }
+    #btn-resend {
+        font-size: 0.9rem;
     }
     .userid,.lg-button{
         margin-left: 1rem;
         margin-right: 1rem;
      }
-     .resend p{
+     .resend {
          margin-bottom: 1rem;
+     }
+     .dash{
+         width: 4rem;
      }
 }

@@ -20,19 +20,19 @@ function changeimage(index,Imageindex){
     
 }
 
-function showdiv(){
-    const magic = document.getElementById('messages');
-    magic.style.display == "flex"
-    console.log(magic.style.display);
-}
-function closediv(){
-    const magic = document.getElementById('messages');
-    magic.style.display == "none"
 
-    console.log(magic.style.display);
-}
 
-function checkingsomething(){
-    const verifier = document.getElementById("idc");
-    console.log(verifier.classList);
+
+var timeLeft = 30;
+var elem = document.getElementById('btn-resend');
+var timerId = setInterval(countdown, 1000);
+
+function countdown() {
+    if (timeLeft == -1) {
+        clearTimeout(timerId);
+        elem.innerHTML = "Send OTP Again";
+    } else {
+        elem.innerHTML = 'Resend in ' + timeLeft ;
+        timeLeft--;
+    }
 }
