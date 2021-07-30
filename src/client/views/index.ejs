@@ -113,7 +113,7 @@
                 for patients.
             </p>
         </div>
-        <div class="active1" class="slide">
+        <div id="active1" class="slide">
             <div class="parent-doc w3-animate-right">
                 <div class="about-doc" id="doctor1">
                     <div class="doc-img"><img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--002.jpg" alt="Duke Sanson"></div>
@@ -152,11 +152,92 @@
                 </div>
             </div>
         </div>
+
+        <div id="active2" class="inactive">
+            <div class="parent-doc w3-animate-right">
+                <div class="about-doc" id="doctor5">
+                    <div class="doc-img"><img src="/img/femaledoctor1.jpg" alt="Donna"></div>
+                    <figcaption><h6>Donna Clinton</h6></figcaption>
+                    <ul class="speciality">
+                        <li>Neuro Surgeon</li>
+                        <li>Chain Department of Neurological Surgery, Australia</li>
+                    </ul>
+                </div>
+                <div class="about-doc" id="doctor6">
+                    <div class="doc-img"><img src="/img/femaledoctor2.jpg" alt="Alexa Peter"></div>
+                    <figcaption><h6>Alexa Peter</h6></figcaption>
+                    <ul class="speciality">
+                        <li>Breast Cancer Surgeon</li>
+                        <li>Director, UT, Southwest</li>
+                        <li>London</li>
+                    </ul>
+                </div>
+                <div class="about-doc" id="doctor7">
+                    <div class="doc-img"><img src="/img/maledoctor1.jpg" alt="Trevor Miles"></div>
+                    <figcaption><h6>Trevor Miles</h6></figcaption>
+                    <ul class="speciality">
+                        <li>Cardiac Surgeon</li>
+                        <li>MBBS, MD, FRCP, Fellowship</li>
+                        <li>New Delhi, India</li>
+                    </ul>
+                </div>
+                <div class="about-doc" id="doctor8">
+                    <div class="doc-img"><img src="/img/surgeon.jpg" alt="Matthew Scott" ></div>
+                    <figcaption><h6>Matthew Scott</h6></figcaption>
+                    <ul class="speciality">
+                        <li>Plastic Surgeon</li>
+                        <li>Department of Plastic Surgery</li>
+                        <li>Dubai</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="active3" class="inactive ">
+            <div class="parent-doc w3-animate-right">
+                <div class="about-doc" id="doctor9">
+                    <div class="doc-img"><img src="/img/femaledoctor3.jpg" alt="Paige Ramos"></div>
+                    <figcaption><h6>Paige Ramos</h6></figcaption>
+                    <ul class="speciality">
+                        <li>Neuro Surgeon</li>
+                        <li>Chain Department of Neurological Surgery, Australia</li>
+                    </ul>
+                </div>
+                <div class="about-doc" id="doctor10">
+                    <div class="doc-img"><img src="/img/maledoctor2.jpg" alt="Joe Adams"></div>
+                    <figcaption><h6>Joe Adams</h6></figcaption>
+                    <ul class="speciality">
+                        <li>Breast Cancer Surgeon</li>
+                        <li>Director, UT, Southwest</li>
+                        <li>London</li>
+                    </ul>
+                </div>
+                <div class="about-doc" id="doctor11">
+                    <div class="doc-img"><img src="/img/maledoctor3.jpg" alt="Joseph Diaz"></div>
+                    <figcaption><h6>Joseph Diaz</h6></figcaption>
+                    <ul class="speciality">
+                        <li>Cardiac Surgeon</li>
+                        <li>MBBS, MD, FRCP, Fellowship</li>
+                        <li>New Delhi, India</li>
+                    </ul>
+                </div>
+                <div class="about-doc" id="doctor12">
+                    <div class="doc-img"><img src="/img/femaledoctor4.jpg" alt="Phyllis Hudson" ></div>
+                    <figcaption><h6>Phyllis Hudson</h6></figcaption>
+                    <ul class="speciality">
+                        <li>Plastic Surgeon</li>
+                        <li>Department of Plastic Surgery</li>
+                        <li>Dubai</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
         <div class="carousel-circle">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide('active1')"></span>
+            <span class="dot" onclick="currentSlide('active2')"></span>
+            <span class="dot" onclick="currentSlide('active3')"></span>
           </div>
         
     </section>
@@ -165,43 +246,79 @@
             <h1>Featured Medical Treatment</h1>
             <p>Join the thousands of others who have exercised their rights to quality healthcare at a price you can afford</p>
             </div>
-            <div class="parent-featured">
-                <div class="treatments t1">
-                    <div class="background"></div>
-                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--010.jpg" alt="cancer">
-                    <div class="details"><h6>Cancer</h6><p>50+ Specialists</p></div>
-                </div>
-                <div class="treatments t2">
-                    <div class="background"></div>
-                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--009.jpg" alt="Dentistry">
-                    <div class="details"><h6>Dentistry</h6><p>50+ Specialists</p></div>
-                </div>
-                <div class="treatments t3">
-                    <div class="background"></div>
-                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--008.jpg" alt="Orthopedics">
-                    <div class="details"><h6>Orthopedics Surgery</h6><p>50+ Specialists</p></div>
-                </div>
-                <div class="treatments t4">
-                    <div class="background"></div>
-                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--011.jpg" alt="Cardiology">
-                    <div class="details"><h6>Cardiology Treatment</h6><p>50+ Specialists</p></div>
-                </div>
-                <div class="treatments t5">
-                    <div class="background"></div>
-                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--007.jpg" alt="Infertility">
-                    <div class="details"><h6>Infertility Treatment</h6><p>50+ Specialists</p></div>
-                </div>
-                <div class="treatments t6">
-                    <div class="background"></div>
-                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--006.jpg" alt="Multi organ transplant">
-                    <div class="details"><h6>Multi Organ Transplant</h6><p>50+ Specialists</p></div>
+            <div class="activated" id="activeid1">
+                <div class="parent-featured">
+                    <div class="treatments t1">
+                        <div class="background"></div>
+                        <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--010.jpg" alt="cancer">
+                        <div class="details"><h6>Cancer</h6><p>50+ Specialists</p></div>
+                    </div>
+                    <div class="treatments t2">
+                        <div class="background"></div>
+                        <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--009.jpg" alt="Dentistry">
+                        <div class="details"><h6>Dentistry</h6><p>50+ Specialists</p></div>
+                    </div>
+                    <div class="treatments t3">
+                        <div class="background"></div>
+                        <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--008.jpg" alt="Orthopedics">
+                        <div class="details"><h6>Orthopedics Surgery</h6><p>50+ Specialists</p></div>
+                    </div>
+                    <div class="treatments t4">
+                        <div class="background"></div>
+                        <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--011.jpg" alt="Cardiology">
+                        <div class="details"><h6>Cardiology Treatment</h6><p>50+ Specialists</p></div>
+                    </div>
+                    <div class="treatments t5">
+                        <div class="background"></div>
+                        <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--007.jpg" alt="Infertility">
+                        <div class="details"><h6>Infertility Treatment</h6><p>50+ Specialists</p></div>
+                    </div>
+                    <div class="treatments t6">
+                        <div class="background"></div>
+                        <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--006.jpg" alt="Multi organ transplant">
+                        <div class="details"><h6>Multi Organ Transplant</h6><p>50+ Specialists</p></div>
+                    </div>
                 </div>
             </div>
+
+            <div class="deactivated" id="activeid2">
+                <div class="parent-featured">
+                    <div class="treatments t1">
+                        <div class="background"></div>
+                        <img src="/img/blood.jpg" alt="blood">
+                        <div class="details"><h6>Blood</h6><p>50+ Specialists</p></div>
+                    </div>
+                    <div class="treatments t2">
+                        <div class="background"></div>
+                        <img src="/img/chemotherapy.jpg" alt="Chemotherapy">
+                        <div class="details"><h6>Chemotherapy</h6><p>50+ Specialists</p></div>
+                    </div>
+                    <div class="treatments t3">
+                        <div class="background"></div>
+                        <img src="/img/vaccine.jpg" alt="Vaccine">
+                        <div class="details"><h6>Vaccine</h6><p>50+ Specialists</p></div>
+                    </div>
+                    <div class="treatments t4">
+                        <div class="background"></div>
+                        <img src="/img/diabetes.jpg" alt="Diabetes">
+                        <div class="details"><h6>Diabetes</h6><p>50+ Specialists</p></div>
+                    </div>
+                    <div class="treatments t5">
+                        <div class="background"></div>
+                        <img src="/img/radiation.jpg" alt="radiation">
+                        <div class="details"><h6>Radiation</h6><p>50+ Specialists</p></div>
+                    </div>
+                    <div class="treatments t6">
+                        <div class="background"></div>
+                        <img src="/img/palliative.jpg" alt="Palliative Care">
+                        <div class="details"><h6>Palliative Care</h6><p>50+ Specialists</p></div>
+                    </div>
+                </div>
+            </div>
+
             <div class="carousel-circle" id="carousel-treat" >
-                <span class="dot activecarousel" onclick="currentSlide(0)"></span>
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot activecarousel" onclick="slidechange('activeid1')"></span>
+                <span class="dot" onclick="slidechange('activeid2')"></span>
               </div>
     </section>
     <section class="services">

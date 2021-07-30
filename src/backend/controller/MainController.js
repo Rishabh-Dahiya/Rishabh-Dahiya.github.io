@@ -12,7 +12,10 @@ function signup(req,res){
 }
 
 function doctor_signup(req,res){
-    res.render("doctor-signup")
+    res.render("doctor-signup",{
+        username : req.session.name,
+        number : req.session.number
+    })
 }
 function login(req, res){
     if(!req.session.email){
@@ -33,55 +36,64 @@ function logout(req,res){
     res.render("login");
 }
 function healthy(req, res){
-    
     res.render("healthy",{
-        username : res.name,sessionnumber : res.number
+        username : req.session.name,
+        number : req.session.number
     });
 }
 
 function about_hospital(req, res){
     
     res.render("about-hospital",{
-        username : res.name,sessionnumber : res.number
+        username : req.session.name,
+        number : req.session.number
     });
 }
 function index(req,res){
     console.log(req.session);
     if (req.session.email || req.session.user)
     {
-    res.render("index");
+    res.render("index",{
+        username : req.session.name,
+        number : req.session.number
+    });
     }   
     else{
         console.log("session not found");
-    res.render("login")
+    res.render("login"
+    )
     }
 }
 
 
 function doctor(req, res){
-    
+
     res.render("doctor",{
-        username : res.name,sessionnumber : res.number
+        username : req.session.name,
+        number : req.session.number
     });
 }
 function appointment(req,res){
     
     res.render("appointment",{
-        username : res.name,sessionnumber : res.number
+        username : req.session.name,
+        number : req.session.number
     });
 }
 
 function contactus(req, res){
     
     res.render("contactus",{
-        username : res.name,sessionnumber : res.number
+        username : req.session.name,
+        number : req.session.number
     });
 }
 
 function about_doctor(req, res){
     
     res.render("about-doctor",{
-        username : res.name,sessionnumber : res.number
+        username : req.session.name,
+        number : req.session.number
     });
 }
 
@@ -89,31 +101,36 @@ function about_doctor(req, res){
 function faq(req, res){
     
     res.render("faq",{
-        username : res.name,sessionnumber : res.number
+        username : req.session.name,
+        number : req.session.number
     });
 }
 function hospital(req, res){
     
     res.render("hospital",{
-        username : res.name,sessionnumber : res.number
+        username : req.session.name,
+        number : req.session.number
     });
 }
 function query(req, res){
     
     res.render("query",{
-        username : res.name,sessionnumber : res.number
+        username : req.session.name,
+        number : req.session.number
     });
 }
 function treatment(req, res){
     
     res.render("treatment",{
-        username : res.name,sessionnumber : res.number
+        username : req.session.name,
+        number : req.session.number
     });
 }
 function tvastra_plus(req, res){
     
     res.render("tvastra-plus",{
-        username : res.name,sessionnumber : res.number
+        username : req.session.name,
+        number : req.session.number
     });
 }
 function otp(req,res){

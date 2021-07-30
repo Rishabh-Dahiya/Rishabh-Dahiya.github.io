@@ -76,6 +76,9 @@
     display: none;
 }
 /*------------DOCTORS-------------*/
+.inactive{
+    display: none;
+}
 .doctors {
 background-color: var(--dark-blue);
 color: var(--white);
@@ -119,6 +122,10 @@ figcaption h6 a{
     color: var(--blue);
 }
 /*--------------FEATURED TREATMENTS-----------------*/
+.deactivated {
+    display: none;
+}
+
 .treatments{
     width:100%;
     height:22rem;
@@ -345,7 +352,7 @@ figcaption h6 a{
     .doc-img{
         height: 21rem;
     }
-   
+  
     /*-----------------Featured-Treatments----------------------------*/
     .parent-featured {
         display: grid;
@@ -616,6 +623,9 @@ figcaption h6 a{
 
 
 /*------------DOCTORS-------------*/
+#active1,#active2,#active3,#active4{
+    animation: 1s ease;
+}
 .doctor-heading{
        padding-bottom: 1rem;
    }
@@ -667,7 +677,6 @@ figcaption h6 a{
    /*----------------Featured Treatments--------------*/
    .heading-featured{
        text-align: left;
-       padding-bottom: 1rem;
    }
    .parent-featured{
     display: grid;

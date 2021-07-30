@@ -48,3 +48,17 @@ function toasterjs(){
         toaster.classList.add("toaster-hide");
     } 
 }
+
+
+function currentSlide(id){
+    document.getElementById('active1').style.display="none";
+    document.getElementById('active2').style.display="none";
+    document.getElementById('active3').style.display="none";
+    document.getElementById(id).style.display="grid";
+}
+
+function slidechange(id){
+    document.getElementById('activeid1').style.display="none";
+    document.getElementById('activeid2').style.display="none";
+    document.getElementById(id).style.display="grid";
+}
