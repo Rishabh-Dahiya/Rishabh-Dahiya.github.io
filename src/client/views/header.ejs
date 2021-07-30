@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/css/toaster.css">
+<link rel="stylesheet" href="/css/header.css">
 <script src="/js/index.js"></script>
 <nav class="nav-bar">
     <figure class="logo">
@@ -20,8 +20,9 @@
         <div class="menu-buttons" id="header-menu-bt">
             <button class="primary-login"><a href="tvastra-plus.ejs">Tvastra Plus</a></button>
             <button class="primary-quote" id="quote"><a href="contactus.ejs">Get a Quote</a></button>
+            <div id = "toaster-name" class="user-info" onclick="toasterjs()"><p><%= username %></p><i class="fas fa-chevron-down"></i></div>
         </div>
-        <div id = "toaster-name" class="user-info" onclick="toasterjs()"><p><%= username %></p><i class="fas fa-chevron-down"></i></div>
+       
     </div>
 </nav>
 <div class="toaster toaster-hide" id = "main-toaster">

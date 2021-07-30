@@ -7,14 +7,7 @@
     --dark-grey:rgb(189, 189, 189, 1);
     --white-text:rgb(251, 252, 252 );
 }
-/* -------- HEADER---------*/
-.logo {
-    width: 40%;
-    height: 60%;
-}
-.nav-desktop{
-    display: none;
-}
+
 /*-----------Hero----------------*/
 .hero-2{
     display: none;
@@ -127,10 +120,6 @@
 }
 @media only screen and (min-width:768px) {
 
-    .logo{
-            width: 10rem;
-            padding-left: 1.5rem;
-    }
     .background{
         background-image: linear-gradient(to bottom, rgba(168,197,236,0.85), rgba(168,197,236,0.85)), url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Doctors.png);
         background-repeat: no-repeat;
@@ -310,49 +299,6 @@
 
 }      
 @media only screen and (min-width:1024px){
-    
-  /*-----------------padding-----------------*/
-  .nav-bar{
-    padding-left: 4rem;
-    padding-right: 2rem;
-}
-   /*-------------Navigation------------------*/
-   .icon{
-    display: none;
-}
-.logo{
-    width: 10rem;
-    height: 2rem;
-    padding-left: 0rem;
-}
-.nav-bar{
-    padding: 0rem 7rem;
-}
-.nav-desktop{
-    display: flex;
-    flex-direction: row;
-}
-.nav-desktop li{
-    display: inline;
-    padding-right: 1.5rem;
-}
-.menu {
-    align-self: center;
-    margin-right: 8rem;
-}
-.menu-buttons{
-    display: flex;
-    align-items: center;
-}
-#quote a{
-    color: var(--white);
-}
-.nav-desktop a{
-    color: var(--dark-blue);
-}
-.login{
-    background-color: var(--white);
-}
     .treatments h3{
         padding-left: 6rem;
     }

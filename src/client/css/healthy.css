@@ -1,11 +1,4 @@
-/* -------- HEADER---------*/
-.logo {
-    width: 40%;
-    height: 60%;
-}
-.nav-desktop{
-    display: none;
-}
+
 /*-------------Hero----------*/
 .background{
     background-image:linear-gradient(to right,rgba(0,0,0,0.4),rgba(0, 0, 0,0.4)),  url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/aboutUs_hero.jpeg);
@@ -113,13 +106,6 @@ video{
 }
 @media only screen and (min-width:768px)
 {
-    .logo{
-        width: 10rem;
-        padding-left: 1.5rem;
-        }
-    .icon{
-        padding-right: 1.5rem;
-     }
      /*-------------------About--------------------------*/
      .about{
          display: grid;
@@ -210,48 +196,6 @@ video{
 }
 }
 @media only screen and (min-width:1024px){
-    .nav-bar{
-        padding-left: 3rem;
-        padding-right: 4rem;
-    }
-
-  /*-------------Navigation------------------*/
-  .icon{
-    display: none;
-}
-.logo{
-    width: 10rem;
-    height: 2rem;
-    padding-left: 0rem;
-}
-.nav-bar{
-    padding: 0rem 7rem;
-}
-.nav-desktop{
-    display: flex;
-    flex-direction: row;
-}
-.nav-desktop li{
-    display: inline;
-    padding-right: 1.5rem;
-}
-.menu {
-    align-self: center;
-    margin-right: 8rem;
-}
-.menu-buttons{
-    display: flex;
-    align-items: center;
-}
-#quote a{
-    color: var(--white);
-}
-.nav-desktop a{
-    color: var(--dark-blue);
-}
-.login{
-    background-color: var(--white);
-}
     /*-----hero-------------*/
     .background{
       padding: 9rem 6rem;

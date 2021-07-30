@@ -1,11 +1,4 @@
-/* -------- HEADER---------*/
-.logo {
-    width: 40%;
-    height: 60%;
-}
-.nav-desktop{
-    display: none;
-}
+
 /*------------main-----------------*/
 .querybox{
     display: flex;
@@ -72,14 +65,6 @@ textarea:placeholder-shown{
     text-align: center;
 }
 @media only screen and (min-width:768px){
-    /*---------------Navigation--------------------------------*/
-    .nav-bar{
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-    }
-    .logo{
-        width: 10rem;
-    }
     .queries{
         margin-left: 10rem;
         margin-right: 10rem;
@@ -94,48 +79,6 @@ textarea:placeholder-shown{
 }
 @media only screen and (min-width:1024px)
 {   
-     /*-----------------padding-----------------*/
-   .nav-bar{
-    padding-left: 4rem;
-    padding-right: 2rem;
-}
-   /*-------------Navigation------------------*/
-   .icon{
-    display: none;
-}
-.logo{
-    width: 10rem;
-    height: 2rem;
-    padding-left: 0rem;
-}
-.nav-bar{
-    padding: 0rem 7rem;
-}
-.nav-desktop{
-    display: flex;
-    flex-direction: row;
-}
-.nav-desktop li{
-    display: inline;
-    padding-right: 1.5rem;
-}
-.menu {
-    align-self: center;
-    margin-right: 8rem;
-}
-.menu-buttons{
-    display: flex;
-    align-items: center;
-}
-#quote a{
-    color: var(--white);
-}
-.nav-desktop a{
-    color: var(--dark-blue);
-}
-.login{
-    background-color: var(--white);
-}
     .queries{
         margin-left: 20rem;
         margin-right: 20rem;

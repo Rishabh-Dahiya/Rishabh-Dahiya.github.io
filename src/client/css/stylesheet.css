@@ -8,15 +8,6 @@
     --grey-text:#6e6e6e;
 }
 
-/* -------- HEADER---------*/
-.logo {
-    width: 40%;
-    height: 60%;
-}
-.nav-desktop{
-    display: none;
-}
-
 /*--------FIND HOSPITALS-------------*/
 .find {
     background-color: var(--light-blue);
@@ -411,100 +402,7 @@ figcaption h6 a{
 
 }
 @media only screen and (min-width:1024px){  
-    /*-----------------padding-----------------*/
-    .nav-bar{
-        padding-left: 4rem;
-        padding-right: 2rem;
-    }
-    /*-------------Navigation------------------*/
-    .icon{
-        display: none;
-    }
-    .logo{
-        width: 10rem;
-        height: 2rem;
-        padding-left: 0rem;
-    }
-    .nav-bar{
-        padding: 0rem 7rem;
-    }
-    .nav-desktop{
-        display: flex;
-        flex-direction: row;
-    }
-    .nav-desktop li{
-        display: inline;
-        padding-right: 1.5rem;
-    }
-    .menu {
-        align-self: center;
-        margin-right: 5rem;
-    }
-    .menu-buttons{
-        display: flex;
-        align-items: center;
-    }
-    #quote a{
-        color: var(--white);
-    }
-    .nav-desktop a{
-        color: var(--dark-blue);
-    }
-    .login{
-        background-color: var(--white);
-    }
-    .profile h6{
-        margin-bottom: 0rem;
-    }
-    .profile i{
-        margin-right: 0.5rem;
-    }
-    .user-info{
-        display: flex;
-        align-items: center;
-        margin-left: 1rem;
-    }
-    .user-info p{
-        margin-bottom: 0rem;
-        padding-right: 0.3rem;
-    }
-    .toaster{
-        border: 0.1rem solid var(--dark-blue);
-        position: absolute;
-        right: 6rem;
-        background-color: var(--white);
-    }
-    .toasterinfo{
-        display: flex;
-        
-    }
-    .info-toaster{
-        display: flex;
-        flex-direction: column;
-       margin: 0.5rem;
-    }
-    .info-toaster p{
-        margin-bottom: 0rem;
-    }
-    .info-toaster h6{
-        margin-bottom: 0rem;
-        color: var(--blue);
-        font-family: nexa-bold;
-    }
-    .toasterinfo figure{
-        margin: 0.5rem;
-    }
-    .opt-toaster ul{
-        display: flex;
-        flex-direction: column;
-    }
-    .opt-toaster li{
-        margin-bottom: 1rem;
-        padding-left: 0.5rem;
-    }
-    .toaster-hide{
-        display: none;
-    }
+    
     /*-----------------Find Affordablt Healthcare------------------------*/
     .find{
         display: flex;

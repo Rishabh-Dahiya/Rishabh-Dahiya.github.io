@@ -1,10 +1,4 @@
-.logo {
-    width: 40%;
-    height: 60%;
-}
-.nav-desktop{
-    display: none;
-}
+
 /*----------------------------Hero------------------------------*/
 .hero-background{
     display: flex;
@@ -101,10 +95,7 @@ textarea{
 }
 @media only screen and (min-width:768px)
 {
-    .logo{
-        width: 10rem;
-        padding-left: 1.5rem;
-    }
+
     /*--------------------main--------------------------------------*/
     .contact-details{
         display: flex;
@@ -168,48 +159,7 @@ textarea{
 }
 }
 @media only screen and (min-width:1024px){
-  /*-----------------padding-----------------*/
-  .nav-bar{
-    padding-left: 4rem;
-    padding-right: 2rem;
-}
-   /*-------------Navigation------------------*/
-   .icon{
-    display: none;
-}
-.logo{
-    width: 10rem;
-    height: 2rem;
-    padding-left: 0rem;
-}
-.nav-bar{
-    padding: 0rem 7rem;
-}
-.nav-desktop{
-    display: flex;
-    flex-direction: row;
-}
-.nav-desktop li{
-    display: inline;
-    padding-right: 1.5rem;
-}
-.menu {
-    align-self: center;
-    margin-right: 8rem;
-}
-.menu-buttons{
-    display: flex;
-    align-items: center;
-}
-#quote a{
-    color: var(--white);
-}
-.nav-desktop a{
-    color: var(--dark-blue);
-}
-.login{
-    background-color: var(--white);
-}
+
 .map{
     height: 25rem;
 }
