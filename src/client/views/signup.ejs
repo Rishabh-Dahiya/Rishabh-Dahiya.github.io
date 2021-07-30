@@ -42,22 +42,22 @@
                     <h5>Sign Up</h5>
               
                 </div>
-                <div id="fname"  class="input-edit"><input name="name" placeholder="Enter Name" type="text"></div>
-                <div id="mail" class="input-edit"><input name="email" placeholder="Enter Email" type="email"></div>
-                <div id="pass" class="input-edit"><input name="password" placeholder="Enter Password" type="password"></div>
+                <div id="fname"  class="input-edit"><input name="name" placeholder="Enter Name" type="text" required></div>
+                <div id="mail" class="input-edit"><input name="email" placeholder="Enter Email" type="email" required></div>
+                <div id="pass" class="input-edit"><input name="password" placeholder="Enter Password" type="password" required></div>
                 <div id="sex" class="input-edit">
-                <select id="gender" name="gender">
+                <select id="gender" name="gender" required>
                     <option>Select your gender</option>
                     <option>Male</option>
                     <option>Female</option>
                     <option>Other</option>
                 <select>
                 </div>
-                <div id="age" class="input-edit"><input type="date" placeholder="dd / mm /yyyy" name="dateofbirth"> </div>
-                <div id="number" class="input-edit"><input type="number" placeholder="Enter Phone Number" name="number"></div>
-                <div id="place" ><div class="input-edit" id="city"><input type="text" name="city" placeholder="Enter City"></div><div class="input-edit" id="state"><input type="text" name="state" placeholder="Enter your state"></div>
+                <div id="age" class="input-edit"><input type="date" placeholder="dd / mm /yyyy" name="dateofbirth" required> </div>
+                <div id="number" class="input-edit"><input type="number" placeholder="Enter Phone Number" name="number" required></div>
+                <div id="place" ><div class="input-edit" id="city"><input type="text" name="city" placeholder="Enter City" required></div><div class="input-edit" id="state"><input type="text" name="state" placeholder="Enter your state"></div>
                 </div>
-                <div id="region" class="input-edit"><input name="country" list="country" placeholder="Select Your country">
+                <div id="region" class="input-edit"><input name="country" list="country" placeholder="Select Your country" required>
                 <datalist id="country">
                     <option value=""></option>
                     <option value=""></option>
@@ -67,6 +67,9 @@
                     <option value=""></option>
                 </datalist>
                 </div>
+                <div class="doctor">
+                    <label for="isdoctor">Is Doctor</label>
+                    <input type="checkbox" name="isdoctor" id="isdoctor"></div>
                 <div class="su-button">
                     <button type = "submit" class ="primary-dark" id="signup-btn"><h6>SIGN UP</h6></button>
                     <i class="fas fa-arrow-right"></i>

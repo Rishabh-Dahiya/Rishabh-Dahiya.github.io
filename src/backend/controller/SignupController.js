@@ -1,11 +1,10 @@
 
 const db = require("../database/conn");
-module.exports={
-    signup: signup
-};
+const multer=require('multer');
+const signupdata = require("../database/userschema");
 
 function signup(req, res){
-    const {name, email, password,number,gender, dateofbirth, city, state, country} = req.body;
+    const {name, email, password,number,gender, dateofbirth, city, state, country,isdoctor} = req.body;
     if(!(name && email && password))
         return res.render("signup",{
             msg: "Please enter all the required details"
@@ -20,7 +19,8 @@ function signup(req, res){
             "dateofbirth":dateofbirth,
             "city":city,
             "state":state,
-            "country":country
+            "country":country,
+            "isdoctor":isdoctor
         } 
 
         db.collection('users').findOne({"email": email , "number":number},'*',function(err, result){
@@ -55,4 +55,8 @@ function signup(req, res){
         }
    })
 }}
-                   
+
+
+module.exports={
+    signup: signup
+};

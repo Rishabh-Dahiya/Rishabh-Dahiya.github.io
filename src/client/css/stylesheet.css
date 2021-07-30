@@ -46,46 +46,34 @@
     padding: 0.5rem 2rem;
 }
 /*----------HOW DOES THIS WORKS-----------------*/
-.desktop-how
-{display: none;}
-.how-it-works {
-    display: flex;
-    flex-direction: column;
+.activejs{
+    border: 0.1rem solid var(--dark-blue);
 }
-.steps li h5{
-    margin-bottom: 0rem;
+.grayjs{
+    border: 0.1rem solid var(--dark-grey);
 }
-.room p{
-   margin-top: 1.27rem;
-   margin-bottom: 0;
-}
-.parent-fi{
-    display: flex;
-    flex-direction: column;
-}
-.first {
-    background-color:var(--white);
-    color:var(--dark-blue);
-     border: 0.09rem solid var(--dark-blue) ;
-    }
-.steps li {
+.activejs , .grayjs{
     display: flex;
     flex-direction: row;
-    height: 4rem;
+    align-items: center;
+}
+.grayjs,.grayjs span{
+    color: var(--grey);
+}
+.steps figure img{
+    padding-bottom: 1rem;
+}
+.desktop-how h5{
+    margin-bottom: 0rem;
+}
+.desktop-how li{
+    height: 3.5rem;
     border-radius: 0.625rem;
-    padding-left: 1rem;
-   align-items: center;
-    text-align: left;
-}
-.rest{
-     background-color:var(--white);
-    color: var(--grey);
+    padding-left: 0.5rem;
     margin-bottom: 1rem;
-    border: 0.09rem solid var(--dark-grey) ;
-    vertical-align: middle;
 }
-.number{
-    color: var(--grey);
+.hide{
+    display: none;
 }
 /*------------DOCTORS-------------*/
 .doctors {
@@ -267,41 +255,86 @@ figcaption h6 a{
     }
   
     /*---------------HOW IT WORKS--------------------------------*/
+    .heading-how p{
+        text-align: left;
+    }
     #content-mobile-how{
         display: none;
     }
-   .desktop-how{
-       display: grid;
-       grid-template-columns: 1fr 1fr;
-       grid-column-gap: 2rem;
-   }
-   .step-list h5{
-       margin-bottom: 0rem;
-   }
-   .step-list span{
-       font-size: 1.25rem;
-       padding-left: 1rem;
-       padding-right: 1rem;
-   }
-   .step-list{
-       display: flex;
-       align-items: center;
-       padding-top: 1rem;
-       padding-bottom: 1rem;
-       border: 0.05rem solid var(--dark-blue);
-       border-radius: 0.5rem;
-       margin-bottom: 1rem;
-   }
-   #rest span,#rest h5{
-       color: var(--white-grey);
-   }
-   .room-image{
-       height: 22rem;
-       margin-top: 1rem;
-   }
-   .room-image img {
-       margin-bottom: 0.5rem;
-   }
+    .desktop-how {
+        display: block;
+    
+    }
+    .desktop-how .steps{
+        display: grid;
+        grid-template-columns: 45% 5% 45% ;
+        grid-template-areas: 
+        "step1 . figure"
+        "step2 . figure"
+        "step3 . figure"
+        "step4 . figure"
+        "step5 . figure"
+        "step6 . figure"
+        "step7 . figure";
+        grid-column-gap: 1rem;
+    }
+    .steps li{
+        margin-bottom: 0.5rem;
+    }
+     .activejs{
+        border: 0.1rem solid var(--blue);
+        color: var(--dark-blue );
+    }
+    .grayjs{
+        border: 0.1rem solid var(--grey);
+        color: var(--dark-grey);
+    }
+    .steps .grayjs span{
+        color: var(--dark-grey);
+    }
+    .steps li{
+        padding-top: 2rem;
+        padding-bottom:2rem;
+    }
+    .steps span{
+        font-size: 1.4rem;
+        padding-right: 0.5rem;
+    }
+    .steps #step1{
+        grid-area: step1;
+    }
+    .steps #step2{
+        grid-area: step2;
+    }
+    .steps #step3{
+        grid-area: step3;
+    }
+    .steps #step4{
+        grid-area: step4;
+    }
+    .steps #step5{
+        grid-area: step5;
+    }
+    .steps #step6{
+        grid-area: step6;
+    }
+    .steps #step7{
+        grid-area: step7;
+    }
+    .steps figure{
+        grid-area:figure;
+    }
+    .steps figure img{
+        padding-top: 4rem;
+        margin-bottom: 1rem;
+    }
+    .steps figure img{
+      height: auto;
+    }
+    .hide{
+        display: none;
+    }
+ 
    /*-----------------DOCTORS----------------------------------------*/
     .parent-doc {
         display: grid;
@@ -398,7 +431,7 @@ figcaption h6 a{
     }
     .menu {
         align-self: center;
-        margin-right: 8rem;
+        margin-right: 5rem;
     }
     .menu-buttons{
         display: flex;
@@ -418,6 +451,52 @@ figcaption h6 a{
     }
     .profile i{
         margin-right: 0.5rem;
+    }
+    .user-info{
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;
+    }
+    .user-info p{
+        margin-bottom: 0rem;
+        padding-right: 0.3rem;
+    }
+    .toaster{
+        border: 0.1rem solid var(--dark-blue);
+        position: absolute;
+        right: 6rem;
+        background-color: var(--white);
+    }
+    .toasterinfo{
+        display: flex;
+        
+    }
+    .info-toaster{
+        display: flex;
+        flex-direction: column;
+       margin: 0.5rem;
+    }
+    .info-toaster p{
+        margin-bottom: 0rem;
+    }
+    .info-toaster h6{
+        margin-bottom: 0rem;
+        color: var(--blue);
+        font-family: nexa-bold;
+    }
+    .toasterinfo figure{
+        margin: 0.5rem;
+    }
+    .opt-toaster ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .opt-toaster li{
+        margin-bottom: 1rem;
+        padding-left: 0.5rem;
+    }
+    .toaster-hide{
+        display: none;
     }
     /*-----------------Find Affordablt Healthcare------------------------*/
     .find{

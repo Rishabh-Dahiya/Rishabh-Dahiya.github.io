@@ -1,5 +1,5 @@
 const redirectprofile = (req, res, next) => {
-    if (req.session.email) {
+    if (!req.session.email) {
       res.redirect("/");
     } else {
       next();

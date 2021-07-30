@@ -16,18 +16,17 @@ function changeimage(index,Imageindex){
     document.getElementById('step7_fig').setAttribute("class",'hide');
     document.getElementById(index).setAttribute("class",'activejs');
     document.getElementById(Imageindex).setAttribute("class",'show');
-
-    
 }
 
 
 
 
-var timeLeft = 30;
-var elem = document.getElementById('btn-resend');
-var timerId = setInterval(countdown, 1000);
+
 
 function countdown() {
+    var timeLeft = 30;
+    var elem = document.getElementById('btn-resend');
+    var timerId = setInterval(countdown, 1000);
     if (timeLeft == -1) {
         clearTimeout(timerId);
         elem.innerHTML = "Send OTP Again";
@@ -35,4 +34,17 @@ function countdown() {
         elem.innerHTML = 'Resend in ' + timeLeft ;
         timeLeft--;
     }
+}
+
+
+function toasterjs(){
+    const name = document.getElementById("toaster-name");
+    const toaster = document.getElementById("main-toaster");
+    if(toaster.classList.contains("toaster-hide"))
+    {
+    toaster.classList.remove("toaster-hide");
+    }   
+    else{
+        toaster.classList.add("toaster-hide");
+    } 
 }

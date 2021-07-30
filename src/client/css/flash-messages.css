@@ -24,7 +24,7 @@
 border-left: 0.5rem solid var(--flash-green);
 }
 #messages .success li{
-  color: var(--flash-red);
+  color: var(--flash-green);
   padding: 1.5rem 1rem;
 }
 

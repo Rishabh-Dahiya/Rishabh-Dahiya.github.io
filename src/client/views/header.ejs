@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="/css/toaster.css">
+<script src="/js/index.js"></script>
 <nav class="nav-bar">
     <figure class="logo">
         <a href="index.ejs"><img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg" alt="tvastra logo"></a>
@@ -6,8 +8,8 @@
         <i class="fas fa-bars"></i>
     </div>
     <div class="nav-mobile nav-desktop">
-        <div class="menu">
-            <ul >
+        <div class="menu"> 
+            <ul>
                 <li><a href="./doctor.ejs">Doctor</a></li>
                 <li><a href="./hospital.ejs">Hospitals</a></li>
                 <li><a href="./treatment.ejs">Treatment</a></li>
@@ -16,8 +18,32 @@
             </ul>
         </div>
         <div class="menu-buttons">
-            <button class="primary-login"><a href="login.ejs">Login / Sign Up</a></button>
+            <button class="primary-login"><a href="tvastra-plus.ejs">Tvastra Plus</a></button>
             <button class="primary-quote" id="quote"><a href="contactus.ejs">Get a Quote</a></button>
         </div>
+        <div id = "toaster-name" class="user-info" onclick="toasterjs()"><p><%= username %></p><i class="fas fa-chevron-down"></i></div>
     </div>
-    </nav>
+</nav>
+<div class="toaster toaster-hide" id = "main-toaster">
+    <div class="toasterinfo">
+        <figure>
+            <img id = "pfp" alt="profile picture" > 
+        </figure>   
+    <div class="info-toaster">
+    <h6><%= username %></h6>
+    <p><%=  number %></p>
+        </div>
+    </div>
+    <hr>
+    <div class="opt-toaster">
+        <ul>
+            <li>My Appointments</li>
+            <li>My Lab Tests</li>
+            <li>My Medicine Orders</li>
+            <li>My Payments</li>
+            <a href="logout.ejs">
+                <li>Logout</li>
+            </a>
+        </ul>
+    </div>
+</div>

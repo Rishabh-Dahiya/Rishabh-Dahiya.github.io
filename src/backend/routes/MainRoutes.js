@@ -7,27 +7,34 @@ const session = require("express-session");
 const middle= require("../controller/middle");
 const app = express();
 
-router.route("/").get(mainController.index);
-router.route('/index.ejs').get(middle.redirectprofile,mainController.logindex);
-router.route("/doctor.ejs").get(mainController.doctor);
-router.route("/healthy.ejs").get(mainController.healthy);
-router.route("/about-hospital.ejs").get(mainController.about_hospital);
-router.route("/appointment.ejs").get(mainController.appointment);
-router.route("/contactus.ejs").get(mainController.contactus);
-router.route("/about-doctor.ejs").get(mainController.about_doctor);
-router.route("/faq.ejs").get(mainController.faq);
-router.route("/hospital.ejs").get(mainController.hospital);
-router.route("/query.ejs").get(mainController.query);
-router.route("/treatment.ejs").get(mainController.treatment);
-router.route("/tvastra-plus.ejs").get(mainController.tvastra_plus);
+router.route("/").get(mainController.login);
+router.route('/doctor-signup').get(mainController.doctor_signup);
+router.route('/index.ejs').get(middle.redirectprofile,mainController.index);
+router.route("/doctor.ejs").get(middle.redirectprofile,mainController.doctor);
+router.route("/healthy.ejs").get(middle.redirectprofile,mainController.healthy);
+router.route("/about-hospital.ejs").get(middle.redirectprofile,mainController.about_hospital);
+router.route("/appointment.ejs").get(middle.redirectprofile,mainController.appointment);
+router.route("/contactus.ejs").get(middle.redirectprofile,mainController.contactus);
+router.route("/about-doctor.ejs").get(middle.redirectprofile,mainController.about_doctor);
+router.route("/faq.ejs").get(middle.redirectprofile,mainController.faq);
+router.route("/hospital.ejs").get(middle.redirectprofile,mainController.hospital);
+router.route("/query.ejs").get(middle.redirectprofile,mainController.query);
+router.route("/treatment.ejs").get(middle.redirectprofile,mainController.treatment);
+router.route("/tvastra-plus.ejs").get(middle.redirectprofile,mainController.tvastra_plus);
 router.route("/otp-password.ejs").get(mainController.otp_password); 
+router.route("/password-user.ejs").get(mainController.password_user);
 router.route("/phone-login.ejs").get(mainController.phonelogin);
+router.route("/logout.ejs").get(middle.redirectprofile,mainController.logout);
    
 //post
 router.route("/login.ejs").get(middle.redirectprofile,mainController.login);
 router.route("/login").post(loginController.login);
-router.route("/signup.ejs").get(middle.redirectprofile, mainController.signup);
+router.route("/signup.ejs").get( mainController.signup);
 router.route("/signup").post(signupController.signup);
+router.route("/docsignup").post(signupController.signup);
+router.route("/password-user").post(loginController.checkuserid);
+router.route("/otp-password").post(loginController.changepassword);
+
 
 
 router.route("/otp").get(mainController.otp);

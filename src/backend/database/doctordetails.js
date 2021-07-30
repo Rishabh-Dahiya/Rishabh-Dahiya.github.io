@@ -10,6 +10,38 @@ const userschema = new Schema({
         unique: true,
         allowNull: false
     },
+    description:{
+        type:String,
+        unique:false,
+        allowNull: false
+    },
+    image:{
+        type:String
+    },
+    hospital:{
+        type:String,
+        required: true
+    },
+    achievement:{
+        type:String,
+        required:true
+    },
+    qualification:{
+        type:String,
+        required:true
+    },
+    awards:{
+        type:String,
+        required:true
+    },
+    specialization:{
+        type:String,
+        required:true
+    },
+    fees:{
+        type:String,
+        required:true
+    },
     password:{
         type: String,
         allowNull:false
@@ -24,12 +56,8 @@ const userschema = new Schema({
         allowNull: false
     },
     dateofbirth:{
-        type: String,
+        type: Number,
         allowNull: false
-    },
-    isdoctor : {
-        type : Boolean,
-        allowNull : true
     },
     city:{
         type: String,
@@ -46,5 +74,5 @@ const userschema = new Schema({
     }
 })
 
-const signupdata = mongoose.model("Signupdata",userschema);
-module.exports = signupdata; 
+const docdetails = mongoose.model("DOCDETAIL",userschema);
+module.exports = docdetails; 
