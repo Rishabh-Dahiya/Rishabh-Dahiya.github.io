@@ -387,7 +387,7 @@
     /*-----------------inside---------------------*/
 
     .figure-hospital{
-        height: 23rem;
+        height: 100%;
     }
     .info-first h5::before{
         width: 1.5rem;
