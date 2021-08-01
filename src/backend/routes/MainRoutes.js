@@ -8,7 +8,6 @@ const middle= require("../controller/middle");
 const app = express();
 
 router.route("/").get(mainController.login);
-router.route('/doctor-signup').get(mainController.doctor_signup);
 router.route('/index.ejs').get(middle.redirectprofile,mainController.index);
 router.route("/doctor.ejs").get(middle.redirectprofile,mainController.doctor);
 router.route("/healthy.ejs").get(middle.redirectprofile,mainController.healthy);
@@ -25,13 +24,15 @@ router.route("/otp-password.ejs").get(mainController.otp_password);
 router.route("/password-user.ejs").get(mainController.password_user);
 router.route("/phone-login.ejs").get(mainController.phonelogin);
 router.route("/logout.ejs").get(middle.redirectprofile,mainController.logout);
+router.route("/dashboard.ejs").get(middle.redirectprofile,mainController.dashboard);
    
 //post
 router.route("/login.ejs").get(middle.redirectprofile,mainController.login);
 router.route("/login").post(loginController.login);
 router.route("/signup.ejs").get( mainController.signup);
 router.route("/signup").post(signupController.signup);
-router.route("/docsignup").post(signupController.signup);
+router.route('/doctor-signup').get(mainController.doctor_signup);
+router.route("/doctor-signup").post(signupController.docdetailsregister);
 router.route("/password-user").post(loginController.checkuserid);
 router.route("/otp-password").post(loginController.changepassword);
 

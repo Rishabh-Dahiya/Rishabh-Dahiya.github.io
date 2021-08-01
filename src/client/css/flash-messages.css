@@ -25,7 +25,7 @@ border-left: 0.5rem solid var(--flash-green);
 }
 #messages .success li{
   color: var(--flash-green);
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 0.5rem;
 }
 
 .warning{
@@ -33,7 +33,7 @@ border-left: 0.5rem solid var(--flash-red);
 }
 #messages .warning li{
   color: var(--flash-red);
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 0.5rem;
 }
 
 .error{

@@ -48,6 +48,15 @@ function toasterjs(){
         toaster.classList.add("toaster-hide");
     } 
 }
+function toastermob(){
+    const switcher = document.getElementById("main-toaster");
+    if(switcher.style.display == "none"){
+        switcher.style.display = "block";
+    }
+    else{
+        switcher.style.display = "none";
+    }
+}
 
 
 function currentSlide(id){
