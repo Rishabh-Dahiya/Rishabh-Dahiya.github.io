@@ -12,9 +12,10 @@
 </head>
 <body>
     <%- include ('./header.ejs') %>
+    <%- include ('./flashmessages.ejs') %>
         </nav>  
         <div class="querybox">
-            <form action="post" action="">
+            <form method="POST" action="/askquery">
                 <div class="queries">
                     <div class="heading">
                         <h5>Submit your query</h5>
@@ -23,7 +24,7 @@
                         <input type="text" name="name" id="name" placeholder="Enter Name">
                     </div>
                     <div class="input-box mobile">
-                        <input type="tel" name="mobile-number" id="mobile-number" placeholder="Enter Phone Number">
+                        <input type="tel" name="number" id="mobile-number" placeholder="Enter Phone Number">
                     </div>
                     <div class="input-box">
                         <input type="email" name="email" id="email" placeholder="Enter Email">

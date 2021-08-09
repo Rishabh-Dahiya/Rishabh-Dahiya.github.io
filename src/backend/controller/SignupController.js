@@ -35,7 +35,7 @@ function signup(req, res) {
     };
 
     db.collection("users").findOne(
-      { email: email, number: number },
+      { email: email},
       "*",
       function (err, result) {
         if (err) {

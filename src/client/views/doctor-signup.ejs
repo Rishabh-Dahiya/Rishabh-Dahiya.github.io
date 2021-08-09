@@ -51,7 +51,7 @@
       </div>
     </nav>
     <%- include ('./flashmessages.ejs') %>
-    <form action="/doctor-signup" method="POST" enctype="multipart/form-data">
+    <form action="/uploadcv" method="POST" >
       <div class="form-container">
         <div class="heading">
           <h4>Welcome</h4>
@@ -71,12 +71,7 @@
           </div>
           <div class="label-input">
             <label for="filename">Upload your profile picture</label>
-            <input
-              type="file"
-              id="filename"
-              class="input-class"
-              name="image"
-            />
+            <input type="file" id="filename" class="input-class" name="image" />
           </div>
           <div class="label-input">
             <label for="hospital">Your Hospital</label>
@@ -137,7 +132,5 @@
     <div class="footer" id="footer-doc">
       <h6>All rights reserved &copy. 2020</h6>
     </div>
-
-  
   </body>
 </html>

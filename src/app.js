@@ -66,12 +66,12 @@ const otpManager = new OtpManager(otpRepository, {
   validityTime: 4,
 });
 app.post("/otp/:token", async (req, res) => {
-  const number = req.body.phonenum;
+  const {number} = req.body.phonenum;
   console.log(number + "this the number got from req.body");
-  var k = await user.findOne({ number: number });
+  var k = await user.findOne({ phonenum : number});
 
   db.collection("users")
-    .findOne({ number: number })
+    .findOne({ phonenum: number })
     .then((user) => {
       if (user) {
         const otp = otpManager.create(req.params.token);
@@ -79,17 +79,14 @@ app.post("/otp/:token", async (req, res) => {
         console.log("Otp sent");
         console.log(req.body);
         req.session.name = user.name;
-        (req.session.email = user.email),
-          (req.session.password = user.password),
-          (req.session.isdoctor = user.isdoctor),
-          (req.session.gender = user.gender),
-          (req.session.dateofbirth = user.dateofbirth),
-          (req.session.state = user.state),
-          (req.session.number = user.number),
-          (req.session.city = user.city),
-          (req.session.country = user.country);
-        req.session.image =
-          "https://image.shutterstock.com/image-vector/user-avatar-icon-button-profile-260nw-1517550290.jpg";
+        req.session.email = user.email,
+          req.session.password = user.password,
+          req.session.gender = user.gender,
+          req.session.dateofbirth = user.dateofbirth,
+          req.session.state = user.state,
+          req.session.number = user.number,
+          req.session.city = user.city,
+          req.session.country = user.country;
         otpSender.send(otp, req.body);
         console.log("this is the req.body");
         console.log(`Your token code is ${otp.token} and otp is ${otp.code}`);
@@ -122,11 +119,12 @@ app.post("/verifyotp/:token", (req, res) => {
   switch (verificationResult) {
     case verificationResults.valid:
       req.flash("success", "Welcome Login Successfull");
-      req.session.name = user.name;
-      req.session.number = user.number;
-      console.log("inside switch " + user.name);
-      return res.render("index", {
-        messages: req.flash()
+      console.log("this user.number " + req.session.number)
+      console.log("inside switch " + req.session.name);
+       return  res.redirect("/index.ejs", {
+        messages: req.flash(),
+        username : req.session.name,
+        number : req.session.number
       });
       break;
     case verificationResults.notValid:

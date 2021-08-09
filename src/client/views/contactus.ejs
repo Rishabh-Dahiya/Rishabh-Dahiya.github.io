@@ -16,6 +16,7 @@
 </head>
 <body>
     <%- include ('./header.ejs') %>  
+    <%- include ('./flashmessages.ejs') %>
         <div class="hero-background">
             <div class="subject">
                 <h2>Contact Us</h2>
@@ -58,25 +59,27 @@
                         
                     </div>
                    </div>
-                   <div class="contact-form">
-                    <div class="form-grid">
-                        <div class="input-box" id="name">
-                            <input type="text" name="name"  placeholder="Enter your name">
+                   <form action="/feedbackmessages" method="POST">
+                       <div class="contact-form">
+                        <div class="form-grid">
+                            <div class="input-box" id="name">
+                                <input type="text" name="name"  placeholder="Enter your name">
+                            </div>
+                            <div class="input-box"  id="email">
+                                <input type="email" name="email" placeholder="Enter email address">
+                            </div>
+                            <div class="input-box" id="subject">
+                                <input type="text" name="subject"  placeholder="Enter subject">
+                            </div>
+                            <div class="input-box "id="message">
+                                <input type="text" name="message"  placeholder="Enter Message">
+                            </div>
                         </div>
-                        <div class="input-box"  id="email">
-                            <input type="email" name="email" placeholder="Enter email address">
+                        <div class="btn">
+                            <button class="primary-light" type="submit">Send Message</button>
                         </div>
-                        <div class="input-box" id="subject">
-                            <input type="text" name="subject"  placeholder="Enter subject">
-                        </div>
-                        <div class="input-box "id="message">
-                            <input type="text" name="textarea"  placeholder="Enter Message">
-                        </div>
-                    </div>
-                    <div class="btn">
-                        <button class="primary-light" type="submit">Send Message</button>
-                    </div>
-                </div>
+                       </div>
+                   </form>
                 </div>
             </div>
         </section>

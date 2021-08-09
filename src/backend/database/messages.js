@@ -1,49 +1,44 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
-const userschema = new Schema({
+const userfeedback = new Schema({
   name: {
     type: String,
     allowNull: false,
   },
   email: {
     type: String,
-    unique: true,
     allowNull: false,
   },
-  password: {
+  subject:{
     type: String,
     allowNull: false,
   },
-  number: {
-    type: String,
-    allowNull: false,
-  },
-  gender: {
-    type: String,
-    allowNull: false,
-  },
-  dateofbirth: {
-    type: String,
-    allowNull: false,
-  },
-  isdoctor: {
-    type: Boolean,
-    allowNull: true,
-  },
-  city: {
-    type: String,
-    allowNull: false,
-  },
-  state: {
-    type: String,
-    allowNull: false,
-  },
-
-  country: {
+  message: {
     type: String,
     allowNull: false,
   },
 });
 
-const signupdata = mongoose.model("Signupdata", userschema);
-module.exports = signupdata;
+const askquery = new Schema({
+  name: {
+    type: String,
+    allowNull: false,
+  },
+  email: {
+    type: String,
+    allowNull: false,
+  },
+  number : {
+    type: String,
+    allowNull : false
+  },
+  query: {
+    type: String,
+    allowNull: false,
+  },
+});
+
+
+const message = mongoose.model("Appointments", userfeedback);
+const query = mongoose.model("Queries", query);
+module.exports = message;

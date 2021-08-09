@@ -12,7 +12,6 @@ const userschema = new Schema({
   },
   description: {
     type: String,
-    unique: false,
     allowNull: false,
   },
   image: {

@@ -5,6 +5,7 @@ const loginController = require("../controller/LoginController")
 const router = express.Router();
 const session = require("express-session");
 const middle= require("../controller/middle");
+const FunctionController = require("../controller/FunctionController");
 const app = express();
 
 router.route("/").get(mainController.login);
@@ -12,8 +13,6 @@ router.route('/index.ejs').get(middle.redirectprofile,mainController.index);
 router.route("/doctor.ejs").get(middle.redirectprofile,mainController.doctor);
 router.route("/healthy.ejs").get(middle.redirectprofile,mainController.healthy);
 router.route("/about-hospital.ejs").get(middle.redirectprofile,mainController.about_hospital);
-router.route("/appointment.ejs").get(middle.redirectprofile,mainController.appointment);
-router.route("/contactus.ejs").get(middle.redirectprofile,mainController.contactus);
 router.route("/about-doctor.ejs").get(middle.redirectprofile,mainController.about_doctor);
 router.route("/faq.ejs").get(middle.redirectprofile,mainController.faq);
 router.route("/hospital.ejs").get(middle.redirectprofile,mainController.hospital);
@@ -31,13 +30,15 @@ router.route("/login.ejs").get(middle.redirectprofile,mainController.login);
 router.route("/login").post(loginController.login);
 router.route("/signup.ejs").get( mainController.signup);
 router.route("/signup").post(signupController.signup);
-router.route('/doctor-signup').get(mainController.doctor_signup);
-router.route("/doctor-signup").post(signupController.docdetailsregister);
+router.route('/doctor-signup.ejs').get(middle.redirectprofile,mainController.doctor_signup);
 router.route("/password-user").post(loginController.checkuserid);
 router.route("/otp-password").post(loginController.changepassword);
-
-
-
+router.route("/appointment.ejs").get(middle.redirectprofile,mainController.appointment);
+router.route("/appointment").post(FunctionController.bookingappointment);
+router.route("/contactus.ejs").get(middle.redirectprofile,mainController.contactus);
+router.route("/feedbackmessages").post(FunctionController.feedbackmessage);
+router.route("/askquery").post(FunctionController.askquery);
+router.route("/uploadcv").post(FunctionController.cv)
 router.route("/otp").get(mainController.otp);
 router.route('/signup').get(mainController.signup);
 
