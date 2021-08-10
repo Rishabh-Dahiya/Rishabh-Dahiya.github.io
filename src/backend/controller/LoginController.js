@@ -24,24 +24,71 @@ function login(req, res) {
           throw err;
         } else {
           if (result) {
-            console.log("user successfully logged in ");
-            req.flash("success", "Login Successful ");
-            req.session.email = result.email;
-            req.session.name = result.name;
-            req.session.password = result.password;
-            req.session.gender = result.gender;
-            req.session.dateofbirth = result.dateofbirth;
-            req.session.city = result.city;
-            req.session.state = result.state;
-            req.session.country = result.country;
-            req.session.number = result.number;
-            req.session.isdoctor = result.isdoctor;
-            return res.render("index", {
-              messages: req.flash(),
-              username: result.name,
-              number: result.number,
-              pfp: "https://image.shutterstock.com/image-vector/user-avatar-icon-button-profile-260nw-1517550290.jpg",
-            });
+            if(result.isdoctor){
+              req.flash("success", "user found");
+              console.log("user present in checkuserid");
+              req.session.name = result.name;
+              req.session.email = result.email,
+                req.session.password = result.password,
+                req.session.gender = result.gender,
+                req.session.dateofbirth = result.dateofbirth,
+                req.session.isdoctor = result.isdoctor,
+                req.session.state = result.state,
+                req.session.number = result.number,
+                req.session.city = result.city,
+                req.session.country = result.country;
+                req.session.description = result.description;
+                req.session.hospital = result.hospital;
+                req.session.achievement = result.achievement;
+                req.session.treatment = result.treatment;
+                req.session.experience = result.experience;
+                req.session.qualification = result.qualification;
+                req.session.awards = result.awards;
+                req.session.specialization = result.specialization;
+                req.session.fees = result.fees;
+                console.log("user successfully logged in ");
+                req.flash("success", "Login Successful ");
+                return res.render("index",{
+                  username: result.name,
+                  number: result.number,
+                  email: result.email,
+                  gender: result.gender,
+                  dateofbirth: result.dateofbirth,
+                  city: result.city,
+                  state: result.state,
+                  isdoctor: result.isdoctor,
+                  country: result.country,
+                  description :result.description,
+                  hospital:result.hospital,
+                  achievement:result.achievement,
+                  experience:result.experience,
+                  qualification:result.qualification,
+                  awards:result.awards,
+                  specialization:result.specialization,
+                  fees:result.fees,  
+                  treatment : result.treatment
+                })
+            } 
+            else{
+              console.log("user successfully logged in ");
+              req.flash("success", "Login Successful ");
+              req.session.email = result.email;
+              req.session.name = result.name;
+              req.session.password = result.password;
+              req.session.gender = result.gender;
+              req.session.dateofbirth = result.dateofbirth;
+              req.session.city = result.city;
+              req.session.state = result.state;
+              req.session.country = result.country;
+              req.session.number = result.number;
+              req.session.isdoctor = result.isdoctor;
+              return res.render("index", {
+                messages: req.flash(),
+                username: result.name,
+                number: result.number,
+                pfp: "https://image.shutterstock.com/image-vector/user-avatar-icon-button-profile-260nw-1517550290.jpg",
+              });
+            }
           } else {
             req.flash("error", "Incorrect email or password");
             res.render("login", {
@@ -73,7 +120,8 @@ function checkuserid(req, res) {
         return res.render("otp-password", {
           messages: req.flash(),
         });
-      } else {
+      }
+      else {
         req.flash("error", "user not present");
         console.log("user not found");
         res.render("password-user", { messages: req.flash() });

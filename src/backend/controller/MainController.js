@@ -24,6 +24,7 @@ function login(req, res) {
     res.render("index", {
       messages: req.flash(),
       username: req.session.name,
+      number : req.session.number
     });
   }
 }
@@ -68,6 +69,20 @@ function appointment(req, res) {
   res.render("appointment", {
     username: req.session.name,
     number: req.session.number,
+  });
+}
+function myappointments(req, res) {
+  console.log("this is req.session.appointdate" + req.session.appointdate);
+  res.render("myappointments", {
+    username: req.session.name,
+    number: req.session.number,
+    email: req.session.email,
+    gender: req.session.gender,
+    dateofbirth: req.session.dateofbirth,
+    appointdate : req.session.appointdate,
+    instance : req.session.instance,
+    status : req.session.status,
+    appointdetails : req.session.appointdetails 
   });
 }
 
@@ -136,7 +151,17 @@ function dashboard(req, res) {
     dateofbirth: req.session.dateofbirth,
     city: req.session.city,
     state: req.session.state,
+    isdoctor: req.session.isdoctor,
     country: req.session.country,
+    description :req.session.description,
+    hospital:req.session.hospital,
+    achievement:req.session.achievement,
+    experience:req.session.experience,
+    qualification:req.session.qualification,
+    awards:req.session.awards,
+    specialization:req.session.specialization,
+    fees:req.session.fees,  
+    treatment:req.session.treatment
   });
 }
 
@@ -162,4 +187,5 @@ module.exports = {
   password_user: password_user,
   doctor_signup: doctor_signup,
   dashboard: dashboard,
+  myappointments: myappointments
 };

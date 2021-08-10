@@ -3,30 +3,30 @@ const Schema = mongoose.Schema;
 const userfeedback = new Schema({
   name: {
     type: String,
-    allowNull: false,
+    required : true,
   },
   email: {
     type: String,
-    allowNull: false,
+    required : true,
   },
   subject:{
     type: String,
-    allowNull: false,
+    required : true,
   },
   message: {
     type: String,
-    allowNull: false,
+    required : true,
   },
 });
 
 const askquery = new Schema({
   name: {
     type: String,
-    allowNull: false,
+    required : true,
   },
   email: {
     type: String,
-    allowNull: false,
+    required : true,
   },
   number : {
     type: String,
@@ -34,7 +34,7 @@ const askquery = new Schema({
   },
   query: {
     type: String,
-    allowNull: false,
+    required : true,
   },
 });
 

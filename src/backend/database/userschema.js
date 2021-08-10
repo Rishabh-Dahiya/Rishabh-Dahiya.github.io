@@ -3,47 +3,45 @@ const Schema = mongoose.Schema;
 const userschema = new Schema({
   name: {
     type: String,
-    allowNull: false,
+    required : true,
   },
   email: {
     type: String,
     unique: true,
-    allowNull: false,
+    required : true,
   },
   password: {
     type: String,
-    allowNull: false,
+    required : true,
   },
   number: {
     type: String,
-    allowNull: false,
   },
   gender: {
     type: String,
-    allowNull: false,
+    required : true,
   },
   dateofbirth: {
     type: String,
-    allowNull: false,
+    required : true,
   },
   isdoctor: {
-    type: Boolean,
-    allowNull: true,
+    type: Boolean
   },
   city: {
     type: String,
-    allowNull: false,
+    required : true,
   },
   state: {
     type: String,
-    allowNull: false,
+    required : true,
   },
 
   country: {
     type: String,
-    allowNull: false,
+    required : true,
   },
 });
 
-const signupdata = mongoose.model("Signupdata", userschema);
+const signupdata = mongoose.model("user", userschema);
 module.exports = signupdata;
